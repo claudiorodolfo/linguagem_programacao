@@ -1,0 +1,31 @@
+# Compilados Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Pacotes gerados
+dist/
+out/
+build/
+bin/
+target/
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+.nb-gradle/
+nbproject/private/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs e temporários
+*.log
+*.tmp
+*~
