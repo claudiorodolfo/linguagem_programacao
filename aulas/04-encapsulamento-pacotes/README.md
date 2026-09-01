@@ -1,8 +1,7 @@
-# Aula 04 — Encapsulamento, modificadores de acesso e pacotes
+# Encapsulamento, modificadores de acesso e pacotes
 
-**Data:** 31/08  
 **Unidade:** 1  
-**Pré-requisito:** aula 03
+**Pré-requisito:** atributos, construtores e métodos
 
 ## Objetivos
 
@@ -11,11 +10,11 @@
 - Organizar classes em **pacotes** e conhecer `import module` (Java 25).
 - Proteger **invariantes** (saldo nunca negativo) em vez de escrever setters cegos.
 
-Relacionamentos e cardinalidade ficam na **aula 05**.
+Relacionamentos e cardinalidade ficam na aula de **relacionamentos**.
 
 ## Roteiro
 
-1. Ataque ao código da aula 03: `conta.saldo = -999` no `main`. Pergunte se isso é aceitável.
+1. Ataque ao código da aula de atributos, construtores e métodos: `conta.saldo = -999` no `main`. Pergunte se isso é aceitável.
 2. Refatore ao vivo para `private` + `depositar`/`sacar`. Sem `setSaldo`.
 3. Monte o pacote `br.edu.ifba.conquista.lp1.aula04.modelo` no quadro (pastas = pacotes).
 4. Execute `DemoEncapsulamento`.
@@ -25,7 +24,7 @@ Relacionamentos e cardinalidade ficam na **aula 05**.
 
 **Encapsular** é reunir dado + regra e impedir que o mundo externo quebre a regra.
 
-| Antes (aula 03) | Depois |
+| Antes (atributos, construtores e métodos) | Depois |
 | --- | --- |
 | `conta.saldo = -10;` | impossível: `saldo` é `private` |
 | qualquer um altera o estado | só métodos validam o estado |
@@ -43,7 +42,7 @@ Use getter quando alguém precisa **consultar**. Use setter só quando a mudanç
 | `protected` | sim | sim | sim | não |
 | `public` | sim | sim | sim | sim |
 
-Nesta aula: atributos `private`, métodos de negócio `public`. `protected` volta na aula 09.
+Nesta aula: atributos `private`, métodos de negócio `public`. `protected` volta na aula de herança.
 
 ## 3. Pacotes
 
@@ -84,16 +83,16 @@ public record Intervalo(int inicio, int fim) {
 }
 ```
 
-O compilador gera construtor, acessores (`inicio()`, não `getInicio()`), `equals`, `hashCode` e `toString`. **Não** use `record` para `Conta`: saldo muda. Na aula 05 o `Endereco` da biblioteca é um `record` (composição + dado imutável).
+O compilador gera construtor, acessores (`inicio()`, não `getInicio()`), `equals`, `hashCode` e `toString`. **Não** use `record` para `Conta`: saldo muda. Na aula de relacionamentos o `Endereco` da biblioteca é um `record` (composição + dado imutável).
 
 ## 4. Exceções leves nesta aula
 
-`IllegalArgumentException` no construtor (saldo inicial negativo, depósito ≤ 0) é aceitável. Não é a aula de tratamento de erros — isso aprofunda na aula 16. Se a turma travar, `IO.println` + recusar a operação também vale.
+`IllegalArgumentException` no construtor (saldo inicial negativo, depósito ≤ 0) é aceitável. Não é a aula de tratamento de erros — isso aprofunda na aula de boas práticas. Se a turma travar, `IO.println` + recusar a operação também vale.
 
 ## O que executar no projetor
 
 O `DemoEncapsulamento` deposita, tenta sacar além do saldo e mostra que `conta.saldo = -10` **não compila**.
 
-## Ponte para a aula 05
+## Ponte para relacionamentos
 
 Uma conta isolada não modela o campus. Um usuário **tem** endereço e **vários** empréstimos. Como expressar 1–1, 1–N e o ciclo de vida das partes?

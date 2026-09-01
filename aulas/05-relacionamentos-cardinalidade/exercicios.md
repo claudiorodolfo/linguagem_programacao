@@ -1,4 +1,4 @@
-# Exercícios — Aula 05 (relacionamentos e cardinalidade)
+# Exercícios — Relacionamentos e cardinalidade
 
 ## Laboratório
 

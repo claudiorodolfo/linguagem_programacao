@@ -3,7 +3,7 @@
 **IFBA — Campus Vitória da Conquista**  
 **Curso:** Sistemas de Informação  
 **Disciplina:** Linguagem de Programação 1 (Java)  
-**Data:** 14/12  
+**Data:** _________________________________  
 **Duração:** 2 horas  
 **Valor:** 10,0 pontos  
 

@@ -1,4 +1,4 @@
-# Exercícios integradores — Aula 17
+# Exercícios integradores — Integradores da disciplina
 
 ## Trilha A (laboratório)
 
@@ -41,7 +41,7 @@ Classe `ProvaFinal extends ProvaEscrita` (ou `extends Atividade`) com peso próp
 
 ### Q8 — Integração biblioteca
 
-Um `Estudante` **tem** `UsuarioBiblioteca` (composição, aula 16). Não precisa da biblioteca inteira: um campo e um getter bastam, com comentário dizendo por que não foi `extends`.
+Um `Estudante` **tem** `UsuarioBiblioteca` (composição, boas práticas). Não precisa da biblioteca inteira: um campo e um getter bastam, com comentário dizendo por que não foi `extends`.
 
 ### Q9 — Relatório em arquivo? Não.
 

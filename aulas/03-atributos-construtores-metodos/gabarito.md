@@ -1,4 +1,4 @@
-# Gabarito — Aula 03
+# Gabarito — Atributos, construtores e métodos
 
 ## Q1
 

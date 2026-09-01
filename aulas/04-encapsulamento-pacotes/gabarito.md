@@ -1,4 +1,4 @@
-# Gabarito — Aula 04
+# Gabarito — Encapsulamento e pacotes
 
 ## Q1
 
@@ -14,7 +14,7 @@ public Retangulo(double base, double altura) {
 }
 ```
 
-Se a turma ainda não viu exceções, o fallback `base = 1.0` com mensagem no console é aceitável. Exceções voltam com mais calma na aula 16.
+Se a turma ainda não viu exceções, o fallback `base = 1.0` com mensagem no console é aceitável. Exceções voltam com mais calma na aula de boas práticas.
 
 Sem setter aberto. Se houver `redimensionar(double b, double a)`, valide de novo.
 

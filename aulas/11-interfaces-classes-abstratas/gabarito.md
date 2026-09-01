@@ -1,4 +1,4 @@
-# Gabarito — Aula 11
+# Gabarito — Interfaces e classes abstratas
 
 ## Q1
 

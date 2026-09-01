@@ -1,6 +1,5 @@
-# Aula 01 — Apresentação da disciplina e revisão de lógica
+# Apresentação da disciplina e revisão de lógica
 
-**Data:** 10/08  
 **Unidade:** 1  
 **Duração sugerida:** 4 h  
 **Linguagem:** Java 25
@@ -184,7 +183,7 @@ double media(double a, double b) {
 - `return` encerra o método.
 - Parâmetros primitivos são cópia do valor; `String` é referência.
 
-`static` continua existindo (algoritmos sem objeto, como na aula 08). Não desaparece; só deixa de ser obrigatório no `main`.
+`static` continua existindo (algoritmos sem objeto, como na aula de recursividade). Não desaparece; só deixa de ser obrigatório no `main`.
 
 ## 9. Entrada com `IO.readln`
 
@@ -195,7 +194,7 @@ double nota = Double.parseDouble(IO.readln("Nota: "));
 
 Tudo é **linha de texto**. Não há a armadilha clássica do `Scanner.nextInt()` + `nextLine()`. `NumberFormatException` se a conversão falhar — trate no laboratório.
 
-`Scanner` ainda existe. Na disciplina: código legado / aula 16 (anti-padrão). Não misture `IO.readln` e `Scanner` no mesmo `System.in`.
+`Scanner` ainda existe. Na disciplina: código legado / boas práticas (anti-padrão). Não misture `IO.readln` e `Scanner` no mesmo `System.in`.
 
 ## 10. Erros que a revisão deve mostrar ao vivo
 
@@ -217,6 +216,6 @@ java -cp aulas/01-revisao-logica/src DemoRevisao
 
 Percorra `DemoRevisao`. Depois a `CalculadoraConsole` (menu em *text block* + `switch` expressão).
 
-## Para a próxima aula
+## Para a aula de classes e objetos
 
-Na aula 02 o `main` deixa de ser o “programa inteiro”: ele **cria** outros objetos com `new`.
+Na aula de classes e objetos o `main` deixa de ser o “programa inteiro”: ele **cria** outros objetos com `new`.

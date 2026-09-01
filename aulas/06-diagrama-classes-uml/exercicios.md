@@ -1,4 +1,4 @@
-# Exercícios — Aula 06 (diagrama de classes UML)
+# Exercícios — Diagrama de classes UML
 
 Desenhe no papel (régua opcional). Depois, onde pedido, escreva o esqueleto Java.
 
@@ -6,11 +6,11 @@ Desenhe no papel (régua opcional). Depois, onde pedido, escreva o esqueleto Jav
 
 ### Q1 — Completar a caixa
 
-Desenhe a classe `ContaBancaria` da aula 04 com visibilidade: `numero` e `saldo` privados; `depositar`, `sacar` e `getSaldo` públicos. Inclua tipos.
+Desenhe a classe `ContaBancaria` da aula de encapsulamento e pacotes com visibilidade: `numero` e `saldo` privados; `depositar`, `sacar` e `getSaldo` públicos. Inclua tipos.
 
 ### Q2 — Pedido / ItemPedido
 
-Do enunciado da aula 05 (composição, máx. 20 itens):
+Do enunciado da aula de relacionamentos (composição, máx. 20 itens):
 
 a) Diagrama com losango **correto**, multiplicidades e uma operação `total(): double` em `Pedido`.  
 b) Esqueleto de `Pedido.adicionarItem(...)` que deixa claro que o item **nasce** no pedido.

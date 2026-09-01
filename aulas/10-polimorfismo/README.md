@@ -1,8 +1,7 @@
-# Aula 10 — Polimorfismo
+# Polimorfismo
 
-**Data:** 26/10  
 **Unidade:** 2  
-**Pré-requisito:** aula 09
+**Pré-requisito:** herança
 
 ## Objetivos
 
@@ -77,11 +76,11 @@ if (conta instanceof ContaPoupanca p) {
 
 Legítimo em fronteiras (deserializar, UI). Abusivo no meio da regra de negócio: se o banco “rende” só poupança, crie `void aplicarRendimentoMensal()` na superclasse com corpo vazio (ou método concreto só na subclasse chamado por um serviço que já sabe a lista de poupanças).
 
-O cast clássico ` (ContaPoupanca) conta ` ainda existe; na disciplina usamos **pattern matching** (`instanceof Tipo x`). Na aula 11 o `switch` em classe `sealed` elimina o `default` obrigatório (exaustivo).
+O cast clássico ` (ContaPoupanca) conta ` ainda existe; na disciplina usamos **pattern matching** (`instanceof Tipo x`). Na aula de interfaces e classes abstratas o `switch` em classe `sealed` elimina o `default` obrigatório (exaustivo).
 
 ## 5. Polimorfismo paramétrico? Não nesta ementa
 
-Não precisa de genéricos (`List<T>`) ainda. Se alguém perguntar: “é outro tipo de polimorfismo; aparece nas coleções nativas depois.” Wrappers na aula 15 usam `ArrayList<Integer>` de leve.
+Não precisa de genéricos (`List<T>`) ainda. Se alguém perguntar: “é outro tipo de polimorfismo; aparece nas coleções nativas depois.” Wrappers na aula de boxing e wrappers usam `ArrayList<Integer>` de leve.
 
 ## 6. Armadilhas
 
@@ -98,6 +97,6 @@ java -cp aulas/10-polimorfismo/src DemoPolimorfismo
 
 Peça para a turma prever cada saque **antes** de rodar. Depois mostre `FolhaPagamento` com `Funcionario[]`.
 
-## Ponte para a aula 11
+## Ponte para interfaces e classes abstratas
 
-E se não fizer sentido instanciar `Conta` “genérica”? E se várias hierarquias diferentes precisarem de `emprestar()`? **Classe abstrata** e **interface** — estudo dirigido na janela 26/10–16/11 (aula 11), junto com o acervo (aula 12).
+E se não fizer sentido instanciar `Conta` “genérica”? E se várias hierarquias diferentes precisarem de `emprestar()`? **Classe abstrata** e **interface** — interfaces e classes abstratas, junto com o acervo (integradores de POO).

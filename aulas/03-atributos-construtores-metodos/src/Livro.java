@@ -1,6 +1,6 @@
 /**
- * Livro da aula 02, agora com construtores e this.
- * Atributos ainda sem private — isso muda na aula 04.
+ * Livro da aula de classes e objetos, agora com construtores e this.
+ * Atributos ainda sem private — isso muda na aula de encapsulamento e pacotes.
  */
 public class Livro {
 

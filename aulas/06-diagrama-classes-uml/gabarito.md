@@ -1,4 +1,4 @@
-# Gabarito — Aula 06
+# Gabarito — Diagrama de classes UML
 
 ## Q1
 
@@ -23,7 +23,7 @@ public boolean adicionarItem(String nome, int qtd, double preco) {
 
 ## Q3
 
-Usuario `1` — Emprestimo `0..5`. Emprestimo `0..*` — Livro `1`. Um empréstimo não compartilhado entre livros; o mesmo livro pode ter tido vários empréstimos em momentos diferentes (no modelo simplificado da aula 05, um livro só está emprestado para um usuário de cada vez — aceite `0..1` no lado empréstimo se a justificativa for “um empréstimo ativo”).
+Usuario `1` — Emprestimo `0..5`. Emprestimo `0..*` — Livro `1`. Um empréstimo não compartilhado entre livros; o mesmo livro pode ter tido vários empréstimos em momentos diferentes (no modelo simplificado da aula de relacionamentos, um livro só está emprestado para um usuário de cada vez — aceite `0..1` no lado empréstimo se a justificativa for “um empréstimo ativo”).
 
 ## Q4
 

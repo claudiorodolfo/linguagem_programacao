@@ -13,19 +13,21 @@ Revisão de lógica de programação. Programação orientada a objetos: classes
 | Pasta | Conteúdo |
 | --- | --- |
 | [`plano-de-ensino.md`](plano-de-ensino.md) | Objetivos, metodologia, avaliação e bibliografia |
-| [`cronograma.md`](cronograma.md) | Encontros, datas e links para cada aula |
+| [`cronograma.md`](cronograma.md) | Ordem sugerida dos encontros e links para cada aula |
 | [`aulas/`](aulas/) | Material de cada encontro, na ordem do cronograma |
 | [`recursos/`](recursos/) | Ambiente, [Java 25](recursos/java25.md), convenções, referências e [guia do docente](recursos/guia-docente.md) |
 
 Cada aula prática segue o mesmo padrão:
 
 ```
-aulas/NN-tema/
+aulas/<assunto>/
   README.md        → objetivos, teoria e roteiro de aula
   exercicios.md    → lista para laboratório / casa
   gabarito.md      → resoluções (uso do docente)
   src/             → implementação Java comentada + classe Demo
 ```
+
+O prefixo numérico nas pastas (quando houver) só ordena a listagem no disco. O identificador estável é o **assunto** (`recursividade`, `heranca`, `prova-unidade-1`…).
 
 As pastas de prova trazem instrumento proposto e gabarito.
 

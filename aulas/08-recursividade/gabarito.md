@@ -1,4 +1,4 @@
-# Gabarito — Aula 08
+# Gabarito — Recursividade
 
 ## Q1
 

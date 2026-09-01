@@ -1,5 +1,5 @@
 /**
- * Do diagrama para o Java: os campos abaixo são a leitura UML da aula 05.
+ * Do diagrama para o Java: os campos abaixo são a leitura UML da aula de relacionamentos.
  * Compare com o quadro (Usuario 1 composição 1 Endereco; Usuario 1 — 0..5 Emprestimo).
  */
 public class DemoUml {
@@ -33,6 +33,6 @@ public class DemoUml {
         IO.println("Losango vazio (agregação): Turma tem Aluno; o aluno existe sem a turma.");
         IO.println("Losango cheio (composição): Pedido tem ItemPedido criado DENTRO do pedido.");
         IO.println("Multiplicidade 1..* no lado do item: Pedido sem itens costuma ser inválido no domínio.");
-        IO.println("Não desenhe extends hoje — triângulo vazio é aula 09.");
+        IO.println("Não desenhe extends hoje — triângulo vazio é herança.");
     }
 }

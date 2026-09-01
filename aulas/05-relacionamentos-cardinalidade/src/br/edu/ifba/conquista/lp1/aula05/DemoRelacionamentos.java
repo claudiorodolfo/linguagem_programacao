@@ -29,10 +29,10 @@ public class DemoRelacionamentos {
         Livro efetivo = new Livro("Java efetivo", "Bloch");
         Livro cabeca = new Livro("Use a cabeça! Java", "Sierra");
 
-        efetivar(new Emprestimo(ana, clean, "17/08/2026"));
-        efetivar(new Emprestimo(ana, efetivo, "17/08/2026"));
-        efetivar(new Emprestimo(bruno, clean, "18/08/2026")); // deve falhar
-        efetivar(new Emprestimo(bruno, cabeca, "18/08/2026"));
+        efetivar(new Emprestimo(ana, clean, "01/03"));
+        efetivar(new Emprestimo(ana, efetivo, "01/03"));
+        efetivar(new Emprestimo(bruno, clean, "02/03")); // deve falhar
+        efetivar(new Emprestimo(bruno, cabeca, "02/03"));
 
         IO.println("Ana mora em: " + ana.cidadeFormatada());
         ana.listarEmprestimos();

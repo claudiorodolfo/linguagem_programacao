@@ -1,10 +1,10 @@
-# Exercícios — Aula 04 (encapsulamento e pacotes)
+# Exercícios — Encapsulamento e pacotes
 
 ## Laboratório
 
 ### Q1 — Encapsular `Retangulo`
 
-Pegue o `Retangulo` da aula 03. Atributos `private`. Construtor rejeita base ou altura ≤ 0 (imprima erro e use 1.0 como fallback, ou recuse criar — documente a escolha). Sem `setBase` que aceite negativo.
+Pegue o `Retangulo` da aula de atributos, construtores e métodos. Atributos `private`. Construtor rejeita base ou altura ≤ 0 (imprima erro e use 1.0 como fallback, ou recuse criar — documente a escolha). Sem `setBase` que aceite negativo.
 
 ### Q2 — Invariante
 

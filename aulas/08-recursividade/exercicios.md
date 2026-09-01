@@ -1,4 +1,4 @@
-# Exercícios — Aula 08 (recursividade)
+# Exercícios — Recursividade
 
 Em todas as questões: **caso-base explícito**. Teste o caso-base no `main` antes do caso grande.
 

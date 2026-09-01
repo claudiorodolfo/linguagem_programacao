@@ -1,7 +1,6 @@
-# Aula 13 — Prova da Unidade 2
+# Prova da Unidade 2
 
-**Data:** 16/11  
-**Conteúdo:** aulas 08 a 12 (com base sólida na Unidade 1)  
+**Conteúdo:** recursividade até os integradores de POO (com base sólida na Unidade 1)  
 **Duração sugerida:** 2 h
 
 ## Instruções ao docente

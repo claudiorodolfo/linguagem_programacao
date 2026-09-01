@@ -1,6 +1,5 @@
-# Aula 14 — Depuração de programas
+# Depuração de programas
 
-**Data:** 23/11  
 **Unidade:** 3  
 **Pré-requisito:** Unidade 2 (já há código com objetos, herança e contratos)
 
@@ -71,7 +70,7 @@ Ritual no quadro:
 3. **`==` em String** — compara referência; use `equals`.
 4. **Atributo não inicializado** — `int` vira 0 e “parece” que funcionou.
 5. **Método que não devolve o que você pensa** — `return` no lugar errado dentro do `for`.
-6. **Alias** — duas variáveis, um objeto (aula 02); o “outro” saldo também muda.
+6. **Alias** — duas variáveis, um objeto (classes e objetos); o “outro” saldo também muda.
 
 ## 6. Código desta aula
 
@@ -93,6 +92,6 @@ Há também `versao-corrigida/` com as mesmas classes já revisadas, para o doce
 3. Step into em `TransferenciaBugada.transferir`. Veja `destino` versus `this`.
 4. Mostre a call stack: `main` → `transferir` → `sacar`.
 
-## Ponte para a aula 15
+## Ponte para boxing e wrappers
 
-A pilha de chamadas do depurador é a **mesma** da recursão (aula 08): cada chamada empilha um quadro. Na próxima aula o perigo muda de forma: `Integer` `null` vira `int` e a JVM lança NPE no unboxing — pause no depurador e veja.
+A pilha de chamadas do depurador é a **mesma** da aula de recursividade: cada chamada empilha um quadro. Na aula de boxing e wrappers o perigo muda de forma: `Integer` `null` vira `int` e a JVM lança NPE no unboxing — pause no depurador e veja.

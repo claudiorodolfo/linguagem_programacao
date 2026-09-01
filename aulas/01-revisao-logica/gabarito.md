@@ -1,4 +1,4 @@
-# Gabarito — Aula 01
+# Gabarito — Revisão de lógica
 
 Uso docente. Não publique antes do laboratório.
 

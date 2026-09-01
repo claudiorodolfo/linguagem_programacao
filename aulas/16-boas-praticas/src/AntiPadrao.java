@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * Funciona (quase). É o paciente da aula 16. Não use como modelo.
+ * Funciona (quase). É o paciente da aula de boas práticas. Não use como modelo.
  */
 public class AntiPadrao {
 

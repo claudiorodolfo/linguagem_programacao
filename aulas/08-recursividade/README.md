@@ -1,25 +1,24 @@
-# Aula 08 — Recursividade
+# Recursividade
 
-**Data:** 05/10  
 **Unidade:** 2  
 **Pré-requisito:** Unidade 1 (métodos, arranjos)
 
 ## Objetivos
 
 - Identificar caso-base e caso recursivo.
-- Relacionar recursão à **pilha de execução** (quadros de chamada). A aula 14 (depuração) volta a essa pilha no depurador.
+- Relacionar recursão à **pilha de execução** (quadros de chamada). A aula de depuração volta a essa pilha no depurador.
 - Implementar algoritmos recursivos clássicos e comparar com a versão iterativa.
 - Reconhecer risco de `StackOverflowError` e explosão de chamadas (Fibonacci ingênuo).
 
 ## Roteiro
 
 1. Desenhe os quadros na lousa: `fat(4)` espera `fat(3)`, … até `fat(1) = 1`, depois os retornos multiplicam.
-2. Se a IDE estiver à mão, chame `fatorial(4)` com breakpoint em `return n * fatorial(n - 1)` e **step into**. A call stack cresce — a aula 14 sistematiza o depurador.
+2. Se a IDE estiver à mão, chame `fatorial(4)` com breakpoint em `return n * fatorial(n - 1)` e **step into**. A call stack cresce — a aula de depuração sistematiza o depurador.
 3. Live coding: palíndromo e busca binária.
 4. Mostre Fibonacci recursivo vs. iterativo (tempo).
 5. Laboratório.
 
-Abre a Unidade 2. Não há aula em 12/10 (feriado). Herança entra na aula 09 (19/10).
+Abre a Unidade 2. A herança vem na aula de herança.
 
 ## 1. Ideia
 
@@ -71,7 +70,7 @@ fat(4) → 4 * fat(3)
 
 Cada chamada ocupa um **quadro** (parâmetros, variáveis locais, endereço de retorno). Recursão profunda demais esgota a pilha. Java não garante otimização de chamada de cauda.
 
-No depurador (opcional hoje; obrigatório na aula 14): step into até o caso-base; step out / resume vendo os retornos.
+No depurador (opcional hoje; obrigatório na aula de depuração): step into até o caso-base; step out / resume vendo os retornos.
 
 ## 4. Recursão sobre arranjos e strings
 
@@ -120,6 +119,6 @@ java -cp aulas/08-recursividade/src DemoRecursao
 
 Depure `Fatorial.calcular(4)` com a turma. Depois rode `DemoRecursao` inteiro. Comente a linha de `Fibonacci.ingenuo(40)` se a máquina travar; 35 já impressiona.
 
-## Ponte para a aula 09
+## Ponte para herança
 
 Recursão resolve um problema **menor da mesma natureza**. Herança resolve um tipo **mais específico da mesma família** (`ContaPoupanca` *é uma* `Conta`). Não misture os dois vocabulários.

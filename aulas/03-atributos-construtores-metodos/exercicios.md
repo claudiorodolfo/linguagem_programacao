@@ -1,4 +1,4 @@
-# Exercícios — Aula 03 (atributos, construtores e métodos)
+# Exercícios — Atributos, construtores e métodos
 
 ## Laboratório
 

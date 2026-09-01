@@ -1,4 +1,4 @@
-# Gabarito — Aula 02
+# Gabarito — Classes e objetos
 
 ## Q1
 

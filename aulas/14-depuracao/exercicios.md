@@ -1,4 +1,4 @@
-# Exercícios — Aula 14 (depuração)
+# Exercícios — Depuração
 
 Regra do laboratório: **não reescreva o programa do zero**. Encontre o defeito, explique em um comentário `// BUG:` / `// FIX:` e corrija.
 

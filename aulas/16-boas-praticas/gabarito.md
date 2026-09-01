@@ -1,4 +1,4 @@
-# Gabarito — Aula 16
+# Gabarito — Boas práticas
 
 ## Q1 — problemas em `AntiPadrao`
 

@@ -1,9 +1,7 @@
-# Aula 12 — Exercícios integradores de POO
+# Exercícios integradores de POO
 
-**Data:** 26/10–16/11 (estudo dirigido; sem encontro presencial extra)  
 **Unidade:** 2  
-**Pré-requisito:** aulas 08 a 11  
-**Depois desta aula:** feriados em 02/11 e 09/11; prova em 16/11.
+**Pré-requisito:** recursividade, herança, polimorfismo e interfaces
 
 ## Objetivos
 
@@ -11,7 +9,7 @@
 - Ler código de terceiros (o `src/` desta aula) e estendê-lo sem reescrever tudo.
 - Identificar o ponto certo para um novo tipo (nova subclasse vs. novo contrato).
 
-Não há tópico teórico novo. Use a janela de feriados como laboratório longo: leia o `src/`, estenda o acervo, compare com o gabarito só depois.
+Não há tópico teórico novo. Use como laboratório longo (estudo dirigido, se não houver encontro presencial): leia o `src/`, estenda o acervo, compare com o gabarito só depois.
 
 ## O sistema: acervo do campus
 
@@ -54,7 +52,7 @@ Regras já implementadas:
           «interface» Emprestavel
 ```
 
-`Notebook` (exercício) implementa `Emprestavel` **sem** ser `ItemAcervo` — o mesmo gancho da aula 11.
+`Notebook` (exercício) implementa `Emprestavel` **sem** ser `ItemAcervo` — o mesmo gancho da aula de interfaces e classes abstratas.
 
 ## Compilar
 
@@ -63,6 +61,6 @@ javac aulas/12-exercicios-integradores-poo/src/*.java
 java -cp aulas/12-exercicios-integradores-poo/src DemoAcervo
 ```
 
-## Preparação da prova (16/11)
+## Preparação da prova da Unidade 2
 
 Avise: a prova mistura recursão (escrever e rastrear), leitura de código, implementação de uma subclasse e uma questão conceitual interface vs. abstrata. Encapsulamento da Unidade 1 **pode** aparecer como detalhe, não como eixo.

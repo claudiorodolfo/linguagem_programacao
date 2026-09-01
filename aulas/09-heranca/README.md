@@ -1,8 +1,7 @@
-# Aula 09 — Herança
+# Herança
 
-**Data:** 19/10  
 **Unidade:** 2  
-**Pré-requisito:** Unidade 1 (classes, encapsulamento) e aula 08
+**Pré-requisito:** Unidade 1 (classes, encapsulamento) e aula de recursividade
 
 ## Objetivos
 
@@ -24,7 +23,7 @@
 
 Herança modela **especialização**: toda `ContaPoupanca` **é uma** `Conta`. Tudo que vale para conta vale para poupança, mais o que for específico.
 
-Não use herança para “a turma *tem* alunos” — isso é associação (aula 05). Teste da frase: se você não diz “é um” com naturalidade, não é `extends`.
+Não use herança para “a turma *tem* alunos” — isso é associação (relacionamentos). Teste da frase: se você não diz “é um” com naturalidade, não é `extends`.
 
 ## 2. Sintaxe
 
@@ -74,7 +73,7 @@ public boolean sacar(double valor, String motivo) { // sobrecarga
 
 ## 5. `protected`
 
-Membro visível na hierarquia (e no pacote). Útil para `saldo` se as subclasses precisam alterar com regra própria — **ou** deixe `private` e ofereça `protected void ajustarSaldo(double delta)` para não espalhar o campo. Nesta aula o código usa `protected double saldo` de propósito, para a turma ver o acesso; na aula 16 discutimos se isso foi uma boa ideia.
+Membro visível na hierarquia (e no pacote). Útil para `saldo` se as subclasses precisam alterar com regra própria — **ou** deixe `private` e ofereça `protected void ajustarSaldo(double delta)` para não espalhar o campo. Nesta aula o código usa `protected double saldo` de propósito, para a turma ver o acesso; na aula de boas práticas discutimos se isso foi uma boa ideia.
 
 ## 6. `Object`
 
@@ -87,11 +86,11 @@ public String toString() {
 }
 ```
 
-Sem `toString`, `System.out.println(conta)` imprime `Conta@1a2b3c`. `equals` e `hashCode` juntos: mencione; implementação completa pode ficar para a aula 16.
+Sem `toString`, `System.out.println(conta)` imprime `Conta@1a2b3c`. `equals` e `hashCode` juntos: mencione; implementação completa pode ficar para a aula de boas práticas.
 
 ## 7. O que herança não é
 
-- Não é desconto de código a qualquer custo (veja *composição em vez de herança* na aula 16).
+- Não é desconto de código a qualquer custo (veja *composição em vez de herança* na aula de boas práticas).
 - Subclasse não deve **quebrar** o contrato da superclasse (poupança que “saca” aumentando o saldo é abuso). Princípio da substituição (Liskov) em versão de uma frase: **onde se espera a superclasse, a subclasse precisa fazer sentido**.
 
 ## O que executar no projetor
@@ -103,6 +102,6 @@ java -cp aulas/09-heranca/src DemoHeranca
 
 Mostre o saque da corrente abaixo de zero (dentro do limite) e o saque da poupança recusado. Imprima os objetos para ver `toString`.
 
-## Ponte para a aula 10
+## Ponte para polimorfismo
 
 Hoje cada variável ainda tem o tipo **exato** (`ContaPoupanca p = ...`). Amanhã uma `Conta[]` guarda correntes e poupanças e o `sacar` certo é escolhido **em tempo de execução**.

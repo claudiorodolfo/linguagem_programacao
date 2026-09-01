@@ -1,4 +1,4 @@
-/** Cópia didática da hierarquia de contas da aula 09, para a aula ser autocontida. */
+/** Cópia didática da hierarquia de contas da aula de herança, para a aula ser autocontida. */
 public class Conta {
 
     private String numero;

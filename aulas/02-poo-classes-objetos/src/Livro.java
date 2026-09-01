@@ -1,7 +1,7 @@
 /**
  * Modelo simplificado de livro da biblioteca do campus.
  * Sem construtor declarado (o padrão entra em cena) e sem private —
- * construtores na aula 03, encapsulamento na aula 04.
+ * construtores na aula de atributos, construtores e métodos, encapsulamento na aula de encapsulamento e pacotes.
  */
 public class Livro {
 

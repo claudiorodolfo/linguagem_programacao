@@ -1,4 +1,4 @@
-# Exercícios — Aula 02 (classes e objetos)
+# Exercícios — Classes e objetos
 
 ## Laboratório
 

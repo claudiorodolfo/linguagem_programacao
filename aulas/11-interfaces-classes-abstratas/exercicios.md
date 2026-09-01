@@ -1,5 +1,4 @@
-# Exercícios — Aula 11
-
+# Exercícios — Interfaces e classes abstratas
 ## Laboratório
 
 ### Q1 — `Forma` abstrata
@@ -20,7 +19,7 @@ public interface Autenticavel {
 
 ### Q3 — Conta abstrata
 
-Tome a hierarquia da aula 10 e torne `Conta` abstrata com `abstract void aplicarTaxasMensais()`. Implemente nas subclasses. Um `Conta[]` percorre e aplica taxas.
+Tome a hierarquia da aula de polimorfismo e torne `Conta` abstrata com `abstract void aplicarTaxasMensais()`. Implemente nas subclasses. Um `Conta[]` percorre e aplica taxas.
 
 ### Q4 — Duas interfaces
 

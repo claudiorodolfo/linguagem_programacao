@@ -1,4 +1,4 @@
-# Gabarito — Aula 10
+# Gabarito — Polimorfismo
 
 ## Q1
 

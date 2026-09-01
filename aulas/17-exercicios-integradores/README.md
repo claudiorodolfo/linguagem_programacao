@@ -1,17 +1,16 @@
-# Aula 17 — Exercícios integradores
+# Exercícios integradores
 
-**Data:** 07/12–14/12 (casa / revisão)  
 **Unidade:** 3  
 **Pré-requisito:** toda a ementa  
-**Próximo encontro:** prova da Unidade 3 (14/12)
+**Próximo encontro:** prova da Unidade 3
 
 ## Objetivos
 
 - Resolver um problema que exige **vários** tópicos da disciplina ao mesmo tempo.
 - Revisar, de forma ativa, recursão, POO, contratos, wrappers e um hábito de qualidade.
-- Chegar à prova 3 sem assunto inédito.
+- Chegar à prova da Unidade 3 sem assunto inédito.
 
-Não há capítulo novo. Há um mini-sistema (`src/`) e uma lista longa para a semana da aula 16. Escolha: **trilha A** (obrigatória) e **trilha B** (desafio).
+Não há capítulo novo. Há um mini-sistema (`src/`) e uma lista longa para a semana da aula de boas práticas. Escolha: **trilha A** (obrigatória) e **trilha B** (desafio).
 
 ## O sistema: boletim do campus
 
@@ -35,7 +34,7 @@ Regras já no código:
 
 1. Rode `DemoBoletim`. Preveja a média **antes** (há um `null`).
 2. Trilha A; quem terminar cedo parte para a B.
-3. Mapa da prova 3: o que cobra (ver `aulas/18-prova-unidade-3/README.md`).
+3. Mapa da prova da Unidade 3: o que cobra (ver a pasta `prova-unidade-3`).
 
 ## Compilar
 

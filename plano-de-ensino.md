@@ -76,9 +76,9 @@ Três provas presenciais, alinhadas às unidades:
 
 | Instrumento | Quando | Conteúdo |
 | --- | --- | --- |
-| Prova da Unidade 1 | ao final da Unidade 1 | Aulas 01 a 06 |
-| Prova da Unidade 2 | ao final da Unidade 2 | Aulas 08 a 12 (com base na Unidade 1) |
-| Prova da Unidade 3 | ao final da Unidade 3 | Aulas 14 a 17 (com base nas unidades anteriores) |
+| Prova da Unidade 1 | ao final da Unidade 1 | revisão até o diagrama de classes UML |
+| Prova da Unidade 2 | ao final da Unidade 2 | recursividade até os integradores de POO (com base na Unidade 1) |
+| Prova da Unidade 3 | ao final da Unidade 3 | depuração, wrappers, boas práticas e integradores da disciplina (com base nas unidades anteriores) |
 
 Sugestão de composição (edite conforme o regulamento do campus):
 
@@ -86,7 +86,7 @@ Sugestão de composição (edite conforme o regulamento do campus):
 N_f = \frac{U_1 + U_2 + U_3}{3}
 \]
 
-Os instrumentos propostos estão em `aulas/07-prova-unidade-1`, `aulas/13-prova-unidade-2` e `aulas/18-prova-unidade-3`. Os gabaritos são para uso docente.
+Os instrumentos propostos estão nas pastas de prova de cada unidade (`prova-unidade-1`, `prova-unidade-2`, `prova-unidade-3`). Os gabaritos são para uso docente.
 
 ## Bibliografia básica
 
@@ -106,5 +106,5 @@ Os instrumentos propostos estão em `aulas/07-prova-unidade-1`, `aulas/13-prova-
 
 - Linguagem-alvo: **Java 25** (LTS). Sem recursos em preview. Ver [`recursos/java25.md`](recursos/java25.md).
 - IDE sugerida: IntelliJ IDEA Community, Eclipse ou VS Code + Extension Pack for Java, com SDK 25. Ver [`recursos/ambiente.md`](recursos/ambiente.md).
-- Confira o calendário acadêmico do semestre (feriados, recessos) e encaixe as pastas de `aulas/` nessa ordem. Este material **não** traz datas fixas. Janelas sem encontro presencial servem às aulas 11 e 12 (estudo dirigido).
+- Confira o calendário acadêmico do semestre (feriados, recessos) e encaixe as pastas de `aulas/` nessa ordem. Este material **não** traz datas fixas. Janelas sem encontro presencial servem às interfaces e os integradores de POO (estudo dirigido).
 - Roteiro operacional do semestre: [`recursos/guia-docente.md`](recursos/guia-docente.md).

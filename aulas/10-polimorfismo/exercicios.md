@@ -1,10 +1,10 @@
-# Exercícios — Aula 10 (polimorfismo)
+# Exercícios — Polimorfismo
 
 ## Laboratório
 
 ### Q1 — Folha
 
-Com `Funcionario` e `Gerente` da aula 09, escreva:
+Com `Funcionario` e `Gerente` da aula de herança, escreva:
 
 ```java
 static double totalFolha(Funcionario[] equipe)

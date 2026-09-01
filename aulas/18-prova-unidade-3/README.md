@@ -1,7 +1,6 @@
-# Aula 18 — Prova da Unidade 3
+# Prova da Unidade 3
 
-**Data:** 14/12  
-**Conteúdo:** aulas 14 a 17, com a ementa inteira como pano de fundo  
+**Conteúdo:** depuração, wrappers, boas práticas e integradores da disciplina, com a ementa inteira como pano de fundo  
 **Duração sugerida:** 2 h
 
 ## Instruções ao docente

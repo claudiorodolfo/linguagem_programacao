@@ -1,4 +1,4 @@
-# Exercícios integradores — Aula 12
+# Exercícios integradores — Integradores de POO
 
 Trabalhe **sobre** o código em `src/`. Não crie um projeto paralelo, salvo se a IDE exigir.
 

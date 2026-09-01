@@ -1,8 +1,7 @@
-# Aula 03 — Atributos, construtores e métodos
+# Atributos, construtores e métodos
 
-**Data:** 24/08  
 **Unidade:** 1  
-**Pré-requisito:** aula 02
+**Pré-requisito:** classes e objetos
 
 ## Objetivos
 
@@ -14,7 +13,7 @@
 
 ## Roteiro
 
-1. Reabra o `Livro` da aula 02: “e se alguém esquecer `titulo`?” Passe a exigir inicialização no construtor.
+1. Reabra o `Livro` da aula de classes e objetos: “e se alguém esquecer `titulo`?” Passe a exigir inicialização no construtor.
 2. Live coding: `ContaBancaria` no quadro — dois construtores, `depositar` / `sacar` / `transferir`, contador estático.
 3. Mostre `this` nos três usos da disciplina.
 4. Laboratório: `exercicios.md`.
@@ -63,7 +62,7 @@ Três usos nesta disciplina:
 
 1. Desambiguar atributo e parâmetro: `this.saldo = saldo;`
 2. Encadear construtor: `this(numero, 0.0);`
-3. Passar o próprio objeto: `historico.registrar(this);` (aula 05)
+3. Passar o próprio objeto: `historico.registrar(this);` (relacionamentos)
 
 ## 4. Métodos
 
@@ -83,11 +82,11 @@ public boolean sacar(double valor) {
 - `return` encerra o método.
 - Parâmetros primitivos são cópia do valor; objetos são cópia da **referência** (por isso `transferir` altera o destino).
 
-`static` continua existindo para algoritmos sem objeto (aula 08, recursão). Não desaparece; só deixa de ser o jeito padrão de organizar o negócio.
+`static` continua existindo para algoritmos sem objeto (recursividade, recursão). Não desaparece; só deixa de ser o jeito padrão de organizar o negócio.
 
 ## 5. Encapsulamento? Ainda não (de propósito)
 
-Nesta aula os atributos podem ficar **sem** `private` para a turma ver o estado no `println`. Na aula 04 eles passam a `private` e o acesso vira método. Avise: “isso é didático e temporário”.
+Nesta aula os atributos podem ficar **sem** `private` para a turma ver o estado no `println`. Na aula de encapsulamento e pacotes eles passam a `private` e o acesso vira método. Avise: “isso é didático e temporário”.
 
 ## 6. Onde fica o `main`?
 
@@ -102,6 +101,6 @@ java -cp aulas/03-atributos-construtores-metodos/src DemoAtributosMetodos
 
 Mostre duas contas independentes, a transferência e o contador estático. Em seguida, duas referências para a **mesma** conta (`c2 = c1`) para o saque em `c2` alterar o saldo visto por `c1`.
 
-## Ponte para a aula 04
+## Ponte para encapsulamento e pacotes
 
 “Qualquer um pode fazer `conta.saldo = -1000`. Como impedir?”

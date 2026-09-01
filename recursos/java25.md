@@ -7,7 +7,7 @@ A linguagem-alvo é **Java 25** (LTS, setembro de 2025). Não usamos recursos em
 Três formas equivalentes de um “olá”:
 
 ```java
-// 1. Arquivo compacto (aula 01, primeiros minutos)
+// 1. Arquivo compacto (revisão de lógica, primeiros minutos)
 void main() {
     IO.println("LP1 — IFBA Conquista");
 }
@@ -27,25 +27,25 @@ public class OlaIfba {
 }
 ```
 
-A JVM, na forma 2, **cria um objeto** e chama `main()`. Isso antecipa a aula 02 sem exigir `new` no primeiro dia.
+A JVM, na forma 2, **cria um objeto** e chama `main()`. Isso antecipa a aula de classes e objetos sem exigir `new` no primeiro dia.
 
-`java.lang.IO` (desde 25): `IO.println`, `IO.print`, `IO.readln()`, `IO.readln("prompt: ")`. Preferimos `IO` a `Scanner` + `System.out` para I/O de console. `Scanner` entra só como código legado (e no anti-padrão da aula 16).
+`java.lang.IO` (desde 25): `IO.println`, `IO.print`, `IO.readln()`, `IO.readln("prompt: ")`. Preferimos `IO` a `Scanner` + `System.out` para I/O de console. `Scanner` entra só como código legado (e no anti-padrão da aula de boas práticas).
 
-Arquivos compactos importam o módulo `java.base` automaticamente (`List`, `ArrayList`, `BigDecimal`… sem `import`). Classes nomeadas continuam precisando de `import` — ou de `import module java.base;` (JEP 511), que mostramos na aula 04.
+Arquivos compactos importam o módulo `java.base` automaticamente (`List`, `ArrayList`, `BigDecimal`… sem `import`). Classes nomeadas continuam precisando de `import` — ou de `import module java.base;` (JEP 511), que mostramos na aula de encapsulamento e pacotes.
 
 ## Sintaxe que o material assume
 
 | Recurso | Desde | Onde aparece |
 | --- | --- | --- |
 | Text blocks `"""` | 15 | menus, relatórios |
-| `switch` expressão (`->`) | 14 | aula 01, calculadora |
-| `record` | 16 | `Endereco` (aula 05); aula 16 |
-| `instanceof Tipo x` | 16 | aula 10 em diante |
-| Classes `sealed` | 17 | `Conta` na aula 11 |
-| `switch` em hierarquia selada | 21 | aula 10/11 |
+| `switch` expressão (`->`) | 14 | revisão de lógica, calculadora |
+| `record` | 16 | `Endereco` (relacionamentos); boas práticas |
+| `instanceof Tipo x` | 16 | polimorfismo em diante |
+| Classes `sealed` | 17 | `Conta` na aula de interfaces e classes abstratas |
+| `switch` em hierarquia selada | 21 | polimorfismo e interfaces |
 | Variável não usada `_` | 22 | `case ContaCorrente _` |
 | `void main()` / arquivo compacto / `IO` | 25 | todas as Demos |
-| Corpo flexível de construtor (código **antes** de `super(...)`) | 25 | aula 09 |
+| Corpo flexível de construtor (código **antes** de `super(...)`) | 25 | herança |
 
 ## O que **não** cobrimos (ainda preview ou fora da ementa)
 
@@ -55,7 +55,7 @@ Arquivos compactos importam o módulo `java.base` automaticamente (`List`, `Arra
 
 ## Remoções que quebram código antigo
 
-Os construtores `new Integer(n)`, `new Double(n)` etc. foram **removidos**. Use `Integer.valueOf(n)` ou autoboxing. A aula 15 trata disso.
+Os construtores `new Integer(n)`, `new Double(n)` etc. foram **removidos**. Use `Integer.valueOf(n)` ou autoboxing. A aula de boxing e wrappers trata disso.
 
 ## Compilar na versão certa
 

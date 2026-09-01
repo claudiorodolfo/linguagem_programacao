@@ -1,4 +1,4 @@
-# Exercícios — Aula 01 (revisão)
+# Exercícios — Revisão
 
 Resolva no laboratório. Entrega sugerida: um arquivo por questão, todos compilando.
 

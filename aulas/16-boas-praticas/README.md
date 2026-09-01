@@ -1,8 +1,7 @@
-# Aula 16 — Boas práticas de programação
+# Boas práticas de programação
 
-**Data:** 07/12  
 **Unidade:** 3  
-**Pré-requisito:** Unidade 2 e aulas 14–15 (já há código “grande” o bastante para ficar ruim)
+**Pré-requisito:** Unidade 2 e depuração e boxing/wrappers (já há código “grande” o bastante para ficar ruim)
 
 ## Objetivos
 
@@ -90,10 +89,10 @@ Nunca engula `Exception` vazia.
 
 ## 6. Encapsulamento de verdade
 
-Já dito na aula 04: `setSaldo(double)` público destrói a conta.  
+Já dito na aula de encapsulamento e pacotes: `setSaldo(double)` público destrói a conta.  
 Nesta aula: getters em massa (`getA()`, `getB()`, `getC()` para o `main` montar a regra) também espalham a lógica. Prefira `conta.extratoFormatado()` a três getters no `Demo`.
 
-`protected double saldo` da aula 09: honesto para ensinar herança; em código “limpo”, `private` + `protected void debitar`.
+`protected double saldo` da aula de herança: honesto para ensinar herança; em código “limpo”, `private` + `protected void debitar`.
 
 ## 7. Composição × herança
 
@@ -145,6 +144,6 @@ javac aulas/16-boas-praticas/versao-limpa/*.java
 java -cp aulas/16-boas-praticas/versao-limpa DemoLimpo
 ```
 
-## Ponte para a aula 17
+## Ponte para integradores da disciplina
 
-Último laboratório do semestre: boletim com wrappers, contratos e uma boa prática (sem `==` em `Integer`, sem NPE). A prova da Unidade 3 é em 14/12.
+Último laboratório do semestre: boletim com wrappers, contratos e uma boa prática (sem `==` em `Integer`, sem NPE). A prova da Unidade 3 vem a seguir.

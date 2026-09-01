@@ -1,8 +1,7 @@
-# Aula 15 — Boxing, unboxing e classes wrapper
+# Boxing, unboxing e classes wrapper
 
-**Data:** 30/11  
 **Unidade:** 3  
-**Pré-requisito:** tipos primitivos (aula 01), objetos (aula 02) e depuração (aula 14)
+**Pré-requisito:** tipos primitivos (revisão de lógica), objetos (classes e objetos) e depuração
 
 ## Objetivos
 
@@ -18,7 +17,7 @@
 1. No quadro: `int n = 7;` versus `Integer n = Integer.valueOf(7);`.
 2. Live coding de `DemoWrappers`: autoboxing em atribuição e em `ArrayList<Integer>`.
 3. A armadilha `Integer a = 127; Integer b = 127; a == b` versus 128.
-4. `Integer x = null; int y = x;` no depurador (aula 14).
+4. `Integer x = null; int y = x;` no depurador (aula de depuração).
 5. Laboratório.
 
 ## 1. Tabela de correspondência
@@ -149,7 +148,7 @@ Integer.MAX_VALUE;               // 2^31 - 1
 Integer.MIN_VALUE;
 ```
 
-Overflow de `int` (aula 01) continua existindo com wrapper: `Integer.MAX_VALUE + 1` unboxa, estoura, reboxa.
+Overflow de `int` (revisão de lógica) continua existindo com wrapper: `Integer.MAX_VALUE + 1` unboxa, estoura, reboxa.
 
 ## O que executar no projetor
 
@@ -160,6 +159,6 @@ java -cp aulas/15-boxing-unboxing/src DemoWrappers
 
 Comente/descomente o bloco `explodirNpe()` na hora. Não deixe a JVM morrer no começo da demo.
 
-## Ponte para a aula 16
+## Ponte para boas práticas
 
-Código que “funciona” ainda pode ser hostil: nomes ruins, `catch` vazio, `setSaldo`. A próxima aula fecha a ementa de conteúdo novo. O laboratório integrador (aula 17) e a prova 3 vêm na sequência.
+Código que “funciona” ainda pode ser hostil: nomes ruins, `catch` vazio, `setSaldo`. A aula de boas práticas fecha a ementa de conteúdo novo. O laboratório integrador (aula de integradores da disciplina) e a prova da Unidade 3 vêm na sequência.

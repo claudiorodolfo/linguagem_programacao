@@ -1,7 +1,6 @@
-# Aula 07 — Prova da Unidade 1
+# Prova da Unidade 1
 
-**Data:** 28/09  
-**Conteúdo:** aulas 01 a 06  
+**Conteúdo:** revisão até o diagrama de classes UML  
 **Duração sugerida:** 2 h (o restante do encontro: vista da prova anterior, se houver, ou saída)
 
 ## Instruções ao docente
@@ -25,4 +24,4 @@
 
 ## Depois da prova
 
-Não inicie recursão nem herança neste dia. A aula 08 (05/10) abre a Unidade 2 com recursividade.
+Não inicie recursão nem herança neste encontro. A aula de recursividade abre a Unidade 2.

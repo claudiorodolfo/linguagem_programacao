@@ -1,4 +1,4 @@
-# Gabarito — Aula 12
+# Gabarito — Integradores de POO
 
 ## Q1
 

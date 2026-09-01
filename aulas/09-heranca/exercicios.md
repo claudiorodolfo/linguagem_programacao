@@ -1,4 +1,4 @@
-# Exercícios — Aula 09 (herança)
+# Exercícios — Herança
 
 ## Laboratório
 
@@ -28,7 +28,7 @@ Explique por escrito (5–8 linhas) o que acontece se a subclasse **não** chama
 `Livro extends Midia`: `autor`, `paginas`.  
 `Revista extends Midia`: `edicao`.  
 `Video extends Midia`: `duracaoMinutos`.  
-Todos com `toString` incluindo o tipo. Array `Midia[]` no `main` (mesmo sem polimorfismo de método ainda: você vai chamar `toString`, que já é polimórfico — spoiler controlado da aula 10).
+Todos com `toString` incluindo o tipo. Array `Midia[]` no `main` (mesmo sem polimorfismo de método ainda: você vai chamar `toString`, que já é polimórfico — spoiler controlado da aula de polimorfismo).
 
 ### Q6 — (desafio) Proteção
 

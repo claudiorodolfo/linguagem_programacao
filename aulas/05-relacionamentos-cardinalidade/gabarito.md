@@ -1,4 +1,4 @@
-# Gabarito — Aula 05
+# Gabarito — Relacionamentos e cardinalidade
 
 ## Q1
 
@@ -65,4 +65,4 @@ public class Matricula {
 
 ## Q6
 
-Árvore análoga à aula 04. `Principal` importa o pacote `modelo`.
+Árvore análoga à aula de encapsulamento e pacotes. `Principal` importa o pacote `modelo`.

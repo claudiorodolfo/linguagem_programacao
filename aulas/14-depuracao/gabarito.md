@@ -1,4 +1,4 @@
-# Gabarito — Aula 14
+# Gabarito — Depuração
 
 ## Q1 — `MediaBugada`
 

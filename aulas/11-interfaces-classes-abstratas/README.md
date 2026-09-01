@@ -1,8 +1,7 @@
-# Aula 11 — Interfaces e classes abstratas
+# Interfaces e classes abstratas
 
-**Data:** 26/10–16/11 (estudo dirigido; sem encontro presencial extra)  
 **Unidade:** 2  
-**Pré-requisito:** aulas 09 e 10
+**Pré-requisito:** herança e polimorfismo
 
 ## Objetivos
 
@@ -15,7 +14,7 @@
 
 ## Roteiro (estudo dirigido)
 
-Leia este `README.md`, compile o `src/` e faça `exercicios.md` na janela até a prova 2. Não há encontro extra depois de 26/10.
+Leia este `README.md`, compile o `src/` e faça `exercicios.md` até a prova da Unidade 2. Use como estudo dirigido se o calendário não couber um encontro presencial.
 
 Sugestão de ordem:
 
@@ -127,6 +126,6 @@ java -cp aulas/11-interfaces-classes-abstratas/src DemoContratos
 
 Instancie contas concretas, chame `aplicarTaxasMensais` num `Conta[]`. Em seguida empreste um livro e um notebook pela mesma variável `Emprestavel`.
 
-## Ponte para a aula 12
+## Ponte para integradores de POO
 
-Não há encontro extra: a aula 12 é **estudo dirigido** na janela de feriados (02/11 e 09/11). Integra herança, polimorfismo e contratos num mini sistema da biblioteca. A prova da Unidade 2 é em 16/11.
+Não há encontro extra obrigatório: a aula de integradores de POO é **estudo dirigido** (laboratório do acervo). Integra herança, polimorfismo e contratos num mini sistema da biblioteca. Em seguida vem a prova da Unidade 2.

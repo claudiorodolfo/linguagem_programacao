@@ -7,7 +7,7 @@ Como usar este repositório semana a semana, sem reler tudo.
 1. Confira **JDK 25** nas máquinas do laboratório ([`ambiente.md`](ambiente.md), [`java25.md`](java25.md)). Language level 25 na IDE.
 2. Publique o repositório (GitHub Classroom, GitLab do IFBA ou pasta compartilhada).
 3. **Não** publique os `gabarito.md` no mesmo momento que os exercícios, se quiser que o laboratório valha. Opções: branch `gabaritos` privada; ou zip só para você.
-4. Imprima ou exporte as três provas com antecedência (`aulas/07`, `13` e `18`).
+4. Imprima ou exporte as três provas com antecedência (pastas `prova-unidade-1`, `prova-unidade-2` e `prova-unidade-3`).
 
 ## Em cada encontro
 
@@ -31,7 +31,7 @@ A Unidade 3 fecha com o **boletim** (wrappers + `null` = nota não lançada).
 
 ## Feriados e recessos
 
-Siga o calendário do campus. Este repositório não marca dia/mês. Se houver janela longa sem encontro na Unidade 2, use as aulas 11 e 12 como estudo dirigido e avise a prova na aula 10.
+Siga o calendário do campus. Este repositório não marca dia/mês. Se houver janela longa sem encontro na Unidade 2, use as interfaces e os integradores de POO como estudo dirigido e avise a prova na aula de polimorfismo.
 
 ## Compilação
 
@@ -40,7 +40,7 @@ Siga o calendário do campus. Este repositório não marca dia/mês. Se houver j
 ./compilar-tudo.sh   # checagem sua, gera .class (já no .gitignore)
 ```
 
-Aulas 04 e 05 usam pacotes; o comando está no `README.md` de cada uma.
+As aulas de encapsulamento e de relacionamentos usam pacotes; o comando está no `README.md` de cada uma.
 
 ## Provas
 

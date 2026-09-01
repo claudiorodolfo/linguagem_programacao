@@ -1,4 +1,4 @@
-# Gabarito — Aula 17
+# Gabarito — Integradores da disciplina
 
 ## Q1
 

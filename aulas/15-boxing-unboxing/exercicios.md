@@ -1,4 +1,4 @@
-# Exercícios — Aula 15 (wrappers)
+# Exercícios — Wrappers
 
 ## Laboratório
 

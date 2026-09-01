@@ -1,4 +1,4 @@
-# Exercícios — Aula 16 (boas práticas)
+# Exercícios — Boas práticas
 
 ## Laboratório
 
@@ -16,7 +16,7 @@ Escreva Javadoc de `sacar` e do construtor da sua conta. Inclua o que acontece c
 
 ### Q4 — Composição
 
-Modele `ProfessorVisitante` que **tem** um `UsuarioBiblioteca` (não herda). Um método `emprestarNaBiblioteca(Emprestavel item)` delega. (Pode usar a interface da aula 11 ou um `boolean` fictício.)
+Modele `ProfessorVisitante` que **tem** um `UsuarioBiblioteca` (não herda). Um método `emprestarNaBiblioteca(Emprestavel item)` delega. (Pode usar a interface da aula de interfaces e classes abstratas ou um `boolean` fictício.)
 
 ## Casa
 
@@ -26,7 +26,7 @@ Troque o Q2 com um colega. Marque 3 sugestões. Entrega: o código **seu** + as 
 
 ### Q6 — Extraia a magia
 
-No acervo da aula 12, prazos 14 e 7 estão soltos. Transforme em constantes `public static final` nas classes. Um único lugar para mudar a política.
+No acervo da aula de integradores de POO, prazos 14 e 7 estão soltos. Transforme em constantes `public static final` nas classes. Um único lugar para mudar a política.
 
 ### Q7 — (desafio) `equals`
 

@@ -1,8 +1,7 @@
-# Aula 02 — Programação orientada a objetos: classes e objetos
+# Programação orientada a objetos: classes e objetos
 
-**Data:** 17/08  
 **Unidade:** 1  
-**Pré-requisito:** aula 01
+**Pré-requisito:** revisão de lógica
 
 ## Objetivos
 
@@ -11,11 +10,11 @@
 - Usar `new` e entender **referência**, **estado** e **identidade**.
 - Modelar um problema simples por abstração de dados.
 
-Construtores, sobrecarga, `this` e métodos com regra de negócio ficam na **aula 03**. Encapsulamento (`private`) fica na **aula 04**.
+Construtores, sobrecarga, `this` e métodos com regra de negócio ficam na aula de **atributos, construtores e métodos**. Encapsulamento (`private`) fica na aula de **encapsulamento e pacotes**.
 
 ## Roteiro
 
-1. Do paradigma procedural ao OO (15 min): o `void main()` da aula 01 já roda **num objeto** (a JVM instancia a Demo). Agora o comportamento de negócio mora em *outros* objetos (`Livro`) criados com `new`.
+1. Do paradigma procedural ao OO (15 min): o `void main()` da aula de revisão de lógica já roda **num objeto** (a JVM instancia a Demo). Agora o comportamento de negócio mora em *outros* objetos (`Livro`) criados com `new`.
 2. Live coding: classe `Livro` no quadro — atributos visíveis, um método simples, **sem** construtor declarado.
 3. Desenhe na lousa: caixa do objeto (identidade + estado) e a classe ao lado.
 4. Laboratório: `exercicios.md`.
@@ -26,7 +25,7 @@ Na revisão, o programa *era* o `main`: variáveis soltas, métodos que recebem 
 
 Em POO, o programa **cria objetos** e **pede** que eles façam o trabalho.
 
-| Procedural (aula 01) | Orientado a objetos |
+| Procedural (revisão de lógica) | Orientado a objetos |
 | --- | --- |
 | `emprestarLivro(titulo, emprestado)` | `livro.emprestar()` |
 | dados e regras espalhados no `main` | dados e regras no próprio objeto |
@@ -61,7 +60,7 @@ c.autor = "Robert Martin";
 | Estado | Valores atuais dos atributos |
 | Identidade | O objeto em si (mesmo que dois livros tenham o mesmo título) |
 
-`a == b` compara **referências**. `a == c` é `false` mesmo com dados iguais. Igualdade de conteúdo entra depois (`equals`, aula 09).
+`a == b` compara **referências**. `a == c` é `false` mesmo com dados iguais. Igualdade de conteúdo entra depois (`equals`, herança).
 
 ## 4. Atributos e um primeiro método
 
@@ -85,7 +84,7 @@ livro.titulo = "Clean Code";
 livro.emprestar();
 ```
 
-O construtor **padrão** (sem argumentos) é gerado pelo compilador enquanto você não declara nenhum. Na aula 03 vocês passam a escrever construtores.
+O construtor **padrão** (sem argumentos) é gerado pelo compilador enquanto você não declara nenhum. Na aula de atributos, construtores e métodos vocês passam a escrever construtores.
 
 Método de instância usa o estado **daquele** objeto. Não é `static`. Chamada: `livro.emprestar()`.
 
@@ -96,7 +95,7 @@ Livro livro = null;
 livro.emprestar(); // NullPointerException
 ```
 
-Uma referência pode não apontar para ninguém. Mostre o NPE **cedo**: é o erro mais comum do semestre. A aula 14 (depuração) volta a ele com o depurador.
+Uma referência pode não apontar para ninguém. Mostre o NPE **cedo**: é o erro mais comum do semestre. A aula de depuração volta a ele com o depurador.
 
 ## 6. Onde fica o `main`?
 
@@ -113,6 +112,6 @@ java -cp aulas/02-poo-classes-objetos/src DemoClassesObjetos
 
 Mostre dois livros independentes e, em seguida, duas referências para o **mesmo** livro (`b = a`) para o empréstimo via `b` alterar o estado visto por `a`.
 
-## Ponte para a aula 03
+## Ponte para atributos, construtores e métodos
 
 “Criar o objeto e depois preencher campo a campo é frágil: alguém esquece o título. Como **obrigar** a inicialização e reunir o comportamento (depositar, sacar) no objeto?”
