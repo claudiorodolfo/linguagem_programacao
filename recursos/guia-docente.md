@@ -29,9 +29,9 @@ Não mude o vocabulário toda semana:
 
 A Unidade 3 fecha com o **boletim** (wrappers + `null` = nota não lançada).
 
-## Feriados
+## Feriados e recessos
 
-07/09, 12/10, 02/11 e 09/11: sem reposição neste material. A Unidade 2 tem um buraco longo entre 26/10 e 16/11 — na aula 10 avise a prova e indique o estudo dirigido das aulas 11 e 12 (`08`–`12`).
+Siga o calendário do campus. Este repositório não marca dia/mês. Se houver janela longa sem encontro na Unidade 2, use as aulas 11 e 12 como estudo dirigido e avise a prova na aula 10.
 
 ## Compilação
 

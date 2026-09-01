@@ -74,11 +74,11 @@ Sugestão de dinâmica em cada encontro de 4 h:
 
 Três provas presenciais, alinhadas às unidades:
 
-| Instrumento | Data | Conteúdo |
+| Instrumento | Quando | Conteúdo |
 | --- | --- | --- |
-| Prova da Unidade 1 | 28/09 | Aulas 01 a 06 |
-| Prova da Unidade 2 | 16/11 | Aulas 08 a 12 (com base na Unidade 1) |
-| Prova da Unidade 3 | 14/12 | Aulas 14 a 17 (com base nas unidades anteriores) |
+| Prova da Unidade 1 | ao final da Unidade 1 | Aulas 01 a 06 |
+| Prova da Unidade 2 | ao final da Unidade 2 | Aulas 08 a 12 (com base na Unidade 1) |
+| Prova da Unidade 3 | ao final da Unidade 3 | Aulas 14 a 17 (com base nas unidades anteriores) |
 
 Sugestão de composição (edite conforme o regulamento do campus):
 
@@ -106,5 +106,5 @@ Os instrumentos propostos estão em `aulas/07-prova-unidade-1`, `aulas/13-prova-
 
 - Linguagem-alvo: **Java 25** (LTS). Sem recursos em preview. Ver [`recursos/java25.md`](recursos/java25.md).
 - IDE sugerida: IntelliJ IDEA Community, Eclipse ou VS Code + Extension Pack for Java, com SDK 25. Ver [`recursos/ambiente.md`](recursos/ambiente.md).
-- Os feriados de 07/09, 12/10, 02/11 e 09/11 **não têm encontro**. Não há reposição automática neste material. A janela 26/10–16/11 serve às aulas 11 e 12 (estudo dirigido).
+- Confira o calendário acadêmico do semestre (feriados, recessos) e encaixe as pastas de `aulas/` nessa ordem. Este material **não** traz datas fixas. Janelas sem encontro presencial servem às aulas 11 e 12 (estudo dirigido).
 - Roteiro operacional do semestre: [`recursos/guia-docente.md`](recursos/guia-docente.md).
