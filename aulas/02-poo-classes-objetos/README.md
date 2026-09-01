@@ -61,7 +61,7 @@ c.autor = "Robert Martin";
 | Estado | Valores atuais dos atributos |
 | Identidade | O objeto em si (mesmo que dois livros tenham o mesmo título) |
 
-`a == b` compara **referências**. `a == c` é `false` mesmo com dados iguais. Igualdade de conteúdo entra depois (`equals`, aula 08).
+`a == b` compara **referências**. `a == c` é `false` mesmo com dados iguais. Igualdade de conteúdo entra depois (`equals`, aula 09).
 
 ## 4. Atributos e um primeiro método
 
@@ -96,7 +96,7 @@ Livro livro = null;
 livro.emprestar(); // NullPointerException
 ```
 
-Uma referência pode não apontar para ninguém. Mostre o NPE **cedo**: é o erro mais comum do semestre. A aula 13 (depuração) volta a ele com o depurador.
+Uma referência pode não apontar para ninguém. Mostre o NPE **cedo**: é o erro mais comum do semestre. A aula 14 (depuração) volta a ele com o depurador.
 
 ## 6. Onde fica o `main`?
 

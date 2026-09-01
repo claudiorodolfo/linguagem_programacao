@@ -43,7 +43,7 @@ Use getter quando alguém precisa **consultar**. Use setter só quando a mudanç
 | `protected` | sim | sim | sim | não |
 | `public` | sim | sim | sim | sim |
 
-Nesta aula: atributos `private`, métodos de negócio `public`. `protected` volta na aula 08.
+Nesta aula: atributos `private`, métodos de negócio `public`. `protected` volta na aula 09.
 
 ## 3. Pacotes
 
@@ -88,7 +88,7 @@ O compilador gera construtor, acessores (`inicio()`, não `getInicio()`), `equal
 
 ## 4. Exceções leves nesta aula
 
-`IllegalArgumentException` no construtor (saldo inicial negativo, depósito ≤ 0) é aceitável. Não é a aula de tratamento de erros — isso aprofunda na aula 15. Se a turma travar, `IO.println` + recusar a operação também vale.
+`IllegalArgumentException` no construtor (saldo inicial negativo, depósito ≤ 0) é aceitável. Não é a aula de tratamento de erros — isso aprofunda na aula 16. Se a turma travar, `IO.println` + recusar a operação também vale.
 
 ## O que executar no projetor
 

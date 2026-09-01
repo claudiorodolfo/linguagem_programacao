@@ -29,7 +29,7 @@ public class OlaIfba {
 
 A JVM, na forma 2, **cria um objeto** e chama `main()`. Isso antecipa a aula 02 sem exigir `new` no primeiro dia.
 
-`java.lang.IO` (desde 25): `IO.println`, `IO.print`, `IO.readln()`, `IO.readln("prompt: ")`. Preferimos `IO` a `Scanner` + `System.out` para I/O de console. `Scanner` entra só como código legado (e no anti-padrão da aula 15).
+`java.lang.IO` (desde 25): `IO.println`, `IO.print`, `IO.readln()`, `IO.readln("prompt: ")`. Preferimos `IO` a `Scanner` + `System.out` para I/O de console. `Scanner` entra só como código legado (e no anti-padrão da aula 16).
 
 Arquivos compactos importam o módulo `java.base` automaticamente (`List`, `ArrayList`, `BigDecimal`… sem `import`). Classes nomeadas continuam precisando de `import` — ou de `import module java.base;` (JEP 511), que mostramos na aula 04.
 
@@ -39,13 +39,13 @@ Arquivos compactos importam o módulo `java.base` automaticamente (`List`, `Arra
 | --- | --- | --- |
 | Text blocks `"""` | 15 | menus, relatórios |
 | `switch` expressão (`->`) | 14 | aula 01, calculadora |
-| `record` | 16 | `Endereco` (aula 05); aula 15 |
-| `instanceof Tipo x` | 16 | aula 09 em diante |
-| Classes `sealed` | 17 | `Conta` na aula 10 |
-| `switch` em hierarquia selada | 21 | aula 09/10 |
+| `record` | 16 | `Endereco` (aula 05); aula 16 |
+| `instanceof Tipo x` | 16 | aula 10 em diante |
+| Classes `sealed` | 17 | `Conta` na aula 11 |
+| `switch` em hierarquia selada | 21 | aula 10/11 |
 | Variável não usada `_` | 22 | `case ContaCorrente _` |
 | `void main()` / arquivo compacto / `IO` | 25 | todas as Demos |
-| Corpo flexível de construtor (código **antes** de `super(...)`) | 25 | aula 08 |
+| Corpo flexível de construtor (código **antes** de `super(...)`) | 25 | aula 09 |
 
 ## O que **não** cobrimos (ainda preview ou fora da ementa)
 
@@ -55,7 +55,7 @@ Arquivos compactos importam o módulo `java.base` automaticamente (`List`, `Arra
 
 ## Remoções que quebram código antigo
 
-Os construtores `new Integer(n)`, `new Double(n)` etc. foram **removidos**. Use `Integer.valueOf(n)` ou autoboxing. A aula 14 trata disso.
+Os construtores `new Integer(n)`, `new Double(n)` etc. foram **removidos**. Use `Integer.valueOf(n)` ou autoboxing. A aula 15 trata disso.
 
 ## Compilar na versão certa
 

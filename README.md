@@ -6,7 +6,7 @@ O repositório acompanha o cronograma da turma: cada pasta em `aulas/` correspon
 
 ## Ementa
 
-Revisão de lógica de programação. Programação orientada a objetos: classes e objetos; atributos, construtores e métodos; encapsulamento, modificadores de acesso e pacotes; cardinalidade e relacionamento entre objetos. Recursividade. Herança. Polimorfismo. Interfaces e classes abstratas. Depuração de programas. Boxing e unboxing; classes wrapper. Boas práticas de programação.
+Revisão de lógica de programação. Programação orientada a objetos: classes e objetos; atributos, construtores e métodos; encapsulamento, modificadores de acesso e pacotes; cardinalidade e relacionamento entre objetos; diagrama de classes UML. Recursividade. Herança. Polimorfismo. Interfaces e classes abstratas. Depuração de programas. Boxing e unboxing; classes wrapper. Boas práticas de programação.
 
 ## Como este repositório está organizado
 
@@ -31,7 +31,7 @@ As pastas de prova trazem instrumento proposto e gabarito.
 
 ## Unidades
 
-1. **Fundamentos de POO** — revisão de lógica, classes e objetos, atributos/construtores/métodos, encapsulamento e relacionamentos.
+1. **Fundamentos de POO** — revisão de lógica, classes e objetos, atributos/construtores/métodos, encapsulamento, relacionamentos e diagrama de classes UML.
 2. **Recursão, hierarquias e contratos** — recursividade, herança, polimorfismo, interfaces, classes abstratas e exercícios integradores de POO.
 3. **Qualidade e tipos** — depuração, boxing/unboxing, wrappers, boas práticas e exercícios integradores.
 

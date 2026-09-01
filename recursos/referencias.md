@@ -14,9 +14,10 @@
 | Classes e objetos | Tutorial *Object-Oriented Programming Concepts* |
 | Herança e polimorfismo | Tutorial *Inheritance* |
 | Interfaces | Tutorial *Interfaces and Inheritance* |
-| Recursão | Qualquer introdução a algoritmos; ver aula 07 |
+| Recursão | Qualquer introdução a algoritmos; ver aula 08 |
 | Wrappers / boxing | Tutorial *The Numbers Classes* e *Autoboxing* |
-| Depuração | Documentação da IDE escolhida + aula 13 |
+| Depuração | Documentação da IDE escolhida + aula 14 |
+| Diagrama de classes | Qualquer resumo UML 2; nesta disciplina: caixa, visibilidade, associação/agregação/composição, multiplicidade (aula 06) |
 
 ## Livros citados no plano
 

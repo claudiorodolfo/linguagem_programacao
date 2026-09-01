@@ -1,6 +1,6 @@
 # Convenções da disciplina
 
-Adote estas regras no quadro e nos exercícios. Elas reaparecem na aula 15 (boas práticas).
+Adote estas regras no quadro e nos exercícios. Elas reaparecem na aula 16 (boas práticas).
 
 ## Nomes
 

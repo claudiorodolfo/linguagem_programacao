@@ -13,7 +13,7 @@ Ajuste carga horária, créditos e composição da nota conforme o PPC vigente d
 
 ## Ementa
 
-Revisão de lógica de programação. Programação orientada a objetos: classes e objetos; atributos, construtores e métodos; encapsulamento, modificadores de acesso e pacotes; cardinalidade e relacionamento entre objetos. Recursividade. Herança. Polimorfismo. Interfaces e classes abstratas. Depuração de programas. Boxing e unboxing; classes wrapper. Boas práticas de programação.
+Revisão de lógica de programação. Programação orientada a objetos: classes e objetos; atributos, construtores e métodos; encapsulamento, modificadores de acesso e pacotes; cardinalidade e relacionamento entre objetos; diagrama de classes UML. Recursividade. Herança. Polimorfismo. Interfaces e classes abstratas. Depuração de programas. Boxing e unboxing; classes wrapper. Boas práticas de programação.
 
 ## Objetivos
 
@@ -24,12 +24,13 @@ Ao final da disciplina, a estudante ou o estudante deverá ser capaz de:
 3. Definir **atributos**, **construtores** e **métodos** com `this` e sobrecarga.
 4. Aplicar **encapsulamento**, modificadores de acesso e organização em **pacotes**.
 5. Reconhecer **cardinalidade** e relacionamentos (associação, agregação, composição).
-6. Projetar soluções **recursivas**, identificando caso-base, caso recursivo e limites da pilha de execução.
-7. Construir hierarquias com **herança** e **polimorfismo**.
-8. Separar contrato de implementação com **interfaces** e **classes abstratas**.
-9. Localizar e corrigir falhas com **depuração** (breakpoints, inspeção de variáveis, pilha de chamadas).
-10. Distinguir tipos primitivos de **wrappers**, explicando **boxing** e **unboxing**.
-11. Escrever código alinhado a **boas práticas** (nomes, responsabilidade, DRY, tratamento de erros).
+6. Ler e produzir **diagrama de classes UML** (caixa, visibilidade, multiplicidade, losango).
+7. Projetar soluções **recursivas**, identificando caso-base, caso recursivo e limites da pilha de execução.
+8. Construir hierarquias com **herança** e **polimorfismo**.
+9. Separar contrato de implementação com **interfaces** e **classes abstratas**.
+10. Localizar e corrigir falhas com **depuração** (breakpoints, inspeção de variáveis, pilha de chamadas).
+11. Distinguir tipos primitivos de **wrappers**, explicando **boxing** e **unboxing**.
+12. Escrever código alinhado a **boas práticas** (nomes, responsabilidade, DRY, tratamento de erros).
 
 ## Conteúdo programático
 
@@ -40,6 +41,7 @@ Ao final da disciplina, a estudante ou o estudante deverá ser capaz de:
 - Atributos, construtores e métodos.
 - Encapsulamento, modificadores de acesso e pacotes/módulos.
 - Cardinalidade e relacionamento entre objetos.
+- Diagrama de classes UML.
 
 ### Unidade 2 — Recursão, hierarquias e contratos
 
@@ -78,9 +80,9 @@ Três provas presenciais, alinhadas às unidades:
 
 | Instrumento | Data | Conteúdo |
 | --- | --- | --- |
-| Prova da Unidade 1 | 21/09 | Aulas 01 a 05 |
-| Prova da Unidade 2 | 16/11 | Aulas 07 a 11 (com base na Unidade 1) |
-| Prova da Unidade 3 | 14/12 | Aulas 13 a 16 (com base nas unidades anteriores) |
+| Prova da Unidade 1 | 28/09 | Aulas 01 a 06 |
+| Prova da Unidade 2 | 16/11 | Aulas 08 a 12 (com base na Unidade 1) |
+| Prova da Unidade 3 | 14/12 | Aulas 14 a 17 (com base nas unidades anteriores) |
 
 Sugestão de composição (edite conforme o regulamento do campus):
 
@@ -88,7 +90,7 @@ Sugestão de composição (edite conforme o regulamento do campus):
 N_f = \frac{U_1 + U_2 + U_3}{3}
 \]
 
-Os instrumentos propostos estão em `aulas/06-prova-unidade-1`, `aulas/12-prova-unidade-2` e `aulas/17-prova-unidade-3`. Os gabaritos são para uso docente.
+Os instrumentos propostos estão em `aulas/07-prova-unidade-1`, `aulas/13-prova-unidade-2` e `aulas/18-prova-unidade-3`. Os gabaritos são para uso docente.
 
 ## Bibliografia básica
 
@@ -108,5 +110,5 @@ Os instrumentos propostos estão em `aulas/06-prova-unidade-1`, `aulas/12-prova-
 
 - Linguagem-alvo: **Java 25** (LTS). Sem recursos em preview. Ver [`recursos/java25.md`](recursos/java25.md).
 - IDE sugerida: IntelliJ IDEA Community, Eclipse ou VS Code + Extension Pack for Java, com SDK 25. Ver [`recursos/ambiente.md`](recursos/ambiente.md).
-- Os feriados de 07/09, 12/10, 02/11 e 09/11 **não têm encontro**. Não há reposição automática neste material. A janela 26/10–16/11 serve ao laboratório dirigido da aula 11.
+- Os feriados de 07/09, 12/10, 02/11 e 09/11 **não têm encontro**. Não há reposição automática neste material. A janela 26/10–16/11 serve às aulas 11 e 12 (estudo dirigido).
 - Roteiro operacional do semestre: [`recursos/guia-docente.md`](recursos/guia-docente.md).

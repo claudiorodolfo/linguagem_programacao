@@ -184,7 +184,7 @@ double media(double a, double b) {
 - `return` encerra o método.
 - Parâmetros primitivos são cópia do valor; `String` é referência.
 
-`static` continua existindo (algoritmos sem objeto, como na aula 07). Não desaparece; só deixa de ser obrigatório no `main`.
+`static` continua existindo (algoritmos sem objeto, como na aula 08). Não desaparece; só deixa de ser obrigatório no `main`.
 
 ## 9. Entrada com `IO.readln`
 
@@ -195,7 +195,7 @@ double nota = Double.parseDouble(IO.readln("Nota: "));
 
 Tudo é **linha de texto**. Não há a armadilha clássica do `Scanner.nextInt()` + `nextLine()`. `NumberFormatException` se a conversão falhar — trate no laboratório.
 
-`Scanner` ainda existe. Na disciplina: código legado / aula 15 (anti-padrão). Não misture `IO.readln` e `Scanner` no mesmo `System.in`.
+`Scanner` ainda existe. Na disciplina: código legado / aula 16 (anti-padrão). Não misture `IO.readln` e `Scanner` no mesmo `System.in`.
 
 ## 10. Erros que a revisão deve mostrar ao vivo
 

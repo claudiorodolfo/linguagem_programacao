@@ -1,0 +1,36 @@
+@startuml biblioteca-campus
+hide empty members
+skinparam classAttributeIconSize 0
+
+class Usuario {
+  - nome: String
+  - matricula: String
+  + registrar(e: Emprestimo): boolean
+  + cidadeFormatada(): String
+}
+
+class Endereco <<record>> {
+  + logradouro: String
+  + cidade: String
+  + uf: String
+  + formatado(): String
+}
+
+class Emprestimo {
+  - data: String
+  + efetivar(): boolean
+  + resumo(): String
+}
+
+class Livro {
+  - titulo: String
+  - autor: String
+  - emprestado: boolean
+  + emprestar(): boolean
+  + devolver(): void
+}
+
+Usuario *-- "1" Endereco : composição
+Usuario "1" o-- "0..5" Emprestimo
+Emprestimo "0..*" --> "1" Livro
+@enduml

@@ -83,7 +83,7 @@ public boolean sacar(double valor) {
 - `return` encerra o método.
 - Parâmetros primitivos são cópia do valor; objetos são cópia da **referência** (por isso `transferir` altera o destino).
 
-`static` continua existindo para algoritmos sem objeto (aula 07, recursão). Não desaparece; só deixa de ser o jeito padrão de organizar o negócio.
+`static` continua existindo para algoritmos sem objeto (aula 08, recursão). Não desaparece; só deixa de ser o jeito padrão de organizar o negócio.
 
 ## 5. Encapsulamento? Ainda não (de propósito)
 

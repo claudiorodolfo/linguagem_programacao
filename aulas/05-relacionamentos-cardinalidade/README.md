@@ -11,12 +11,12 @@
 - Implementar relacionamento como **referência** ou **arranjo de referências**.
 - Aplicar uma versão leve da Lei de Demeter: não espalhar a estrutura interna.
 
-Não há aula em 07/09 (feriado). Esta é a última aula de conteúdo da Unidade 1; a prova é em 21/09.
+Não há aula em 07/09 (feriado). A próxima aula (21/09) formaliza o desenho em **UML**. A prova da Unidade 1 é em **28/09**.
 
 ## Roteiro
 
 1. Recapitule encapsulamento em 5 min: saldo `private`, sem `setSaldo`.
-2. Desenhe UML simplificado: `Usuario` 1 — N `Emprestimo` N — 1 `Livro`; `Usuario` 1 — 1 `Endereco`.
+2. Esboce no quadro: `Usuario` 1 — N `Emprestimo` N — 1 `Livro`; `Usuario` 1 — 1 `Endereco`. Avise que a grafia UML (losango, `0..5`) é a aula 06.
 3. Execute `DemoRelacionamentos` (usa pacotes).
 4. Laboratório.
 
@@ -30,7 +30,7 @@ Fale em português antes de UML.
 | **Agregação** | “tem um”, mas as partes vivem sozinhas | `Estante` tem `Livro`; o livro existe sem a estante |
 | **Composição** | “parte de”, ciclo de vida acoplado | `Pedido` e `ItemPedido`: o item não faz sentido sem o pedido |
 
-Na memória: relacionamento é **referência** (campo) ou **coleção de referências** (arranjo / lista). Nesta aula usamos arranjo com capacidade fixa para não exigir `ArrayList` ainda; na aula 11 a biblioteca passa a usar lista.
+Na memória: relacionamento é **referência** (campo) ou **coleção de referências** (arranjo / lista). Nesta aula usamos arranjo com capacidade fixa para não exigir `ArrayList` ainda; na aula 12 a biblioteca passa a usar lista.
 
 ## 2. Cardinalidade
 
@@ -75,6 +75,6 @@ java -cp aulas/05-relacionamentos-cardinalidade/out \
 
 O `DemoRelacionamentos` cria dois usuários, três livros, registra empréstimos e tenta emprestar um livro já emprestado (a regra está em `Livro.emprestar()`, não no `main`).
 
-## Ponte para a prova (21/09)
+## Ponte para a aula 06
 
-A Unidade 1 cobra: revisão de lógica, classes e objetos, atributos/construtores/métodos, encapsulamento/pacotes e relacionamentos (tipos e cardinalidade). Instrumento em `aulas/06-prova-unidade-1`. Recursão e depuração vêm depois.
+Vocês já falam associação, agregação, composição e 1–N. Na próxima aula isso vira **diagrama de classes**: caixa com visibilidade, losango vazio/cheio e multiplicidade. A prova (28/09) cobra o desenho e a tradução para Java.

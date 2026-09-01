@@ -14,7 +14,7 @@ public Retangulo(double base, double altura) {
 }
 ```
 
-Se a turma ainda não viu exceções, o fallback `base = 1.0` com mensagem no console é aceitável. Exceções voltam com mais calma na aula 15.
+Se a turma ainda não viu exceções, o fallback `base = 1.0` com mensagem no console é aceitável. Exceções voltam com mais calma na aula 16.
 
 Sem setter aberto. Se houver `redimensionar(double b, double a)`, valide de novo.
 
