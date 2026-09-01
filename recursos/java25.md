@@ -7,7 +7,7 @@ A linguagem-alvo é **Java 25** (LTS, setembro de 2025). Não usamos recursos em
 Três formas equivalentes de um “olá”:
 
 ```java
-// 1. Arquivo compacto (aula 02, primeiros minutos)
+// 1. Arquivo compacto (aula 01, primeiros minutos)
 void main() {
     IO.println("LP1 — IFBA Conquista");
 }
@@ -27,9 +27,9 @@ public class OlaIfba {
 }
 ```
 
-A JVM, na forma 2, **cria um objeto** e chama `main()`. Isso antecipa a aula 03 sem exigir `new` no primeiro dia.
+A JVM, na forma 2, **cria um objeto** e chama `main()`. Isso antecipa a aula 02 sem exigir `new` no primeiro dia.
 
-`java.lang.IO` (desde 25): `IO.println`, `IO.print`, `IO.readln()`, `IO.readln("prompt: ")`. Preferimos `IO` a `Scanner` + `System.out` para I/O de console. `Scanner` entra só como código legado (e no anti-padrão da aula 13).
+`java.lang.IO` (desde 25): `IO.println`, `IO.print`, `IO.readln()`, `IO.readln("prompt: ")`. Preferimos `IO` a `Scanner` + `System.out` para I/O de console. `Scanner` entra só como código legado (e no anti-padrão da aula 15).
 
 Arquivos compactos importam o módulo `java.base` automaticamente (`List`, `ArrayList`, `BigDecimal`… sem `import`). Classes nomeadas continuam precisando de `import` — ou de `import module java.base;` (JEP 511), que mostramos na aula 04.
 
@@ -38,8 +38,8 @@ Arquivos compactos importam o módulo `java.base` automaticamente (`List`, `Arra
 | Recurso | Desde | Onde aparece |
 | --- | --- | --- |
 | Text blocks `"""` | 15 | menus, relatórios |
-| `switch` expressão (`->`) | 14 | aula 02, calculadora |
-| `record` | 16 | `Endereco` (aula 04); aula 13 |
+| `switch` expressão (`->`) | 14 | aula 01, calculadora |
+| `record` | 16 | `Endereco` (aula 05); aula 15 |
 | `instanceof Tipo x` | 16 | aula 09 em diante |
 | Classes `sealed` | 17 | `Conta` na aula 10 |
 | `switch` em hierarquia selada | 21 | aula 09/10 |
@@ -61,5 +61,5 @@ Os construtores `new Integer(n)`, `new Double(n)` etc. foram **removidos**. Use 
 
 ```bash
 java -version    # deve mostrar 25
-javac --release 25 aulas/03-classes-objetos/src/*.java
+javac --release 25 aulas/02-poo-classes-objetos/src/*.java
 ```

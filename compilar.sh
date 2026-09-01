@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # Compila e executa uma aula sem pacotes.
-# Uso: ./compilar.sh aulas/03-classes-objetos DemoClassesObjetos
+# Uso: ./compilar.sh aulas/02-poo-classes-objetos DemoClassesObjetos
 set -euo pipefail
 
 if [[ $# -lt 2 ]]; then
   echo "Uso: $0 <pasta-da-aula> <ClassePrincipal>"
-  echo "Exemplo: $0 aulas/03-classes-objetos DemoClassesObjetos"
+  echo "Exemplo: $0 aulas/02-poo-classes-objetos DemoClassesObjetos"
   exit 1
 fi
 

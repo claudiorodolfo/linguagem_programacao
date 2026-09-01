@@ -14,9 +14,9 @@
 | Classes e objetos | Tutorial *Object-Oriented Programming Concepts* |
 | Herança e polimorfismo | Tutorial *Inheritance* |
 | Interfaces | Tutorial *Interfaces and Inheritance* |
-| Recursão | Qualquer introdução a algoritmos; ver aula 06 |
+| Recursão | Qualquer introdução a algoritmos; ver aula 07 |
 | Wrappers / boxing | Tutorial *The Numbers Classes* e *Autoboxing* |
-| Depuração | Documentação da IDE escolhida + aula 05 |
+| Depuração | Documentação da IDE escolhida + aula 13 |
 
 ## Livros citados no plano
 

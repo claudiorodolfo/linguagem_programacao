@@ -2,11 +2,11 @@
 
 Material didático da disciplina **Linguagem de Programação 1**, ministrada em **Java** para o Curso de **Sistemas de Informação** do **IFBA — Campus Vitória da Conquista**.
 
-O repositório acompanha o cronograma da turma: cada pasta em `aulas/` corresponde a um encontro e reúne texto de apoio, código-fonte, exercícios e gabarito.
+O repositório acompanha o cronograma da turma: cada pasta em `aulas/` corresponde a um encontro (ou a um laboratório dirigido) e reúne texto de apoio, código-fonte, exercícios e gabarito.
 
 ## Ementa
 
-Recursividade. Programação orientada a objetos: abstração de dados; classes e objetos; herança; e polimorfismo. Interfaces e classes abstratas. Depuração de programas. Box e Unboxing. Boas práticas de programação.
+Revisão de lógica de programação. Programação orientada a objetos: classes e objetos; atributos, construtores e métodos; encapsulamento, modificadores de acesso e pacotes; cardinalidade e relacionamento entre objetos. Recursividade. Herança. Polimorfismo. Interfaces e classes abstratas. Depuração de programas. Boxing e unboxing; classes wrapper. Boas práticas de programação.
 
 ## Como este repositório está organizado
 
@@ -31,9 +31,9 @@ As pastas de prova trazem instrumento proposto e gabarito.
 
 ## Unidades
 
-1. **Fundamentos de POO e recursão** — revisão de lógica, classes e objetos, encapsulamento, relacionamentos, depuração e recursividade.
-2. **Hierarquias e contratos** — herança, polimorfismo, interfaces, classes abstratas e exercícios integradores.
-3. **Qualidade e tipos** — boas práticas, boxing/unboxing, classes wrapper e exercícios integradores.
+1. **Fundamentos de POO** — revisão de lógica, classes e objetos, atributos/construtores/métodos, encapsulamento e relacionamentos.
+2. **Recursão, hierarquias e contratos** — recursividade, herança, polimorfismo, interfaces, classes abstratas e exercícios integradores de POO.
+3. **Qualidade e tipos** — depuração, boxing/unboxing, wrappers, boas práticas e exercícios integradores.
 
 ## Como compilar e executar
 
@@ -43,24 +43,24 @@ Cada aula é autocontida. A partir da raiz do repositório:
 
 ```bash
 # Exemplo: aula de classes e objetos
-javac --release 25 aulas/03-classes-objetos/src/*.java
-java -cp aulas/03-classes-objetos/src DemoClassesObjetos
+javac --release 25 aulas/02-poo-classes-objetos/src/*.java
+java -cp aulas/02-poo-classes-objetos/src DemoClassesObjetos
 ```
 
 Quando a aula usa pacotes (`package ...`), compile a partir de `src/` e informe o pacote da classe principal:
 
 ```bash
 # Exemplo: aula de encapsulamento
-javac --release 25 -d aulas/04-encapsulamento-relacionamentos/out \
-  $(find aulas/04-encapsulamento-relacionamentos/src -name "*.java")
-java -cp aulas/04-encapsulamento-relacionamentos/out \
-  br.edu.ifba.conquista.lp1.aula04.DemoRelacionamentos
+javac --release 25 -d aulas/04-encapsulamento-pacotes/out \
+  $(find aulas/04-encapsulamento-pacotes/src -name "*.java")
+java -cp aulas/04-encapsulamento-pacotes/out \
+  br.edu.ifba.conquista.lp1.aula04.DemoEncapsulamento
 ```
 
 Há um script na raiz para o caso simples (arquivos no mesmo diretório, sem pacote):
 
 ```bash
-./compilar.sh aulas/03-classes-objetos DemoClassesObjetos
+./compilar.sh aulas/02-poo-classes-objetos DemoClassesObjetos
 ```
 
 No Windows, troque `:` por `;` no classpath.

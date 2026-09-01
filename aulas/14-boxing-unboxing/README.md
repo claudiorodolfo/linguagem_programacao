@@ -2,7 +2,7 @@
 
 **Data:** 30/11  
 **Unidade:** 3  
-**Pré-requisito:** tipos primitivos (aula 02) e um contato mínimo com a ideia de objeto
+**Pré-requisito:** tipos primitivos (aula 01), objetos (aula 02) e depuração (aula 13)
 
 ## Objetivos
 
@@ -18,7 +18,7 @@
 1. No quadro: `int n = 7;` versus `Integer n = Integer.valueOf(7);`.
 2. Live coding de `DemoWrappers`: autoboxing em atribuição e em `ArrayList<Integer>`.
 3. A armadilha `Integer a = 127; Integer b = 127; a == b` versus 128.
-4. `Integer x = null; int y = x;` no depurador (volta a aula 05).
+4. `Integer x = null; int y = x;` no depurador (aula 13).
 5. Laboratório.
 
 ## 1. Tabela de correspondência
@@ -149,7 +149,7 @@ Integer.MAX_VALUE;               // 2^31 - 1
 Integer.MIN_VALUE;
 ```
 
-Overflow de `int` (aula 02) continua existindo com wrapper: `Integer.MAX_VALUE + 1` unboxa, estoura, reboxa.
+Overflow de `int` (aula 01) continua existindo com wrapper: `Integer.MAX_VALUE + 1` unboxa, estoura, reboxa.
 
 ## O que executar no projetor
 
@@ -162,4 +162,4 @@ Comente/descomente o bloco `explodirNpe()` na hora. Não deixe a JVM morrer no c
 
 ## Ponte para a aula 15
 
-Último laboratório do semestre: um exercício que mistura POO + wrappers + uma boa prática (sem `==` em `Integer`, sem NPE). A prova da Unidade 3 é em 14/12.
+Código que “funciona” ainda pode ser hostil: nomes ruins, `catch` vazio, `setSaldo`. A próxima aula fecha a ementa de conteúdo novo. O laboratório integrador (aula 16) e a prova 3 vêm na sequência.

@@ -1,9 +1,8 @@
 # Aula 09 — Polimorfismo
 
-**Data:** 05/10  
+**Data:** 19/10  
 **Unidade:** 2  
-**Pré-requisito:** aula 08  
-**Nota:** 12/10 é feriado; o próximo encontro de conteúdo é 19/10.
+**Pré-requisito:** aula 08
 
 ## Objetivos
 

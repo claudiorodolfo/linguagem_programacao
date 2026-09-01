@@ -10,27 +10,32 @@ compilar_simples() {
   javac --release 25 "$dir"/*.java
 }
 
-compilar_simples aulas/02-apresentacao-revisao/src
-compilar_simples aulas/03-classes-objetos/src
+compilar_pacote() {
+  local src="$1"
+  local out="$2"
+  echo ">> $src (pacotes)"
+  mkdir -p "$out"
+  javac --release 25 -d "$out" $(find "$src" -name "*.java")
+}
 
-echo ">> aulas/04-encapsulamento-relacionamentos (pacotes)"
-mkdir -p aulas/04-encapsulamento-relacionamentos/out
-javac --release 25 -d aulas/04-encapsulamento-relacionamentos/out \
-  $(find aulas/04-encapsulamento-relacionamentos/src -name "*.java")
-
-compilar_simples aulas/05-depuracao/src
-compilar_simples aulas/05-depuracao/versao-corrigida
-compilar_simples aulas/06-recursividade/src
-compilar_simples aulas/07-prova-unidade-1/src
+compilar_simples aulas/01-revisao-logica/src
+compilar_simples aulas/02-poo-classes-objetos/src
+compilar_simples aulas/03-atributos-construtores-metodos/src
+compilar_pacote aulas/04-encapsulamento-pacotes/src aulas/04-encapsulamento-pacotes/out
+compilar_pacote aulas/05-relacionamentos-cardinalidade/src aulas/05-relacionamentos-cardinalidade/out
+compilar_simples aulas/06-prova-unidade-1/src
+compilar_simples aulas/07-recursividade/src
 compilar_simples aulas/08-heranca/src
 compilar_simples aulas/09-polimorfismo/src
 compilar_simples aulas/10-interfaces-classes-abstratas/src
 compilar_simples aulas/11-exercicios-integradores-poo/src
 compilar_simples aulas/12-prova-unidade-2/src
-compilar_simples aulas/13-boas-praticas/src
-compilar_simples aulas/13-boas-praticas/versao-limpa
+compilar_simples aulas/13-depuracao/src
+compilar_simples aulas/13-depuracao/versao-corrigida
 compilar_simples aulas/14-boxing-unboxing/src
-compilar_simples aulas/15-exercicios-integradores/src
-compilar_simples aulas/16-prova-unidade-3/src
+compilar_simples aulas/15-boas-praticas/src
+compilar_simples aulas/15-boas-praticas/versao-limpa
+compilar_simples aulas/16-exercicios-integradores/src
+compilar_simples aulas/17-prova-unidade-3/src
 
 echo "OK: tudo compilou."

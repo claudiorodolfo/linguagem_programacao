@@ -25,7 +25,7 @@ Qualquer uma destas opções serve. Escolha **uma** e mantenha a turma alinhada 
 
 | IDE | Quando usar |
 | --- | --- |
-| IntelliJ IDEA Community | Depuração confortável; recomendada a partir da aula 05. Language level 25. |
+| IntelliJ IDEA Community | Depuração confortável; recomendada a partir da aula 13. Language level 25. |
 | Eclipse | Tradicional em disciplinas de SI; compiler compliance 25 |
 | VS Code + Extension Pack for Java | Máquinas com pouca RAM; `java.configuration.runtimes` apontando para o 25 |
 | Linha de comando (`javac` / `java`) | Sempre disponível; usada nos roteiros |
@@ -53,7 +53,7 @@ A forma com classe explícita e a forma clássica `public static void main` est�
 
 Nas aulas sem pacote, todos os `.java` ficam em `src/` e compilam juntos. Nas aulas com pacote (a partir da aula 04), a árvore de diretórios espelha o `package`.
 
-## Atalhos úteis de depuração (aula 05)
+## Atalhos úteis de depuração (aula 13)
 
 | Ação | IntelliJ | Eclipse | VS Code |
 | --- | --- | --- | --- |

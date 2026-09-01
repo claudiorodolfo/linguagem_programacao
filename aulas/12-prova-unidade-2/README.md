@@ -1,7 +1,7 @@
 # Aula 12 — Prova da Unidade 2
 
 **Data:** 16/11  
-**Conteúdo:** aulas 08 a 11 (com base sólida na Unidade 1)  
+**Conteúdo:** aulas 07 a 11 (com base sólida na Unidade 1)  
 **Duração sugerida:** 2 h
 
 ## Instruções ao docente
@@ -19,4 +19,4 @@
 | 2 | Polimorfismo / ligação dinâmica | 2,0 |
 | 3 | Implementar tipo novo no acervo | 2,5 |
 | 4 | Interface vs. classe abstrata | 2,0 |
-| 5 | Integrador + um toque de U1 | 1,5 |
+| 5 | Integrador + recursão (U2) | 1,5 |

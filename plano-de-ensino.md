@@ -13,35 +13,37 @@ Ajuste carga horária, créditos e composição da nota conforme o PPC vigente d
 
 ## Ementa
 
-Recursividade. Programação orientada a objetos: abstração de dados; classes e objetos; herança; e polimorfismo. Interfaces e classes abstratas. Depuração de programas. Box e Unboxing. Boas práticas de programação.
+Revisão de lógica de programação. Programação orientada a objetos: classes e objetos; atributos, construtores e métodos; encapsulamento, modificadores de acesso e pacotes; cardinalidade e relacionamento entre objetos. Recursividade. Herança. Polimorfismo. Interfaces e classes abstratas. Depuração de programas. Boxing e unboxing; classes wrapper. Boas práticas de programação.
 
 ## Objetivos
 
 Ao final da disciplina, a estudante ou o estudante deverá ser capaz de:
 
 1. Revisar e aplicar estruturas de controle, arranjos e métodos em Java.
-2. Modelar problemas com **abstração de dados**, definindo classes, objetos, atributos e comportamentos.
-3. Aplicar **encapsulamento** e organizar código em pacotes, reconhecendo associação, agregação e composição.
-4. Localizar e corrigir falhas com **depuração** (breakpoints, inspeção de variáveis, pilha de chamadas).
-5. Projetar soluções **recursivas**, identificando caso-base, caso recursivo e limites da pilha de execução.
-6. Construir hierarquias com **herança** e **polimorfismo**.
-7. Separar contrato de implementação com **interfaces** e **classes abstratas**.
-8. Distinguir tipos primitivos de **wrappers**, explicando **boxing** e **unboxing**.
-9. Escrever código alinhado a **boas práticas** (nomes, responsabilidade, DRY, tratamento de erros).
+2. Modelar problemas com **abstração de dados**, distinguindo classe e objeto.
+3. Definir **atributos**, **construtores** e **métodos** com `this` e sobrecarga.
+4. Aplicar **encapsulamento**, modificadores de acesso e organização em **pacotes**.
+5. Reconhecer **cardinalidade** e relacionamentos (associação, agregação, composição).
+6. Projetar soluções **recursivas**, identificando caso-base, caso recursivo e limites da pilha de execução.
+7. Construir hierarquias com **herança** e **polimorfismo**.
+8. Separar contrato de implementação com **interfaces** e **classes abstratas**.
+9. Localizar e corrigir falhas com **depuração** (breakpoints, inspeção de variáveis, pilha de chamadas).
+10. Distinguir tipos primitivos de **wrappers**, explicando **boxing** e **unboxing**.
+11. Escrever código alinhado a **boas práticas** (nomes, responsabilidade, DRY, tratamento de erros).
 
 ## Conteúdo programático
 
-### Unidade 1 — Fundamentos de POO e recursão
+### Unidade 1 — Fundamentos de POO
 
 - Apresentação da disciplina e revisão de lógica de programação em Java.
-- Classes, objetos, construtores e o operador `new`.
-- Encapsulamento, modificadores de acesso e organização em pacotes.
-- Relacionamentos entre objetos (associação, agregação, composição).
-- Depuração de programas.
+- Programação orientada a objetos: classes e objetos.
+- Atributos, construtores e métodos.
+- Encapsulamento, modificadores de acesso e pacotes/módulos.
+- Cardinalidade e relacionamento entre objetos.
+
+### Unidade 2 — Recursão, hierarquias e contratos
+
 - Recursividade.
-
-### Unidade 2 — Hierarquias e contratos
-
 - Herança, `super`, redefinição de métodos.
 - Polimorfismo, ligação dinâmica, `instanceof`.
 - Interfaces e classes abstratas.
@@ -49,8 +51,9 @@ Ao final da disciplina, a estudante ou o estudante deverá ser capaz de:
 
 ### Unidade 3 — Qualidade e tipos
 
-- Boas práticas de programação.
+- Depuração de programas.
 - Boxing, unboxing e classes wrapper.
+- Boas práticas de programação.
 - Exercícios integradores da disciplina.
 
 ## Metodologia
@@ -75,9 +78,9 @@ Três provas presenciais, alinhadas às unidades:
 
 | Instrumento | Data | Conteúdo |
 | --- | --- | --- |
-| Prova da Unidade 1 | 21/09 | Aulas 02 a 06 |
-| Prova da Unidade 2 | 16/11 | Aulas 08 a 11 (com base na Unidade 1) |
-| Prova da Unidade 3 | 14/12 | Aulas 13 a 15 (com base nas unidades anteriores) |
+| Prova da Unidade 1 | 21/09 | Aulas 01 a 05 |
+| Prova da Unidade 2 | 16/11 | Aulas 07 a 11 (com base na Unidade 1) |
+| Prova da Unidade 3 | 14/12 | Aulas 13 a 16 (com base nas unidades anteriores) |
 
 Sugestão de composição (edite conforme o regulamento do campus):
 
@@ -85,7 +88,7 @@ Sugestão de composição (edite conforme o regulamento do campus):
 N_f = \frac{U_1 + U_2 + U_3}{3}
 \]
 
-Os instrumentos propostos estão em `aulas/07-prova-unidade-1`, `aulas/12-prova-unidade-2` e `aulas/16-prova-unidade-3`. Os gabaritos são para uso docente.
+Os instrumentos propostos estão em `aulas/06-prova-unidade-1`, `aulas/12-prova-unidade-2` e `aulas/17-prova-unidade-3`. Os gabaritos são para uso docente.
 
 ## Bibliografia básica
 
@@ -105,5 +108,5 @@ Os instrumentos propostos estão em `aulas/07-prova-unidade-1`, `aulas/12-prova-
 
 - Linguagem-alvo: **Java 25** (LTS). Sem recursos em preview. Ver [`recursos/java25.md`](recursos/java25.md).
 - IDE sugerida: IntelliJ IDEA Community, Eclipse ou VS Code + Extension Pack for Java, com SDK 25. Ver [`recursos/ambiente.md`](recursos/ambiente.md).
-- Os feriados de 07/09, 12/10, 02/11 e 09/11 **não têm encontro**. Não há reposição automática neste material.
+- Os feriados de 07/09, 12/10, 02/11 e 09/11 **não têm encontro**. Não há reposição automática neste material. A janela 26/10–16/11 serve ao laboratório dirigido da aula 11.
 - Roteiro operacional do semestre: [`recursos/guia-docente.md`](recursos/guia-docente.md).

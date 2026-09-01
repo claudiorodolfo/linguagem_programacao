@@ -1,8 +1,9 @@
 # Aula 08 — Herança
 
-**Data:** 28/09  
+**Data:** 05/10  
 **Unidade:** 2  
-**Pré-requisito:** Unidade 1 (classes, encapsulamento)
+**Pré-requisito:** Unidade 1 (classes, encapsulamento) e aula 07  
+**Nota:** 12/10 é feriado; o próximo encontro de conteúdo é 19/10 (polimorfismo).
 
 ## Objetivos
 
@@ -24,7 +25,7 @@
 
 Herança modela **especialização**: toda `ContaPoupanca` **é uma** `Conta`. Tudo que vale para conta vale para poupança, mais o que for específico.
 
-Não use herança para “a turma *tem* alunos” — isso é associação (aula 04). Teste da frase: se você não diz “é um” com naturalidade, não é `extends`.
+Não use herança para “a turma *tem* alunos” — isso é associação (aula 05). Teste da frase: se você não diz “é um” com naturalidade, não é `extends`.
 
 ## 2. Sintaxe
 
@@ -74,7 +75,7 @@ public boolean sacar(double valor, String motivo) { // sobrecarga
 
 ## 5. `protected`
 
-Membro visível na hierarquia (e no pacote). Útil para `saldo` se as subclasses precisam alterar com regra própria — **ou** deixe `private` e ofereça `protected void ajustarSaldo(double delta)` para não espalhar o campo. Nesta aula o código usa `protected double saldo` de propósito, para a turma ver o acesso; na aula 13 discutimos se isso foi uma boa ideia.
+Membro visível na hierarquia (e no pacote). Útil para `saldo` se as subclasses precisam alterar com regra própria — **ou** deixe `private` e ofereça `protected void ajustarSaldo(double delta)` para não espalhar o campo. Nesta aula o código usa `protected double saldo` de propósito, para a turma ver o acesso; na aula 15 discutimos se isso foi uma boa ideia.
 
 ## 6. `Object`
 
@@ -87,11 +88,11 @@ public String toString() {
 }
 ```
 
-Sem `toString`, `System.out.println(conta)` imprime `Conta@1a2b3c`. `equals` e `hashCode` juntos: mencione; implementação completa pode ficar para a aula 13.
+Sem `toString`, `System.out.println(conta)` imprime `Conta@1a2b3c`. `equals` e `hashCode` juntos: mencione; implementação completa pode ficar para a aula 15.
 
 ## 7. O que herança não é
 
-- Não é desconto de código a qualquer custo (veja *composição em vez de herança* na aula 13).
+- Não é desconto de código a qualquer custo (veja *composição em vez de herança* na aula 15).
 - Subclasse não deve **quebrar** o contrato da superclasse (poupança que “saca” aumentando o saldo é abuso). Princípio da substituição (Liskov) em versão de uma frase: **onde se espera a superclasse, a subclasse precisa fazer sentido**.
 
 ## O que executar no projetor

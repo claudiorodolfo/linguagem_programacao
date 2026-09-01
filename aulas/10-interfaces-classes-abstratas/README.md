@@ -1,6 +1,6 @@
 # Aula 10 — Interfaces e classes abstratas
 
-**Data:** 19/10  
+**Data:** 26/10  
 **Unidade:** 2  
 **Pré-requisito:** aulas 08 e 09
 
@@ -125,4 +125,4 @@ Instancie contas concretas, chame `aplicarTaxasMensais` num `Conta[]`. Em seguid
 
 ## Ponte para a aula 11
 
-A próxima semana **não** introduz assunto novo: integra herança, polimorfismo e contratos num mini sistema da biblioteca. 02/11 e 09/11 são feriados; a prova da Unidade 2 é em 16/11.
+Não há encontro extra: a aula 11 é **estudo dirigido** na janela de feriados (02/11 e 09/11). Integra herança, polimorfismo e contratos num mini sistema da biblioteca. A prova da Unidade 2 é em 16/11.
