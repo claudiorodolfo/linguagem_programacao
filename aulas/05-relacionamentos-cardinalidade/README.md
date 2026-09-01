@@ -14,7 +14,7 @@ A aula de diagrama de classes UML formaliza o desenho. A prova da Unidade 1 vem 
 
 ## Roteiro
 
-1. Recapitule encapsulamento em 5 min: saldo `private`, sem `setSaldo`.
+1. Recapitule encapsulamento: saldo `private`, sem `setSaldo`.
 2. Esboce no quadro: `Usuario` 1 — N `Emprestimo` N — 1 `Livro`; `Usuario` 1 — 1 `Endereco`. Avise que a grafia UML (losango, `0..5`) é a aula de diagrama de classes UML.
 3. Execute `DemoRelacionamentos` (usa pacotes).
 4. Laboratório.

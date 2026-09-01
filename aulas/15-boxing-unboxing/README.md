@@ -121,7 +121,7 @@ E em comparadores: `a < 3` unboxa `a`.
 
 Quando a nota pode faltar, **mantenha** `Integer` e teste `== null` antes de unboxar. Não use `int` se o domínio precisa de “desconhecido”.
 
-## 7. `ArrayList` em cinco minutos
+## 7. `ArrayList` (o suficiente para wrappers)
 
 ```java
 import java.util.ArrayList;

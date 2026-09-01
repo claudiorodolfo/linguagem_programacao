@@ -61,14 +61,14 @@ Ao final da disciplina, a estudante ou o estudante deverá ser capaz de:
 - Estudo de caso recorrente (**biblioteca do campus** e **conta bancária**), aprofundado de uma aula para a outra.
 - Provas escritas com trechos de código para leitura, correção e implementação.
 
-Sugestão de dinâmica em cada encontro de 4 h:
+Sugestão de dinâmica em cada encontro (ajuste ao ritmo da turma):
 
-| Bloco | Duração | Atividade |
-| --- | --- | --- |
-| 1 | 50–70 min | Teoria + live coding do `README.md` |
-| 2 | 15 min | Intervalo |
-| 3 | 80–100 min | Laboratório (`exercicios.md`) |
-| 4 | 20–30 min | Correção comentada / fechamento |
+| Bloco | Atividade |
+| --- | --- |
+| 1 | Teoria + live coding do `README.md` |
+| 2 | Intervalo |
+| 3 | Laboratório (`exercicios.md`) |
+| 4 | Correção comentada / fechamento |
 
 ## Avaliação
 

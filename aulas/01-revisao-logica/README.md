@@ -1,7 +1,6 @@
 # Apresentação da disciplina e revisão de lógica
 
 **Unidade:** 1  
-**Duração sugerida:** 4 h  
 **Linguagem:** Java 25
 
 ## Objetivos
@@ -12,7 +11,7 @@
 
 ## Roteiro
 
-1. Leitura rápida do [`plano-de-ensino.md`](../../plano-de-ensino.md) e do [`cronograma.md`](../../cronograma.md) (15 min).
+1. Leitura rápida do [`plano-de-ensino.md`](../../plano-de-ensino.md) e do [`cronograma.md`](../../cronograma.md).
 2. Instalação conferida: `java -version` deve mostrar **25** ([`recursos/ambiente.md`](../../recursos/ambiente.md)).
 3. Revisão guiada com `OlaIfba.java` (compacto) e depois `DemoRevisao`.
 4. Laboratório: `exercicios.md`.

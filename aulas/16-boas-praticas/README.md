@@ -14,7 +14,7 @@
 
 ## Roteiro
 
-1. Projete `AntiPadrao.java` (código que funciona e é hostil). Peça reescrita em duplas (15 min) **antes** da teoria.
+1. Projete `AntiPadrao.java` (código que funciona e é hostil). Peça reescrita em duplas **antes** da teoria.
 2. Nomeie as práticas no quadro, mapeando o que as duplas já fizeram.
 3. Mostre a versão em `versao-limpa/`.
 4. Laboratório: refatorar, não criar sistema novo.

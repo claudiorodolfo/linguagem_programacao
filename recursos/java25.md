@@ -7,7 +7,7 @@ A linguagem-alvo é **Java 25** (LTS, setembro de 2025). Não usamos recursos em
 Três formas equivalentes de um “olá”:
 
 ```java
-// 1. Arquivo compacto (revisão de lógica, primeiros minutos)
+// 1. Arquivo compacto (revisão de lógica, primeiro contato)
 void main() {
     IO.println("LP1 — IFBA Conquista");
 }

@@ -44,7 +44,7 @@ As aulas de encapsulamento e de relacionamentos usam pacotes; o comando está no
 
 ## Provas
 
-Cada pasta de prova tem mapa de competências. Após aplicar, compare com o gabarito e anote itens em que a turma inteira errou — viram 10 minutos da aula seguinte.
+Cada pasta de prova tem mapa de competências. Após aplicar, compare com o gabarito e anote itens em que a turma inteira errou — voltam na aula seguinte.
 
 ## O que este material não cobre (de propósito)
 
