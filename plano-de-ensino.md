@@ -1,36 +1,33 @@
-# Plano de ensino — Linguagem de Programação 1
+# Plano de Ensino — Linguagem de Programação 1
 
 | Campo | Informação |
 | --- | --- |
-| Instituição | Instituto Federal de Educação, Ciência e Tecnologia da Bahia |
+| Instituição | Instituto Federal da Bahia |
 | Campus | Vitória da Conquista |
 | Curso | Bacharelado em Sistemas de Informação |
 | Disciplina | Linguagem de Programação 1 |
 | Linguagem | Java 25 (LTS) |
 | Carga horária sugerida | 60 h (aulas semanais de 4 h) |
 
-Ajuste carga horária, créditos e composição da nota conforme o PPC vigente do curso.
-
 ## Ementa
 
-Revisão de lógica de programação. Programação orientada a objetos: classes e objetos; atributos, construtores e métodos; encapsulamento, modificadores de acesso e pacotes; cardinalidade e relacionamento entre objetos; diagrama de classes UML. Recursividade. Herança. Polimorfismo. Interfaces e classes abstratas. Depuração de programas. Boxing e unboxing; classes wrapper. Boas práticas de programação.
+Recursividade. Programação orientada a objetos: abstração de dados; classes e objetos; herança; e polimorfismo. Interfaces e classes abstratas. Depuração de programas. Box e Unboxing. Boas práticas de programação.
 
 ## Objetivos
 
 Ao final da disciplina, a estudante ou o estudante deverá ser capaz de:
 
-1. Revisar e aplicar estruturas de controle, arranjos e métodos em Java.
-2. Modelar problemas com **abstração de dados**, distinguindo classe e objeto.
-3. Definir **atributos**, **construtores** e **métodos** com `this` e sobrecarga.
-4. Aplicar **encapsulamento**, modificadores de acesso e organização em **pacotes**.
-5. Reconhecer **cardinalidade** e relacionamentos (associação, agregação, composição).
-6. Ler e produzir **diagrama de classes UML** (caixa, visibilidade, multiplicidade, losango).
-7. Projetar soluções **recursivas**, identificando caso-base, caso recursivo e limites da pilha de execução.
-8. Construir hierarquias com **herança** e **polimorfismo**.
-9. Separar contrato de implementação com **interfaces** e **classes abstratas**.
-10. Localizar e corrigir falhas com **depuração** (breakpoints, inspeção de variáveis, pilha de chamadas).
-11. Distinguir tipos primitivos de **wrappers**, explicando **boxing** e **unboxing**.
-12. Escrever código alinhado a **boas práticas** (nomes, responsabilidade, DRY, tratamento de erros).
+1. Modelar problemas com **abstração de dados**, distinguindo classe e objeto.
+2. Definir **atributos**, **construtores** e **métodos** com `this` e sobrecarga.
+3. Aplicar **encapsulamento**, modificadores de acesso e organização em **pacotes**.
+4. Reconhecer **cardinalidade** e relacionamentos (associação, agregação, composição).
+5. Ler e produzir **diagrama de classes UML** (caixa, visibilidade, multiplicidade, losango).
+6. Projetar soluções **recursivas**, identificando caso-base, caso recursivo e limites da pilha de execução.
+7. Construir hierarquias com **herança** e **polimorfismo**.
+8. Separar contrato de implementação com **interfaces** e **classes abstratas**.
+9. Localizar e corrigir falhas com **depuração** (breakpoints, inspeção de variáveis, pilha de chamadas).
+10. Distinguir tipos primitivos de **wrappers**, explicando **boxing** e **unboxing**.
+11. Escrever código alinhado a **boas práticas** (nomes, responsabilidade, DRY, tratamento de erros).
 
 ## Conteúdo programático
 
@@ -49,7 +46,6 @@ Ao final da disciplina, a estudante ou o estudante deverá ser capaz de:
 - Herança, `super`, redefinição de métodos.
 - Polimorfismo, ligação dinâmica, `instanceof`.
 - Interfaces e classes abstratas.
-- Exercícios integradores de POO.
 
 ### Unidade 3 — Qualidade e tipos
 
