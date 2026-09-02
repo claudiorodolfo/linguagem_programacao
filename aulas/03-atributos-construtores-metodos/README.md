@@ -15,7 +15,6 @@
 1. Reabra o `Livro` da aula de classes e objetos: “e se alguém esquecer `titulo`?” Passe a exigir inicialização no construtor.
 2. Live coding: `ContaBancaria` no quadro — dois construtores, `depositar` / `sacar` / `transferir`, contador estático.
 3. Mostre `this` nos três usos da disciplina.
-4. Laboratório: `exercicios.md`.
 
 ## 1. Atributos de instância versus de classe
 

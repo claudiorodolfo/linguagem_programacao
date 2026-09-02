@@ -17,7 +17,6 @@ Relacionamentos e cardinalidade ficam na aula de **relacionamentos**.
 2. Refatore ao vivo para `private` + `depositar`/`sacar`. Sem `setSaldo`.
 3. Monte o pacote `br.edu.ifba.conquista.lp1.aula04.modelo` no quadro (pastas = pacotes).
 4. Execute `DemoEncapsulamento`.
-5. Laboratório.
 
 ## 1. Encapsulamento
 

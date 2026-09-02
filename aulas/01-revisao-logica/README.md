@@ -11,7 +11,6 @@
 1. Leitura rápida do [`plano-de-ensino.md`](../../plano-de-ensino.md) e do [`cronograma.md`](../../cronograma.md).
 2. Instalação conferida: `java -version` deve mostrar **25** ([`recursos/ambiente.md`](../../recursos/ambiente.md)).
 3. Revisão guiada com `OlaIfba.java` (compacto) e depois `DemoRevisao`.
-4. Laboratório: `exercicios.md`.
 
 ## 1. O que esta disciplina não é
 
@@ -21,7 +20,7 @@ Não é “introdução à lógica do zero”. Espera-se que a turma já tenha v
 - o foco passa a ser **modelar com objetos**;
 - a qualidade do código (nomes, visibilidade, depuração) entra na nota.
 
-Quem estiver enferrujado usa esta aula e os exercícios como ponte.
+Quem estiver enferrujado usa esta aula como ponte.
 
 ## 2. Anatomia de um programa Java 25
 
@@ -188,7 +187,7 @@ String nome = IO.readln("Nome: ");
 double nota = Double.parseDouble(IO.readln("Nota: "));
 ```
 
-Tudo é **linha de texto**. Não há a armadilha clássica do `Scanner.nextInt()` + `nextLine()`. `NumberFormatException` se a conversão falhar — trate no laboratório.
+Tudo é **linha de texto**. Não há a armadilha clássica do `Scanner.nextInt()` + `nextLine()`. `NumberFormatException` se a conversão falhar.
 
 `Scanner` ainda existe. Na disciplina: código legado / boas práticas (anti-padrão). Não misture `IO.readln` e `Scanner` no mesmo `System.in`.
 

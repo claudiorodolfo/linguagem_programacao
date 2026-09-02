@@ -16,7 +16,6 @@ A aula de diagrama de classes UML formaliza o desenho.
 1. Recapitule encapsulamento: saldo `private`, sem `setSaldo`.
 2. Esboce no quadro: `Usuario` 1 — N `Emprestimo` N — 1 `Livro`; `Usuario` 1 — 1 `Endereco`. A grafia UML (losango, `0..5`) fica na aula de diagrama de classes UML.
 3. Execute `DemoRelacionamentos` (usa pacotes).
-4. Laboratório.
 
 ## 1. Relacionamentos
 

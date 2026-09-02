@@ -18,7 +18,6 @@ Generalização (`extends`, triângulo vazio) fica na aula de herança. Interfac
 2. Notação da caixa (nome / atributos / métodos) e visibilidade no quadro.
 3. Losango vazio vs. preenchido; números `1`, `0..1`, `1..*`.
 4. Live coding: `DemoUml` — cada linha do diagrama vira um campo Java.
-5. Laboratório: `exercicios.md` (papel + código).
 
 ## 1. Para que serve
 

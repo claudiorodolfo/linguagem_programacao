@@ -1,6 +1,6 @@
 # Aulas
 
-Material na ordem do [`cronograma.md`](../cronograma.md). Cada pasta tem `README.md` (roteiro), `exercicios.md`, `gabarito.md` (docente) e `src/` (Java). As datas de cada encontro ficam a cargo do calendário do semestre. O prefixo numérico, se existir, só ordena a listagem; o identificador estável é o assunto (segunda parte do nome da pasta).
+Material na ordem do [`cronograma.md`](../cronograma.md). Cada pasta tem `README.md` (roteiro) e `src/` (Java). Quando houver, também `exercicios.md` e `gabarito.md` (docente). As datas de cada encontro ficam a cargo do calendário do semestre. O prefixo numérico, se existir, só ordena a listagem; o identificador estável é o assunto (segunda parte do nome da pasta).
 
 ## Unidade 1 — Fundamentos de POO
 

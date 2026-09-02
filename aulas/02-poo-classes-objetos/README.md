@@ -16,7 +16,6 @@ Construtores, sobrecarga, `this` e métodos com regra de negócio ficam na aula 
 1. Do paradigma procedural ao OO: o `void main()` da aula de revisão de lógica já roda **num objeto** (a JVM instancia a Demo). Agora o comportamento de negócio mora em *outros* objetos (`Livro`) criados com `new`.
 2. Live coding: classe `Livro` no quadro — atributos visíveis, um método simples, **sem** construtor declarado.
 3. Desenhe na lousa: caixa do objeto (identidade + estado) e a classe ao lado.
-4. Laboratório: `exercicios.md`.
 
 ## 1. Do procedural ao orientado a objetos
 
