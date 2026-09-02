@@ -119,9 +119,9 @@ public class Livro implements Comparable<Livro> {
 ## O que executar no projetor
 
 ```bash
-javac --release 25 -d aulas/09-interfaces-classes-abstratas/out \
+javac --release 25 -d aulas/09-interfaces-classes-abstratas/bin \
   $(find aulas/09-interfaces-classes-abstratas/src -name "*.java")
-java -cp aulas/09-interfaces-classes-abstratas/out br.edu.ifba.vdc.bsi.lp1.DemoContratos
+java -cp aulas/09-interfaces-classes-abstratas/bin br.edu.ifba.vdc.bsi.lp1.DemoContratos
 ```
 
 Instancie contas concretas, chame `aplicarTaxasMensais` num `Conta[]`. Em seguida empreste um livro e um notebook pela mesma variável `Emprestavel`.

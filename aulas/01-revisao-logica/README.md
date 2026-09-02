@@ -208,10 +208,10 @@ Tudo é **linha de texto**. Não há a armadilha clássica do `Scanner.nextInt()
 ## O que executar no projetor
 
 ```bash
-javac --release 25 -d aulas/01-revisao-logica/out \
+javac --release 25 -d aulas/01-revisao-logica/bin \
   $(find aulas/01-revisao-logica/src -name "*.java")
-java -cp aulas/01-revisao-logica/out br.edu.ifba.vdc.bsi.lp1.OlaIfba
-java -cp aulas/01-revisao-logica/out br.edu.ifba.vdc.bsi.lp1.DemoRevisao
+java -cp aulas/01-revisao-logica/bin br.edu.ifba.vdc.bsi.lp1.OlaIfba
+java -cp aulas/01-revisao-logica/bin br.edu.ifba.vdc.bsi.lp1.DemoRevisao
 ```
 
 Percorra `DemoRevisao`. Depois a `CalculadoraConsole` (menu em *text block* + `switch` expressão).

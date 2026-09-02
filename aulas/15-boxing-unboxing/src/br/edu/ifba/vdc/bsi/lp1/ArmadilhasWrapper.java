@@ -2,10 +2,10 @@ package br.edu.ifba.vdc.bsi.lp1;
 
 // Acessar o diretório dos fontes:
 // cd aulas/15-boxing-unboxing/src
-// Compilar e enviar os .class para a pasta out:
-// javac --release 25 -d out br/edu/ifba/vdc/bsi/lp1/*.java
-// Executar a partir desta pasta, usando out no classpath:
-// java -cp out br.edu.ifba.vdc.bsi.lp1.ArmadilhasWrapper
+// Compilar e enviar os .class para a pasta bin:
+// javac --release 25 -d bin br/edu/ifba/vdc/bsi/lp1/*.java
+// Executar a partir desta pasta, usando bin no classpath:
+// java -cp bin br.edu.ifba.vdc.bsi.lp1.ArmadilhasWrapper
 
 /** Comparações que o compilador aceita e a JVM pune. */
 public class ArmadilhasWrapper {

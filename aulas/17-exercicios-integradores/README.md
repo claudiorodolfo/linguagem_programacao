@@ -38,9 +38,9 @@ Regras já no código:
 ## Compilar
 
 ```bash
-javac --release 25 -d aulas/17-exercicios-integradores/out \
+javac --release 25 -d aulas/17-exercicios-integradores/bin \
   $(find aulas/17-exercicios-integradores/src -name "*.java")
-java -cp aulas/17-exercicios-integradores/out br.edu.ifba.vdc.bsi.lp1.DemoBoletim
+java -cp aulas/17-exercicios-integradores/bin br.edu.ifba.vdc.bsi.lp1.DemoBoletim
 ```
 
 ## Mapa rápido da ementa neste `src/`

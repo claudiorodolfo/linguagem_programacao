@@ -90,9 +90,9 @@ Genéricos (`List<T>`) ficam de fora. Wrappers na aula de boxing e wrappers usam
 ## O que executar no projetor
 
 ```bash
-javac --release 25 -d aulas/08-polimorfismo/out \
+javac --release 25 -d aulas/08-polimorfismo/bin \
   $(find aulas/08-polimorfismo/src -name "*.java")
-java -cp aulas/08-polimorfismo/out br.edu.ifba.vdc.bsi.lp1.DemoPolimorfismo
+java -cp aulas/08-polimorfismo/bin br.edu.ifba.vdc.bsi.lp1.DemoPolimorfismo
 ```
 
 O `DemoPolimorfismo` percorre os saques e a `FolhaPagamento` com `Funcionario[]`.

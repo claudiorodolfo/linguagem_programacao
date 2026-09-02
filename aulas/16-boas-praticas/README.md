@@ -133,13 +133,13 @@ O bloco sem parâmetros é o **construtor compacto**: valida, não precisa repet
 ## O que executar no projetor
 
 ```bash
-javac --release 25 -d aulas/16-boas-praticas/out \
+javac --release 25 -d aulas/16-boas-praticas/bin \
   $(find aulas/16-boas-praticas/src -name "*.java")
-java -cp aulas/16-boas-praticas/out br.edu.ifba.vdc.bsi.lp1.AntiPadrao
+java -cp aulas/16-boas-praticas/bin br.edu.ifba.vdc.bsi.lp1.AntiPadrao
 
-javac --release 25 -d aulas/16-boas-praticas/out-limpo \
+javac --release 25 -d aulas/16-boas-praticas/bin-limpo \
   $(find aulas/16-boas-praticas/versao-limpa -name "*.java")
-java -cp aulas/16-boas-praticas/out-limpo br.edu.ifba.vdc.bsi.lp1.DemoLimpo
+java -cp aulas/16-boas-praticas/bin-limpo br.edu.ifba.vdc.bsi.lp1.DemoLimpo
 ```
 
 ## Ponte para integradores da disciplina

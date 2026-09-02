@@ -63,6 +63,6 @@ Os construtores `new Integer(n)`, `new Double(n)` etc. foram **removidos**. Use 
 
 ```bash
 java -version    # deve mostrar 25
-javac --release 25 -d aulas/02-poo-classes-objetos/out \
+javac --release 25 -d aulas/02-poo-classes-objetos/bin \
   $(find aulas/02-poo-classes-objetos/src -name "*.java")
 ```

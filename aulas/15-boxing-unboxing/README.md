@@ -152,9 +152,9 @@ Overflow de `int` (revisão de lógica) continua existindo com wrapper: `Integer
 ## O que executar no projetor
 
 ```bash
-javac --release 25 -d aulas/15-boxing-unboxing/out \
+javac --release 25 -d aulas/15-boxing-unboxing/bin \
   $(find aulas/15-boxing-unboxing/src -name "*.java")
-java -cp aulas/15-boxing-unboxing/out br.edu.ifba.vdc.bsi.lp1.DemoWrappers
+java -cp aulas/15-boxing-unboxing/bin br.edu.ifba.vdc.bsi.lp1.DemoWrappers
 ```
 
 Comente/descomente o bloco `explodirNpe()` na hora. Não deixe a JVM morrer no começo da demo.

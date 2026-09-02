@@ -55,9 +55,9 @@ package br.edu.ifba.vdc.bsi.lp1.modelo;
 Compilação (a partir da raiz do repositório):
 
 ```bash
-javac --release 25 -d aulas/04-encapsulamento-pacotes/out \
+javac --release 25 -d aulas/04-encapsulamento-pacotes/bin \
   $(find aulas/04-encapsulamento-pacotes/src -name "*.java")
-java -cp aulas/04-encapsulamento-pacotes/out \
+java -cp aulas/04-encapsulamento-pacotes/bin \
   br.edu.ifba.vdc.bsi.lp1.DemoEncapsulamento
 ```
 

@@ -93,9 +93,9 @@ Classe de modelo (`ContaBancaria`, `Livro`) **não** deve ler teclado nem imprim
 ## O que executar no projetor
 
 ```bash
-javac --release 25 -d aulas/03-atributos-construtores-metodos/out \
+javac --release 25 -d aulas/03-atributos-construtores-metodos/bin \
   $(find aulas/03-atributos-construtores-metodos/src -name "*.java")
-java -cp aulas/03-atributos-construtores-metodos/out br.edu.ifba.vdc.bsi.lp1.DemoAtributosMetodos
+java -cp aulas/03-atributos-construtores-metodos/bin br.edu.ifba.vdc.bsi.lp1.DemoAtributosMetodos
 ```
 
 O `DemoAtributosMetodos` cria duas contas independentes, transfere e incrementa o contador estático. Depois, duas referências para a **mesma** conta (`c2 = c1`): o saque em `c2` altera o saldo visto por `c1`.

@@ -112,9 +112,9 @@ Hanói com 3 discos: o número de movimentos é \(2^n - 1\). `n = 30` é inviáv
 ## O que executar no projetor
 
 ```bash
-javac --release 25 -d aulas/11-recursividade/out \
+javac --release 25 -d aulas/11-recursividade/bin \
   $(find aulas/11-recursividade/src -name "*.java")
-java -cp aulas/11-recursividade/out br.edu.ifba.vdc.bsi.lp1.DemoRecursao
+java -cp aulas/11-recursividade/bin br.edu.ifba.vdc.bsi.lp1.DemoRecursao
 ```
 
 Depure `Fatorial.calcular(4)` e rode `DemoRecursao`. `Fibonacci.ingenuo(40)` pode travar a máquina; 35 já é lento.

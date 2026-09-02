@@ -45,9 +45,9 @@ Cada aula é autocontida. Os fontes ficam em `src/br/edu/ifba/vdc/bsi/lp1/` (pac
 
 ```bash
 # Exemplo: aula de classes e objetos
-javac --release 25 -d aulas/02-poo-classes-objetos/out \
+javac --release 25 -d aulas/02-poo-classes-objetos/bin \
   $(find aulas/02-poo-classes-objetos/src -name "*.java")
-java -cp aulas/02-poo-classes-objetos/out br.edu.ifba.vdc.bsi.lp1.DemoClassesObjetos
+java -cp aulas/02-poo-classes-objetos/bin br.edu.ifba.vdc.bsi.lp1.DemoClassesObjetos
 ```
 
 A aula de encapsulamento também usa o subpacote `br.edu.ifba.vdc.bsi.lp1.modelo`. O comando é o mesmo (`find` no `src/`).

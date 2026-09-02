@@ -14,15 +14,15 @@ fi
 AULA="$1"
 CLASSE="$2"
 SRC="${AULA}/src"
-OUT="${AULA}/out"
+BIN="${AULA}/bin"
 
 if [[ ! -d "$SRC" ]]; then
   echo "Pasta não encontrada: $SRC"
   exit 1
 fi
 
-mkdir -p "$OUT"
+mkdir -p "$BIN"
 echo "Compilando ${SRC} (Java 25) ..."
-javac --release 25 -d "$OUT" $(find "$SRC" -name "*.java")
+javac --release 25 -d "$BIN" $(find "$SRC" -name "*.java")
 echo "Executando ${PKG}.${CLASSE} ..."
-java -cp "$OUT" "${PKG}.${CLASSE}"
+java -cp "$BIN" "${PKG}.${CLASSE}"

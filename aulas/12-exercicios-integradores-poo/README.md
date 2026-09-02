@@ -56,8 +56,8 @@ Regras já implementadas:
 ## Compilar
 
 ```bash
-javac --release 25 -d aulas/12-exercicios-integradores-poo/out \
+javac --release 25 -d aulas/12-exercicios-integradores-poo/bin \
   $(find aulas/12-exercicios-integradores-poo/src -name "*.java")
-java -cp aulas/12-exercicios-integradores-poo/out br.edu.ifba.vdc.bsi.lp1.DemoAcervo
+java -cp aulas/12-exercicios-integradores-poo/bin br.edu.ifba.vdc.bsi.lp1.DemoAcervo
 ```
 

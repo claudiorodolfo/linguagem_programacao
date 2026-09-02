@@ -62,9 +62,9 @@ package br.edu.ifba.vdc.bsi.lp1.modelo;
 ```
 
 ```bash
-javac --release 25 -d aulas/05-relacionamentos-cardinalidade/out \
+javac --release 25 -d aulas/05-relacionamentos-cardinalidade/bin \
   $(find aulas/05-relacionamentos-cardinalidade/src -name "*.java")
-java -cp aulas/05-relacionamentos-cardinalidade/out \
+java -cp aulas/05-relacionamentos-cardinalidade/bin \
   br.edu.ifba.vdc.bsi.lp1.DemoRelacionamentos
 ```
 
