@@ -1,6 +1,5 @@
 # Polimorfismo
 
-**Unidade:** 2  
 **Pré-requisito:** herança
 
 ## Objetivos

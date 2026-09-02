@@ -1,6 +1,5 @@
 # Recursividade
 
-**Unidade:** 2  
 **Pré-requisito:** Unidade 1 (métodos, arranjos)
 
 ## Objetivos

@@ -1,8 +1,5 @@
 # Apresentação da disciplina e revisão de lógica
 
-**Unidade:** 1  
-**Linguagem:** Java 25
-
 ## Objetivos
 
 - Apresentar ementa, cronograma, avaliação e o repositório da disciplina.

@@ -1,6 +1,5 @@
 # Cardinalidade e relacionamento entre objetos
 
-**Unidade:** 1  
 **Pré-requisito:** encapsulamento e pacotes
 
 ## Objetivos

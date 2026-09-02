@@ -1,6 +1,5 @@
 # Interfaces e classes abstratas
 
-**Unidade:** 2  
 **Pré-requisito:** herança e polimorfismo
 
 ## Objetivos

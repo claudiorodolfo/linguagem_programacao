@@ -1,6 +1,5 @@
 # Programação orientada a objetos: classes e objetos
 
-**Unidade:** 1  
 **Pré-requisito:** revisão de lógica
 
 ## Objetivos

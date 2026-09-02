@@ -1,6 +1,5 @@
 # Exercícios integradores de POO
 
-**Unidade:** 2  
 **Pré-requisito:** recursividade, herança, polimorfismo e interfaces
 
 ## Objetivos

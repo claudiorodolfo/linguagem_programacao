@@ -1,6 +1,5 @@
 # Depuração de programas
 
-**Unidade:** 3  
 **Pré-requisito:** Unidade 2 (já há código com objetos, herança e contratos)
 
 ## Objetivos

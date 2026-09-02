@@ -1,6 +1,5 @@
 # Encapsulamento, modificadores de acesso e pacotes
 
-**Unidade:** 1  
 **Pré-requisito:** atributos, construtores e métodos
 
 ## Objetivos

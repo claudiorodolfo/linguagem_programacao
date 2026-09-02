@@ -1,6 +1,5 @@
 # Exercícios integradores
 
-**Unidade:** 3  
 **Pré-requisito:** toda a ementa  
 **Próximo encontro:** prova da Unidade 3
 

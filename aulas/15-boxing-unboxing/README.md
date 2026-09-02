@@ -1,6 +1,5 @@
 # Boxing, unboxing e classes wrapper
 
-**Unidade:** 3  
 **Pré-requisito:** tipos primitivos (revisão de lógica), objetos (classes e objetos) e depuração
 
 ## Objetivos

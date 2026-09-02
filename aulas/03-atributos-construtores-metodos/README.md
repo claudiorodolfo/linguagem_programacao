@@ -1,6 +1,5 @@
 # Atributos, construtores e métodos
 
-**Unidade:** 1  
 **Pré-requisito:** classes e objetos
 
 ## Objetivos

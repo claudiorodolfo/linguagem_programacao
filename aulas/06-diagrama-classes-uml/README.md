@@ -1,6 +1,5 @@
 # Diagrama de classes UML
 
-**Unidade:** 1  
 **Pré-requisito:** relacionamentos
 
 ## Objetivos

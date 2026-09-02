@@ -1,6 +1,5 @@
 # Boas práticas de programação
 
-**Unidade:** 3  
 **Pré-requisito:** Unidade 2 e depuração e boxing/wrappers (já há código “grande” o bastante para ficar ruim)
 
 ## Objetivos
