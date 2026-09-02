@@ -15,7 +15,7 @@ Relacionamentos e cardinalidade ficam na aula de **relacionamentos**.
 
 1. Ataque ao código da aula de atributos, construtores e métodos: `conta.saldo = -999` no `main`.
 2. Refatore ao vivo para `private` + `depositar`/`sacar`. Sem `setSaldo`.
-3. Monte o pacote `br.edu.ifba.conquista.lp1.aula04.modelo` no quadro (pastas = pacotes).
+3. Monte o pacote `br.edu.ifba.vdc.bsi.lp1.modelo` no quadro (pastas = pacotes).
 4. Execute `DemoEncapsulamento`.
 
 ## 1. Encapsulamento
@@ -45,12 +45,12 @@ Nesta aula: atributos `private`, métodos de negócio `public`. `protected` volt
 ## 3. Pacotes
 
 ```java
-package br.edu.ifba.conquista.lp1.aula04.modelo;
+package br.edu.ifba.vdc.bsi.lp1.modelo;
 ```
 
-- Espelham pastas: `src/br/edu/ifba/conquista/lp1/aula04/modelo/ContaBancaria.java`
+- Espelham pastas: `src/br/edu/ifba/vdc/bsi/lp1/modelo/ContaBancaria.java`
 - `import` traz classes de outro pacote.
-- Convenção: minúsculas, domínio invertido.
+- Convenção: minúsculas, domínio invertido. Pacote da disciplina: `br.edu.ifba.vdc.bsi.lp1`.
 
 Compilação (a partir da raiz do repositório):
 
@@ -58,7 +58,7 @@ Compilação (a partir da raiz do repositório):
 javac --release 25 -d aulas/04-encapsulamento-pacotes/out \
   $(find aulas/04-encapsulamento-pacotes/src -name "*.java")
 java -cp aulas/04-encapsulamento-pacotes/out \
-  br.edu.ifba.conquista.lp1.aula04.DemoEncapsulamento
+  br.edu.ifba.vdc.bsi.lp1.DemoEncapsulamento
 ```
 
 No Windows PowerShell, compile arquivo a arquivo ou use a IDE.

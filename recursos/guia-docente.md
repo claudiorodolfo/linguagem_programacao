@@ -40,7 +40,7 @@ Siga o calendário do campus. Este repositório não marca dia/mês. Se houver j
 ./compilar-tudo.sh   # checagem sua, gera .class (já no .gitignore)
 ```
 
-As aulas de encapsulamento e de relacionamentos usam pacotes; o comando está no `README.md` de cada uma.
+As aulas usam o pacote `br.edu.ifba.vdc.bsi.lp1`. O comando está no `README.md` de cada uma; na raiz, `./compilar.sh`.
 
 ## Provas
 

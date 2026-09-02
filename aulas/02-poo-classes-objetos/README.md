@@ -102,8 +102,9 @@ Classe de modelo (`Livro`) **não** deve ler teclado nem imprimir o menu. O `mai
 ## O que executar no projetor
 
 ```bash
-javac --release 25 aulas/02-poo-classes-objetos/src/*.java
-java -cp aulas/02-poo-classes-objetos/src DemoClassesObjetos
+javac --release 25 -d aulas/02-poo-classes-objetos/out \
+  $(find aulas/02-poo-classes-objetos/src -name "*.java")
+java -cp aulas/02-poo-classes-objetos/out br.edu.ifba.vdc.bsi.lp1.DemoClassesObjetos
 ```
 
 O `DemoClassesObjetos` cria dois livros independentes e, em seguida, duas referências para o **mesmo** livro (`b = a`): o empréstimo via `b` altera o estado visto por `a`.

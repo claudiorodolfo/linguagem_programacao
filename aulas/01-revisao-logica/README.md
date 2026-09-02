@@ -4,13 +4,13 @@
 
 - Apresentar ementa, cronograma, avaliação e o repositório da disciplina.
 - Reativar tipos, operadores, decisões, laços, arranjos e métodos em Java.
-- Compilar e executar com **arquivo compacto**, `void main()` e `IO` (Java 25).
+- Compilar e executar com `void main()`, `IO` (Java 25) e o pacote `br.edu.ifba.vdc.bsi.lp1`.
 
 ## Roteiro
 
 1. Leitura rápida do [`plano-de-ensino.md`](../../plano-de-ensino.md) e do [`cronograma.md`](../../cronograma.md).
 2. Instalação conferida: `java -version` deve mostrar **25** ([`recursos/ambiente.md`](../../recursos/ambiente.md)).
-3. Revisão guiada com `OlaIfba.java` (compacto) e depois `DemoRevisao`.
+3. Revisão guiada com `OlaIfba` e depois `DemoRevisao`.
 
 ## 1. O que esta disciplina não é
 
@@ -36,11 +36,15 @@ void main() {
 java OlaIfba.java     # source-file mode: nem precisa javac no primeiro dia
 ```
 
-O compilador declara uma classe implícita. Não é outro Java: é o mesmo programa, com o “empacotamento” escondido.
+Arquivo compacto **não** declara `package` (JEP 512). O `OlaIfba.java` do repositório é a forma nomeada abaixo.
 
-Em seguida mostre a forma que usaremos o semestre inteiro:
+O compilador declara uma classe implícita. Não é outro Java: é o mesmo programa, com a classe escondida.
+
+Em seguida a forma que usaremos o semestre inteiro (classe nomeada no pacote da disciplina):
 
 ```java
+package br.edu.ifba.vdc.bsi.lp1;
+
 public class OlaIfba {
     void main() {
         IO.println("LP1 — IFBA Conquista");
@@ -204,9 +208,10 @@ Tudo é **linha de texto**. Não há a armadilha clássica do `Scanner.nextInt()
 ## O que executar no projetor
 
 ```bash
-java aulas/01-revisao-logica/src/OlaIfba.java
-javac --release 25 aulas/01-revisao-logica/src/*.java
-java -cp aulas/01-revisao-logica/src DemoRevisao
+javac --release 25 -d aulas/01-revisao-logica/out \
+  $(find aulas/01-revisao-logica/src -name "*.java")
+java -cp aulas/01-revisao-logica/out br.edu.ifba.vdc.bsi.lp1.OlaIfba
+java -cp aulas/01-revisao-logica/out br.edu.ifba.vdc.bsi.lp1.DemoRevisao
 ```
 
 Percorra `DemoRevisao`. Depois a `CalculadoraConsole` (menu em *text block* + `switch` expressão).

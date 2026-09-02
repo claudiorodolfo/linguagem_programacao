@@ -58,14 +58,14 @@ Evite cadeias `usuario.getEndereco().getCidade().getUf()`. Prefira `usuario.cida
 ## 5. Pacotes desta aula
 
 ```java
-package br.edu.ifba.conquista.lp1.aula05.modelo;
+package br.edu.ifba.vdc.bsi.lp1.modelo;
 ```
 
 ```bash
 javac --release 25 -d aulas/05-relacionamentos-cardinalidade/out \
   $(find aulas/05-relacionamentos-cardinalidade/src -name "*.java")
 java -cp aulas/05-relacionamentos-cardinalidade/out \
-  br.edu.ifba.conquista.lp1.aula05.DemoRelacionamentos
+  br.edu.ifba.vdc.bsi.lp1.DemoRelacionamentos
 ```
 
 ## O que executar no projetor

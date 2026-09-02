@@ -24,7 +24,7 @@ aulas/<assunto>/
   README.md        → objetivos, teoria e roteiro de aula
   exercicios.md    → lista para laboratório / casa
   gabarito.md      → resoluções (uso do docente)
-  src/             → implementação Java comentada + classe Demo
+  src/br/edu/ifba/vdc/bsi/lp1/  → Java + Demo (pacote `br.edu.ifba.vdc.bsi.lp1`)
 ```
 
 O prefixo numérico nas pastas (quando houver) só ordena a listagem no disco. O identificador estável é o **assunto** (`recursividade`, `heranca`, `classes-interna-externa`…).
@@ -41,25 +41,18 @@ As pastas de prova trazem instrumento proposto e gabarito.
 
 Requisito: **JDK 25**. Instruções de instalação em [`recursos/ambiente.md`](recursos/ambiente.md). Sintaxe da linguagem em [`recursos/java25.md`](recursos/java25.md).
 
-Cada aula é autocontida. A partir da raiz do repositório:
+Cada aula é autocontida. Os fontes ficam em `src/br/edu/ifba/vdc/bsi/lp1/` (pacote `br.edu.ifba.vdc.bsi.lp1`). A partir da raiz do repositório:
 
 ```bash
 # Exemplo: aula de classes e objetos
-javac --release 25 aulas/02-poo-classes-objetos/src/*.java
-java -cp aulas/02-poo-classes-objetos/src DemoClassesObjetos
+javac --release 25 -d aulas/02-poo-classes-objetos/out \
+  $(find aulas/02-poo-classes-objetos/src -name "*.java")
+java -cp aulas/02-poo-classes-objetos/out br.edu.ifba.vdc.bsi.lp1.DemoClassesObjetos
 ```
 
-Quando a aula usa pacotes (`package ...`), compile a partir de `src/` e informe o pacote da classe principal:
+A aula de encapsulamento também usa o subpacote `br.edu.ifba.vdc.bsi.lp1.modelo`. O comando é o mesmo (`find` no `src/`).
 
-```bash
-# Exemplo: aula de encapsulamento
-javac --release 25 -d aulas/04-encapsulamento-pacotes/out \
-  $(find aulas/04-encapsulamento-pacotes/src -name "*.java")
-java -cp aulas/04-encapsulamento-pacotes/out \
-  br.edu.ifba.conquista.lp1.aula04.DemoEncapsulamento
-```
-
-Há um script na raiz para o caso simples (arquivos no mesmo diretório, sem pacote):
+Há um script na raiz:
 
 ```bash
 ./compilar.sh aulas/02-poo-classes-objetos DemoClassesObjetos

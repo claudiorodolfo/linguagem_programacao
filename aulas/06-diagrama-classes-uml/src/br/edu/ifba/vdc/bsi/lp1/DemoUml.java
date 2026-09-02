@@ -1,5 +1,12 @@
 package br.edu.ifba.vdc.bsi.lp1;
 
+// Acessar o diretório dos fontes:
+// cd aulas/06-diagrama-classes-uml/src
+// Compilar e enviar os .class para a pasta out:
+// javac --release 25 -d out br/edu/ifba/vdc/bsi/lp1/*.java
+// Executar a partir desta pasta, usando out no classpath:
+// java -cp out br.edu.ifba.vdc.bsi.lp1.DemoUml
+
 /**
  * Do diagrama para o Java: os campos abaixo são a leitura UML da aula de relacionamentos.
  * Compare com o quadro (Usuario 1 composição 1 Endereco; Usuario 1 — 0..5 Emprestimo).

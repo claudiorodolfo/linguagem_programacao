@@ -1,5 +1,12 @@
 package br.edu.ifba.vdc.bsi.lp1;
 
+// Acessar o diretório dos fontes:
+// cd aulas/05-relacionamentos-cardinalidade/src
+// Compilar e enviar os .class para a pasta out:
+// javac --release 25 -d out br/edu/ifba/vdc/bsi/lp1/*.java br/edu/ifba/vdc/bsi/lp1/modelo/*.java
+// Executar a partir desta pasta, usando out no classpath:
+// java -cp out br.edu.ifba.vdc.bsi.lp1.DemoRelacionamentos
+
 import br.edu.ifba.vdc.bsi.lp1.modelo.Emprestimo;
 import br.edu.ifba.vdc.bsi.lp1.modelo.Endereco;
 import br.edu.ifba.vdc.bsi.lp1.modelo.Livro;
@@ -7,11 +14,6 @@ import br.edu.ifba.vdc.bsi.lp1.modelo.Usuario;
 
 /**
  * Demonstra associação, composição e cardinalidade na biblioteca do campus.
- *
- * javac --release 25 -d aulas/05-relacionamentos-cardinalidade/out \
- *   $(find aulas/05-relacionamentos-cardinalidade/src -name "*.java")
- * java -cp aulas/05-relacionamentos-cardinalidade/out \
- *   br.edu.ifba.vdc.bsi.lp1.DemoRelacionamentos
  */
 public class DemoRelacionamentos {
 

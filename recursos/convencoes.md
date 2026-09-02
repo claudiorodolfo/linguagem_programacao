@@ -10,7 +10,7 @@ Adote estas regras no quadro e nos exercícios. Elas reaparecem na aula de boas 
 | Método | camelCase, verbo | `sacar`, `calcularMedia` |
 | Variável / atributo | camelCase | `saldo`, `quantidadePaginas` |
 | Constante | MAIÚSCULAS com `_` | `TAXA_SAQUE`, `MAX_EMPRESTIMOS` |
-| Pacote | minúsculas, domínio invertido | `br.edu.ifba.conquista.lp1.aula04` |
+| Pacote | minúsculas, domínio invertido | `br.edu.ifba.vdc.bsi.lp1` |
 
 ## Visibilidade
 

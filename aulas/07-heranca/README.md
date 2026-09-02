@@ -95,8 +95,9 @@ Sem `toString`, `System.out.println(conta)` imprime `Conta@1a2b3c`. `equals` e `
 ## O que executar no projetor
 
 ```bash
-javac aulas/07-heranca/src/*.java
-java -cp aulas/07-heranca/src DemoHeranca
+javac --release 25 -d aulas/07-heranca/out \
+  $(find aulas/07-heranca/src -name "*.java")
+java -cp aulas/07-heranca/out br.edu.ifba.vdc.bsi.lp1.DemoHeranca
 ```
 
 O `DemoHeranca` saca na corrente abaixo de zero (dentro do limite) e recusa o saque da poupança. Os `toString` saem no `println`.

@@ -122,8 +122,9 @@ O material usa o **subconjunto** de UML necessário para caixa, visibilidade, as
 ## O que executar no projetor
 
 ```bash
-javac --release 25 aulas/06-diagrama-classes-uml/src/*.java
-java -cp aulas/06-diagrama-classes-uml/src DemoUml
+javac --release 25 -d aulas/06-diagrama-classes-uml/out \
+  $(find aulas/06-diagrama-classes-uml/src -name "*.java")
+java -cp aulas/06-diagrama-classes-uml/out br.edu.ifba.vdc.bsi.lp1.DemoUml
 ```
 
 Percorra `DemoUml` com o diagrama da seção 4 aberto. O arquivo `biblioteca.puml` é opcional (PlantUML) para quem quiser gerar a figura em casa; a prova é no **papel**.

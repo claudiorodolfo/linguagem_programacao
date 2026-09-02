@@ -1,5 +1,12 @@
 package br.edu.ifba.vdc.bsi.lp1;
 
+// Acessar o diretório dos fontes:
+// cd aulas/14-depuracao/versao-corrigida
+// Compilar e enviar os .class para a pasta out:
+// javac --release 25 -d out br/edu/ifba/vdc/bsi/lp1/*.java
+// Executar a partir desta pasta, usando out no classpath:
+// java -cp out br.edu.ifba.vdc.bsi.lp1.BuscaCorrigida
+
 public class BuscaCorrigida {
 
     void main() {

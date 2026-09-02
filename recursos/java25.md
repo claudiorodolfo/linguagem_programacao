@@ -12,7 +12,9 @@ void main() {
     IO.println("LP1 — IFBA Conquista");
 }
 
-// 2. Classe com main de instância (padrão das Demos daqui para frente)
+// 2. Classe com main de instância no pacote da disciplina
+package br.edu.ifba.vdc.bsi.lp1;
+
 public class OlaIfba {
     void main() {
         IO.println("LP1 — IFBA Conquista");
@@ -61,5 +63,6 @@ Os construtores `new Integer(n)`, `new Double(n)` etc. foram **removidos**. Use 
 
 ```bash
 java -version    # deve mostrar 25
-javac --release 25 aulas/02-poo-classes-objetos/src/*.java
+javac --release 25 -d aulas/02-poo-classes-objetos/out \
+  $(find aulas/02-poo-classes-objetos/src -name "*.java")
 ```

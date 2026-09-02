@@ -115,8 +115,9 @@ Não é o centro desta aula. Reconheça a sintaxe; o uso pesado volta com contra
 ## O que executar no projetor
 
 ```bash
-javac --release 25 aulas/10-classes-interna-externa/src/*.java
-java -cp aulas/10-classes-interna-externa/src DemoClassesInternas
+javac --release 25 -d aulas/10-classes-interna-externa/out \
+  $(find aulas/10-classes-interna-externa/src -name "*.java")
+java -cp aulas/10-classes-interna-externa/out br.edu.ifba.vdc.bsi.lp1.DemoClassesInternas
 ```
 
 O `DemoClassesInternas` instancia a interna a partir da externa, o movimento lê o `numero` privado e `Conta.Formatador` existe sem `new Conta`.
