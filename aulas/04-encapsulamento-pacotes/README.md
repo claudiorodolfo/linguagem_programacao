@@ -13,7 +13,7 @@ Relacionamentos e cardinalidade ficam na aula de **relacionamentos**.
 
 ## Roteiro
 
-1. Ataque ao código da aula de atributos, construtores e métodos: `conta.saldo = -999` no `main`. Pergunte se isso é aceitável.
+1. Ataque ao código da aula de atributos, construtores e métodos: `conta.saldo = -999` no `main`.
 2. Refatore ao vivo para `private` + `depositar`/`sacar`. Sem `setSaldo`.
 3. Monte o pacote `br.edu.ifba.conquista.lp1.aula04.modelo` no quadro (pastas = pacotes).
 4. Execute `DemoEncapsulamento`.
@@ -86,7 +86,7 @@ O compilador gera construtor, acessores (`inicio()`, não `getInicio()`), `equal
 
 ## 4. Exceções leves nesta aula
 
-`IllegalArgumentException` no construtor (saldo inicial negativo, depósito ≤ 0) é aceitável. Não é a aula de tratamento de erros — isso aprofunda na aula de boas práticas. Se a turma travar, `IO.println` + recusar a operação também vale.
+`IllegalArgumentException` no construtor (saldo inicial negativo, depósito ≤ 0) é aceitável. Tratamento de erros aprofunda na aula de boas práticas. `IO.println` + recusar a operação também vale.
 
 ## O que executar no projetor
 

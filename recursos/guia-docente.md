@@ -31,7 +31,7 @@ A Unidade 3 fecha com o **boletim** (wrappers + `null` = nota não lançada).
 
 ## Feriados e recessos
 
-Siga o calendário do campus. Este repositório não marca dia/mês. Se houver janela longa sem encontro na Unidade 2, use as interfaces e os integradores de POO como estudo dirigido e avise a prova na aula de polimorfismo.
+Siga o calendário do campus. Este repositório não marca dia/mês. Se houver janela longa sem encontro na Unidade 2, as interfaces e os integradores de POO servem como estudo dirigido.
 
 ## Compilação
 
@@ -44,7 +44,7 @@ As aulas de encapsulamento e de relacionamentos usam pacotes; o comando está no
 
 ## Provas
 
-Cada pasta de prova tem mapa de competências. Após aplicar, compare com o gabarito e anote itens em que a turma inteira errou — voltam na aula seguinte.
+Cada pasta de prova tem mapa de competências. Após aplicar, compare com o gabarito.
 
 ## O que este material não cobre (de propósito)
 

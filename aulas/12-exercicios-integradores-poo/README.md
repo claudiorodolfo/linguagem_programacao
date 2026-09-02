@@ -37,7 +37,7 @@ Regras já implementadas:
 
 1. Execute `DemoAcervo` e desenhe o diagrama (abstrata, interface, subclasses) no caderno.
 2. Resolva `exercicios.md`, alterando e ampliando o sistema. Não abra o gabarito antes.
-3. Compare Q2 e Q4 com o gabarito — são as que mais caem na prova.
+3. Compare Q2 e Q4 com o gabarito.
 
 ## Diagrama para a lousa
 
@@ -60,6 +60,3 @@ javac aulas/12-exercicios-integradores-poo/src/*.java
 java -cp aulas/12-exercicios-integradores-poo/src DemoAcervo
 ```
 
-## Preparação da prova da Unidade 2
-
-Avise: a prova mistura recursão (escrever e rastrear), leitura de código, implementação de uma subclasse e uma questão conceitual interface vs. abstrata. Encapsulamento da Unidade 1 **pode** aparecer como detalhe, não como eixo.

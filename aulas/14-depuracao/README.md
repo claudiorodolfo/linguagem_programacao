@@ -11,7 +11,7 @@
 
 ## Roteiro
 
-1. Mostre um programa que **compila e roda** mas dá resultado errado (`MediaBugada`). Pergunte: “onde está o erro?”
+1. Um programa que **compila e roda** mas dá resultado errado (`MediaBugada`).
 2. `println` de emergência: funciona, mas suja o código e não mostra o caminho.
 3. Abra a IDE, coloque breakpoint, rode em debug. Atalhos em [`recursos/ambiente.md`](../../recursos/ambiente.md).
 4. Laboratório: os arquivos `*Bug.java` compilam; a tarefa é **achar e corrigir** sem olhar o gabarito.
@@ -80,16 +80,14 @@ Ritual no quadro:
 | `BuscaBugada.java` | `return` dentro do laço no lugar errado / `==` em String |
 | `DemoDebug.java` | Menu para escolher o cenário no projetor |
 
-**Não “consertem” os arquivos no Git antes da aula.** O ponto é a turma quebrar a cabeça. Depois da prática, compare com `gabarito.md`.
+Os `*Bug.java` são o material do laboratório. Correção em `gabarito.md` e em `versao-corrigida/`.
 
-Há também `versao-corrigida/` com as mesmas classes já revisadas, para o docente projetar no fechamento.
+## Sessão ao vivo
 
-## Sessão ao vivo (sugestão)
-
-1. Rode `MediaBugada` com notas 7, 8, 9. Peça o valor esperado (8.0) e o obtido.
+1. Rode `MediaBugada` com notas 7, 8, 9 (esperado 8.0).
 2. Breakpoint na linha da soma. Observe `i` e `soma`.
 3. Step into em `TransferenciaBugada.transferir`. Veja `destino` versus `this`.
-4. Mostre a call stack: `main` → `transferir` → `sacar`.
+4. Call stack: `main` → `transferir` → `sacar`.
 
 ## Ponte para boxing e wrappers
 

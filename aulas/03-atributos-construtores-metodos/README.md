@@ -85,7 +85,7 @@ public boolean sacar(double valor) {
 
 ## 5. Encapsulamento? Ainda não (de propósito)
 
-Nesta aula os atributos podem ficar **sem** `private` para a turma ver o estado no `println`. Na aula de encapsulamento e pacotes eles passam a `private` e o acesso vira método. Avise: “isso é didático e temporário”.
+Nesta aula os atributos podem ficar **sem** `private`. Na aula de encapsulamento e pacotes eles passam a `private` e o acesso vira método.
 
 ## 6. Onde fica o `main`?
 
@@ -98,7 +98,7 @@ javac --release 25 aulas/03-atributos-construtores-metodos/src/*.java
 java -cp aulas/03-atributos-construtores-metodos/src DemoAtributosMetodos
 ```
 
-Mostre duas contas independentes, a transferência e o contador estático. Em seguida, duas referências para a **mesma** conta (`c2 = c1`) para o saque em `c2` alterar o saldo visto por `c1`.
+O `DemoAtributosMetodos` cria duas contas independentes, transfere e incrementa o contador estático. Depois, duas referências para a **mesma** conta (`c2 = c1`): o saque em `c2` altera o saldo visto por `c1`.
 
 ## Ponte para encapsulamento e pacotes
 

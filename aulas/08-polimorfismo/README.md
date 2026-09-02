@@ -79,7 +79,7 @@ O cast clássico ` (ContaPoupanca) conta ` ainda existe; na disciplina usamos **
 
 ## 5. Polimorfismo paramétrico? Não nesta ementa
 
-Não precisa de genéricos (`List<T>`) ainda. Se alguém perguntar: “é outro tipo de polimorfismo; aparece nas coleções nativas depois.” Wrappers na aula de boxing e wrappers usam `ArrayList<Integer>` de leve.
+Genéricos (`List<T>`) ficam de fora. Wrappers na aula de boxing e wrappers usam `ArrayList<Integer>`.
 
 ## 6. Armadilhas
 
@@ -94,7 +94,7 @@ javac aulas/08-polimorfismo/src/*.java
 java -cp aulas/08-polimorfismo/src DemoPolimorfismo
 ```
 
-Peça para a turma prever cada saque **antes** de rodar. Depois mostre `FolhaPagamento` com `Funcionario[]`.
+O `DemoPolimorfismo` percorre os saques e a `FolhaPagamento` com `Funcionario[]`.
 
 ## Ponte para interfaces e classes abstratas
 

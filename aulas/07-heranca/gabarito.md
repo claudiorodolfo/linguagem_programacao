@@ -67,7 +67,7 @@ No Java 25 a chamada **não** precisa ser a primeira linha: dá para validar no 
 ## Q5
 
 `Midia[] estante = { new Livro(...), new Revista(...), new Video(...) };`  
-`for (Midia m : estante) System.out.println(m);` já usa `toString` dinâmico — deixe a turma descobrir e nomeie na aula de polimorfismo.
+`for (Midia m : estante) System.out.println(m);` já usa `toString` dinâmico (polimorfismo).
 
 ## Q6
 

@@ -13,12 +13,9 @@
 
 ## Roteiro
 
-1. Projete `AntiPadrao.java` (código que funciona e é hostil). Peça reescrita em duplas **antes** da teoria.
-2. Nomeie as práticas no quadro, mapeando o que as duplas já fizeram.
-3. Mostre a versão em `versao-limpa/`.
-4. Laboratório: refatorar, não criar sistema novo.
-
-Esta aula não é Engenharia de Software completa. É o **mínimo profissional** para o restante da graduação.
+1. `AntiPadrao.java` (código que funciona e é hostil).
+2. As práticas abaixo, com a versão em `versao-limpa/`.
+3. Laboratório: refatorar, não criar sistema novo.
 
 ## 1. Nomes
 
@@ -82,7 +79,7 @@ Melhor, nesta disciplina:
 
 - Pré-condição violada → `IllegalArgumentException` (mensagem em português).
 - Operação de negócio recusada (saque sem saldo) → `boolean` ou tipo de resultado, **documentado**.
-- Não use exceção para fluxo normal (não lance `SaldoInsuficienteException` em todo saque didático, a menos que a turma já esteja confortável).
+- Não use exceção para fluxo normal (não lance `SaldoInsuficienteException` em todo saque).
 
 Nunca engula `Exception` vazia.
 
@@ -91,7 +88,7 @@ Nunca engula `Exception` vazia.
 Já dito na aula de encapsulamento e pacotes: `setSaldo(double)` público destrói a conta.  
 Nesta aula: getters em massa (`getA()`, `getB()`, `getC()` para o `main` montar a regra) também espalham a lógica. Prefira `conta.extratoFormatado()` a três getters no `Demo`.
 
-`protected double saldo` da aula de herança: honesto para ensinar herança; em código “limpo”, `private` + `protected void debitar`.
+`protected double saldo` da aula de herança funciona; em código “limpo”, `private` + `protected void debitar`.
 
 ## 7. Composição × herança
 
@@ -113,7 +110,7 @@ Não obrigue composição em toda hierarquia boa (`ContaCorrente extends Conta` 
 - Magias: `if (p == 14)` → `Livro.PRAZO_DIAS`.
 - Métodos longos: se precisa rolar a tela, extraia `private`.
 - `null`: rejeite no construtor; não espalhe NPE.
-- `equals`/`hashCode` juntos se comparar objetos em coleções (mencione; implementação completa só se der tempo).
+- `equals`/`hashCode` juntos se comparar objetos em coleções.
 - Indentação e `{ }` mesmo em `if` de uma linha — evita o bug do “achei que estava dentro”.
 - **`record`** para dados imutáveis (`Endereco`); classe quando o estado muda.
 - **`sealed`** quando a hierarquia for um conjunto fechado (toda subclasse nova altera `permits`).

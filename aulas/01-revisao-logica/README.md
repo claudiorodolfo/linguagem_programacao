@@ -59,7 +59,7 @@ Forma clássica (livros antigos, projetos corporativos):
 public static void main(String[] args) { ... }
 ```
 
-Não some. Só não é mais a primeira coisa que a turma decora.
+Ainda existe; não é o ponto de entrada desta disciplina.
 
 ## 3. Tipos primitivos
 
@@ -68,7 +68,7 @@ Não some. Só não é mais a primeira coisa que a turma decora.
 | `boolean` | verdadeiro/falso | flags, condições |
 | `char` | 16 bits (Unicode) | um caractere `'A'` |
 | `byte`, `short`, `int`, `long` | inteiros | contadores, índices |
-| `float`, `double` | ponto flutuante | dinheiro *nesta disciplina* use `double` com cuidado; avise que em sistema real se usa `BigDecimal` |
+| `float`, `double` | ponto flutuante | dinheiro *nesta disciplina* use `double` com cuidado; em sistema real, `BigDecimal` |
 
 ```java
 int quantidade = 3;
@@ -79,9 +79,9 @@ char conceito = 'B';
 
 **String não é primitivo.** É uma classe: `String nome = "Ana";`
 
-No quadro, tipos **explícitos**. `var` existe; nesta disciplina só depois que a turma estiver confortável (se usar).
+Tipos **explícitos**. `var` existe; não é o padrão desta disciplina.
 
-## 4. Operadores que mais caem em prova
+## 4. Operadores
 
 - Aritméticos: `+ - * / %`
 - Relacionais: `== != < > <= >=`
@@ -119,7 +119,7 @@ String msg = switch (conceito) {
 IO.println(msg);
 ```
 
-A forma antiga com `:` e `break` ainda compila. Mostre **uma vez** o bug do `break` esquecido e não volte a ela nos exercícios.
+A forma antiga com `:` e `break` ainda compila; o fall-through sem `break` é uma armadilha clássica. Os exercícios usam a forma expressão.
 
 Bloco com `yield` quando o ramo tem mais de uma instrução:
 

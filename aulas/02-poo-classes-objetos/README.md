@@ -63,7 +63,7 @@ c.autor = "Robert Martin";
 
 ## 4. Atributos e um primeiro método
 
-Nesta aula os atributos ficam **sem** `private` e **sem** construtor declarado — para a turma ver o estado nascer com `new` e ser preenchido campo a campo. Isso é didático e temporário.
+Nesta aula os atributos ficam **sem** `private` e **sem** construtor declarado. Encapsulamento e construtores vêm nas aulas seguintes.
 
 ```java
 public class Livro {
@@ -94,13 +94,11 @@ Livro livro = null;
 livro.emprestar(); // NullPointerException
 ```
 
-Uma referência pode não apontar para ninguém. Mostre o NPE **cedo**: é o erro mais comum do semestre. A aula de depuração volta a ele com o depurador.
+Uma referência pode não apontar para ninguém: `NullPointerException`. A aula de depuração volta a isso.
 
 ## 6. Onde fica o `main`?
 
 Classe de modelo (`Livro`) **não** deve ler teclado nem imprimir o menu. O `main` (ou uma classe `Demo`) **cria** objetos, **chama** métodos e **mostra** resultados.
-
-Isso é o primeiro hábito de boa prática da disciplina.
 
 ## O que executar no projetor
 
@@ -109,7 +107,7 @@ javac --release 25 aulas/02-poo-classes-objetos/src/*.java
 java -cp aulas/02-poo-classes-objetos/src DemoClassesObjetos
 ```
 
-Mostre dois livros independentes e, em seguida, duas referências para o **mesmo** livro (`b = a`) para o empréstimo via `b` alterar o estado visto por `a`.
+O `DemoClassesObjetos` cria dois livros independentes e, em seguida, duas referências para o **mesmo** livro (`b = a`): o empréstimo via `b` altera o estado visto por `a`.
 
 ## Ponte para atributos, construtores e métodos
 

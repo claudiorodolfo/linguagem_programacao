@@ -22,7 +22,7 @@
 
 Herança modela **especialização**: toda `ContaPoupanca` **é uma** `Conta`. Tudo que vale para conta vale para poupança, mais o que for específico.
 
-Não use herança para “a turma *tem* alunos” — isso é associação (relacionamentos). Teste da frase: se você não diz “é um” com naturalidade, não é `extends`.
+Não use herança para “a turma *tem* alunos” — isso é associação (relacionamentos). Se a frase natural não é “é um”, não é `extends`.
 
 ## 2. Sintaxe
 
@@ -72,7 +72,7 @@ public boolean sacar(double valor, String motivo) { // sobrecarga
 
 ## 5. `protected`
 
-Membro visível na hierarquia (e no pacote). Útil para `saldo` se as subclasses precisam alterar com regra própria — **ou** deixe `private` e ofereça `protected void ajustarSaldo(double delta)` para não espalhar o campo. Nesta aula o código usa `protected double saldo` de propósito, para a turma ver o acesso; na aula de boas práticas discutimos se isso foi uma boa ideia.
+Membro visível na hierarquia (e no pacote). Útil para `saldo` se as subclasses precisam alterar com regra própria — **ou** `private` + `protected void ajustarSaldo(double delta)` para não espalhar o campo. O código desta aula usa `protected double saldo`. A aula de boas práticas retoma a escolha.
 
 ## 6. `Object`
 
@@ -85,12 +85,12 @@ public String toString() {
 }
 ```
 
-Sem `toString`, `System.out.println(conta)` imprime `Conta@1a2b3c`. `equals` e `hashCode` juntos: mencione; implementação completa pode ficar para a aula de boas práticas.
+Sem `toString`, `System.out.println(conta)` imprime `Conta@1a2b3c`. `equals` e `hashCode` juntos ficam na aula de boas práticas.
 
 ## 7. O que herança não é
 
 - Não é desconto de código a qualquer custo (veja *composição em vez de herança* na aula de boas práticas).
-- Subclasse não deve **quebrar** o contrato da superclasse (poupança que “saca” aumentando o saldo é abuso). Princípio da substituição (Liskov) em versão de uma frase: **onde se espera a superclasse, a subclasse precisa fazer sentido**.
+- Subclasse não deve **quebrar** o contrato da superclasse (poupança que “saca” aumentando o saldo é abuso). Princípio da substituição (Liskov): **onde se espera a superclasse, a subclasse precisa fazer sentido**.
 
 ## O que executar no projetor
 
@@ -99,7 +99,7 @@ javac aulas/07-heranca/src/*.java
 java -cp aulas/07-heranca/src DemoHeranca
 ```
 
-Mostre o saque da corrente abaixo de zero (dentro do limite) e o saque da poupança recusado. Imprima os objetos para ver `toString`.
+O `DemoHeranca` saca na corrente abaixo de zero (dentro do limite) e recusa o saque da poupança. Os `toString` saem no `println`.
 
 ## Ponte para polimorfismo
 

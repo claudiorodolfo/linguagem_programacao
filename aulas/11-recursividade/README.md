@@ -54,7 +54,7 @@ static long fatorial(int n) {
 }
 ```
 
-`long` porque `20!` já não cabe em `int`. `21!` não cabe em `long` — mencione, não precisa resolver com `BigInteger` agora.
+`long` porque `20!` já não cabe em `int`. `21!` não cabe em `long`. `BigInteger` fica de fora.
 
 ## 3. A pilha
 
@@ -107,7 +107,7 @@ Nesta disciplina ainda não há árvores (isso é outra ementa). Recursão vale 
 
 `potencia(base, exp)`: caso-base `exp == 0 → 1`; recursivo `base * potencia(base, exp - 1)`. Versão logarítmica (`exp` par → quadrado) é desafio.
 
-Hanói com 3 discos no projetor: o número de movimentos é \(2^n - 1\). Bom para ver a pilha; ruim para `n = 30` (peça para **não** rodarem).
+Hanói com 3 discos: o número de movimentos é \(2^n - 1\). `n = 30` é inviável na prática.
 
 ## O que executar no projetor
 
@@ -116,7 +116,7 @@ javac aulas/11-recursividade/src/*.java
 java -cp aulas/11-recursividade/src DemoRecursao
 ```
 
-Depure `Fatorial.calcular(4)` com a turma. Depois rode `DemoRecursao` inteiro. Comente a linha de `Fibonacci.ingenuo(40)` se a máquina travar; 35 já impressiona.
+Depure `Fatorial.calcular(4)` e rode `DemoRecursao`. `Fibonacci.ingenuo(40)` pode travar a máquina; 35 já é lento.
 
 ## Ponte para herança
 

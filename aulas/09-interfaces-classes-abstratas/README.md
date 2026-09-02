@@ -102,7 +102,7 @@ public interface Emprestavel {
 }
 ```
 
-Útil para evoluir contrato sem quebrar implementações antigas. Na prova, cobre o conceito; não cobre os detalhes de conflito de `default` em duas interfaces.
+Útil para evoluir contrato sem quebrar implementações antigas. Conflito de `default` em duas interfaces fica de fora.
 
 ## 6. `Comparable` (gancho)
 

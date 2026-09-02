@@ -119,7 +119,7 @@ javac --release 25 aulas/10-classes-interna-externa/src/*.java
 java -cp aulas/10-classes-interna-externa/src DemoClassesInternas
 ```
 
-Mostre a falha de `new Interna()` sem externa. Depois o `movimento` lendo o `numero` privado. Por último, `Conta.Formatador` sem `new Conta`.
+O `DemoClassesInternas` instancia a interna a partir da externa, o movimento lê o `numero` privado e `Conta.Formatador` existe sem `new Conta`.
 
 ## Ponte
 

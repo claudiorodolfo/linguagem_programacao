@@ -51,7 +51,7 @@ Arquivos compactos importam o módulo `java.base` automaticamente (`List`, `Arra
 
 - Padrões em tipos primitivos (JEP 507, preview no 25)
 - Virtual threads, scoped values, structured concurrency
-- `var` no quadro: evite no primeiro mês; tipos explícitos ensinam mais
+- `var`: fora do padrão desta disciplina; tipos explícitos
 
 ## Remoções que quebram código antigo
 

@@ -40,4 +40,4 @@ Não estende `ItemAcervo`. Implementa `Emprestavel` (prazo 1 dia, multa/dia R$ 1
 
 ### Q8 — (desafio) Composição
 
-`Emprestimo` hoje aponta para `Emprestavel`. Extraia `PrazoPolitica` (estratégia) em vez de `diasDePrazo()` em cada classe. Só se o restante estiver sólido — é um gosto de padrão Strategy, sem nome obrigatório na prova.
+`Emprestimo` hoje aponta para `Emprestavel`. Extraia `PrazoPolitica` (estratégia) em vez de `diasDePrazo()` em cada classe.

@@ -40,7 +40,7 @@ Wrappers estão em `java.lang` (não precisam de `import`). São **imutáveis**:
 1. **Coleções e genéricos** só trabalham com objetos: `ArrayList<int>` não compila; `ArrayList<Integer>` sim.
 2. **Ausência de valor:** um `int` sempre tem bit pattern; `Integer` pode ser `null` (“não informado”).
 3. **Métodos de serviço:** `Integer.parseInt("42")`, `Double.isNaN`, `Character.isDigit`.
-4. **Uso em APIs** que pedem `Object` (chaves de mapa, reflexão — só mencione).
+4. **Uso em APIs** que pedem `Object` (chaves de mapa, reflexão).
 
 ## 3. Boxing e unboxing
 
@@ -106,7 +106,7 @@ Integer idade = null; // “não informado”
 int x = idade;        // NullPointerException
 ```
 
-O compilador gera `idade.intValue()`. Mostre no bytecode *não* precisa; mostre no debugger.
+O compilador gera `idade.intValue()`. No depurador o NPE aparece nessa chamada.
 
 Cuidado em expressões:
 

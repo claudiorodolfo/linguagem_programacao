@@ -10,17 +10,15 @@
 - Usar **classe associativa** para N–N.
 - Traduzir o diagrama para Java (campo, arranjo, `new` interno) e o Java de volta para o diagrama.
 
-Generalização (`extends`) aparece como **spoiler de uma linha**: o triângulo vazio volta na aula de herança. Interfaces (`«interface»`) voltam na aula de interfaces e classes abstratas.
+Generalização (`extends`, triângulo vazio) fica na aula de herança. Interfaces (`«interface»`) ficam na aula de interfaces e classes abstratas.
 
 ## Roteiro
 
-1. Reabra o desenho da aula de relacionamentos (caixas `Usuario`, `Emprestimo`, `Livro`, `Endereco`). Diga: “hoje isso vira UML de verdade, a língua em que vocês vão documentar o projeto o resto da graduação.”
+1. Reabra o desenho da aula de relacionamentos (caixas `Usuario`, `Emprestimo`, `Livro`, `Endereco`) e passe à notação UML.
 2. Notação da caixa (nome / atributos / métodos) e visibilidade no quadro.
 3. Losango vazio vs. preenchido; números `1`, `0..1`, `1..*`.
 4. Live coding: `DemoUml` — cada linha do diagrama vira um campo Java.
 5. Laboratório: `exercicios.md` (papel + código).
-
-A prova da Unidade 1 cobra este diagrama.
 
 ## 1. Para que serve
 
@@ -120,7 +118,7 @@ Lei de Demeter no desenho: não exponha `Endereco` no `main` se o diagrama já t
 - `«interface»` e `«abstract»` — interfaces e classes abstratas.
 - Sequência, casos de uso, pacotes UML completos — fora desta ementa. Pacote Java continua sendo pasta + `package`.
 
-Se alguém perguntar “é UML 2.5?”: usamos o **subconjunto** que cabe no quadro e cai em prova. Não cobramos ferramenta CASE.
+O material usa o **subconjunto** de UML necessário para caixa, visibilidade, associação, agregação, composição e multiplicidade. Sem ferramenta CASE.
 
 ## O que executar no projetor
 

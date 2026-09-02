@@ -9,12 +9,12 @@
 - Implementar relacionamento como **referência** ou **arranjo de referências**.
 - Aplicar uma versão leve da Lei de Demeter: não espalhar a estrutura interna.
 
-A aula de diagrama de classes UML formaliza o desenho. A prova da Unidade 1 vem depois dessa aula.
+A aula de diagrama de classes UML formaliza o desenho.
 
 ## Roteiro
 
 1. Recapitule encapsulamento: saldo `private`, sem `setSaldo`.
-2. Esboce no quadro: `Usuario` 1 — N `Emprestimo` N — 1 `Livro`; `Usuario` 1 — 1 `Endereco`. Avise que a grafia UML (losango, `0..5`) é a aula de diagrama de classes UML.
+2. Esboce no quadro: `Usuario` 1 — N `Emprestimo` N — 1 `Livro`; `Usuario` 1 — 1 `Endereco`. A grafia UML (losango, `0..5`) fica na aula de diagrama de classes UML.
 3. Execute `DemoRelacionamentos` (usa pacotes).
 4. Laboratório.
 
@@ -54,7 +54,7 @@ O `Endereco` é um `record` (encapsulamento e pacotes): dado imutável. Nasce co
 
 ## 4. Lei de Demeter (versão leve)
 
-Evite cadeias `usuario.getEndereco().getCidade().getUf()`. Prefira `usuario.cidadeFormatada()`. Não cobre isso em prova com o nome da lei; cobre o hábito: **não espalhe a estrutura interna**.
+Evite cadeias `usuario.getEndereco().getCidade().getUf()`. Prefira `usuario.cidadeFormatada()`: **não espalhe a estrutura interna**.
 
 ## 5. Pacotes desta aula
 
