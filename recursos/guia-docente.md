@@ -7,7 +7,7 @@ Como usar este repositório semana a semana, sem reler tudo.
 1. Confira **JDK 25** nas máquinas do laboratório ([`ambiente.md`](ambiente.md), [`java25.md`](java25.md)). Language level 25 na IDE.
 2. Publique o repositório (GitHub Classroom, GitLab do IFBA ou pasta compartilhada).
 3. **Não** publique os `gabarito.md` no mesmo momento que os exercícios, se quiser que o laboratório valha. Opções: branch `gabaritos` privada; ou zip só para você.
-4. Imprima ou exporte as três provas com antecedência (pastas `prova-unidade-1`, `prova-unidade-2` e `prova-unidade-3`).
+4. Imprima ou exporte as provas com antecedência (pastas `prova-unidade-2` e `prova-unidade-3`).
 
 ## Em cada encontro
 

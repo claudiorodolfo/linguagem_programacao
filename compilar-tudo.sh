@@ -24,11 +24,11 @@ compilar_simples aulas/03-atributos-construtores-metodos/src
 compilar_pacote aulas/04-encapsulamento-pacotes/src aulas/04-encapsulamento-pacotes/out
 compilar_pacote aulas/05-relacionamentos-cardinalidade/src aulas/05-relacionamentos-cardinalidade/out
 compilar_simples aulas/06-diagrama-classes-uml/src
-compilar_simples aulas/07-prova-unidade-1/src
-compilar_simples aulas/08-recursividade/src
-compilar_simples aulas/09-heranca/src
-compilar_simples aulas/10-polimorfismo/src
-compilar_simples aulas/11-interfaces-classes-abstratas/src
+compilar_simples aulas/07-heranca/src
+compilar_simples aulas/08-polimorfismo/src
+compilar_simples aulas/09-interfaces-classes-abstratas/src
+compilar_simples aulas/10-classes-interna-externa/src
+compilar_simples aulas/11-recursividade/src
 compilar_simples aulas/12-exercicios-integradores-poo/src
 compilar_simples aulas/13-prova-unidade-2/src
 compilar_simples aulas/14-depuracao/src

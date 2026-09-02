@@ -90,8 +90,8 @@ Não precisa de genéricos (`List<T>`) ainda. Se alguém perguntar: “é outro 
 ## O que executar no projetor
 
 ```bash
-javac aulas/10-polimorfismo/src/*.java
-java -cp aulas/10-polimorfismo/src DemoPolimorfismo
+javac aulas/08-polimorfismo/src/*.java
+java -cp aulas/08-polimorfismo/src DemoPolimorfismo
 ```
 
 Peça para a turma prever cada saque **antes** de rodar. Depois mostre `FolhaPagamento` com `Funcionario[]`.

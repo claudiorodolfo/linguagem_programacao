@@ -112,8 +112,8 @@ Hanói com 3 discos no projetor: o número de movimentos é \(2^n - 1\). Bom par
 ## O que executar no projetor
 
 ```bash
-javac aulas/08-recursividade/src/*.java
-java -cp aulas/08-recursividade/src DemoRecursao
+javac aulas/11-recursividade/src/*.java
+java -cp aulas/11-recursividade/src DemoRecursao
 ```
 
 Depure `Fatorial.calcular(4)` com a turma. Depois rode `DemoRecursao` inteiro. Comente a linha de `Fibonacci.ingenuo(40)` se a máquina travar; 35 já impressiona.

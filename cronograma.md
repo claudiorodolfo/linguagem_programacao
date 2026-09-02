@@ -12,11 +12,11 @@ Feriados e recessos do campus **não têm material de aula** — pule o encontro
 | [encapsulamento-pacotes](aulas/04-encapsulamento-pacotes) | Encapsulamento. Modificadores de acesso. Pacotes/módulos |
 | [relacionamentos-cardinalidade](aulas/05-relacionamentos-cardinalidade) | Cardinalidade e relacionamento entre objetos |
 | [diagrama-classes-uml](aulas/06-diagrama-classes-uml) | Diagrama de classes UML |
-| [prova-unidade-1](aulas/07-prova-unidade-1) | Prova da Unidade 1 |
-| [recursividade](aulas/08-recursividade) | Recursividade |
-| [heranca](aulas/09-heranca) | Herança |
-| [polimorfismo](aulas/10-polimorfismo) | Polimorfismo |
-| [interfaces-classes-abstratas](aulas/11-interfaces-classes-abstratas) | Interfaces e classes abstratas (estudo dirigido, se o calendário apertar) |
+| [heranca](aulas/07-heranca) | Herança |
+| [polimorfismo](aulas/08-polimorfismo) | Polimorfismo |
+| [interfaces-classes-abstratas](aulas/09-interfaces-classes-abstratas) | Interfaces e classes abstratas (estudo dirigido, se o calendário apertar) |
+| [classes-interna-externa](aulas/10-classes-interna-externa) | Classes internas e externas |
+| [recursividade](aulas/11-recursividade) | Recursividade |
 | [exercicios-integradores-poo](aulas/12-exercicios-integradores-poo) | Exercícios integradores de POO (estudo dirigido / laboratório) |
 | [prova-unidade-2](aulas/13-prova-unidade-2) | Prova da Unidade 2 |
 | [depuracao](aulas/14-depuracao) | Depuração (debug) |
@@ -32,11 +32,11 @@ As interfaces e os integradores de POO podem ocupar uma janela sem encontro pres
 ```
 Unidade 1
   Revisão → Classes/objetos → Atributos/construtores/métodos
-  → Encapsulamento/pacotes → Relacionamentos → Diagrama UML → Prova
+  → Encapsulamento/pacotes → Relacionamentos → Diagrama UML
 
 Unidade 2
-  Recursão → Herança → Polimorfismo → Interfaces/abstratas
-  → Integradores POO → Prova
+  Herança → Polimorfismo → Interfaces/abstratas
+  → Classes internas → Recursão → Integradores POO → Prova
 
 Unidade 3
   Debug → Wrappers → Boas práticas → Integradores → Prova

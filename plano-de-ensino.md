@@ -86,7 +86,7 @@ Sugestão de composição (edite conforme o regulamento do campus):
 N_f = \frac{U_1 + U_2 + U_3}{3}
 \]
 
-Os instrumentos propostos estão nas pastas de prova de cada unidade (`prova-unidade-1`, `prova-unidade-2`, `prova-unidade-3`). Os gabaritos são para uso docente.
+Os instrumentos propostos estão nas pastas de prova (`prova-unidade-2`, `prova-unidade-3`). Os gabaritos são para uso docente.
 
 ## Bibliografia básica
 

@@ -27,7 +27,7 @@ aulas/<assunto>/
   src/             → implementação Java comentada + classe Demo
 ```
 
-O prefixo numérico nas pastas (quando houver) só ordena a listagem no disco. O identificador estável é o **assunto** (`recursividade`, `heranca`, `prova-unidade-1`…).
+O prefixo numérico nas pastas (quando houver) só ordena a listagem no disco. O identificador estável é o **assunto** (`recursividade`, `heranca`, `classes-interna-externa`…).
 
 As pastas de prova trazem instrumento proposto e gabarito.
 

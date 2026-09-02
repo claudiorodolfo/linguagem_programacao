@@ -133,4 +133,4 @@ Percorra `DemoUml` com o diagrama da seção 4 aberto. O arquivo `biblioteca.pum
 
 ## Ponte para a prova da Unidade 1
 
-A Unidade 1 cobra a revisão até o diagrama de classes UML: revisão, classes, atributos/métodos, encapsulamento/pacotes, relacionamentos **e** o diagrama de classes (ler, completar, traduzir para Java). Instrumento na pasta `prova-unidade-1`.
+A Unidade 1 cobra a revisão até o diagrama de classes UML: revisão, classes, atributos/métodos, encapsulamento/pacotes, relacionamentos **e** o diagrama de classes (ler, completar, traduzir para Java).
