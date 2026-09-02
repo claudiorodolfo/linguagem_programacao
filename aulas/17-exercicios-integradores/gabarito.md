@@ -19,15 +19,17 @@ Espelhar `Trabalho`. Recalcular pesos.
 ## Q3
 
 ```java
-public static String situacao(Estudante e) {
-    Integer m = media(e);
-    if (m == null) return "cursando";
-    double v = m; // ou m.doubleValue() — aqui média pode ser Integer arredondada
-    ...
+public static String situacao(Estudante estudante) {
+    return switch (media(estudante)) {
+        case null -> "cursando";
+        case Double v when v >= 7.0 -> "aprovado";
+        case Double v when v >= 5.0 -> "recuperação";
+        default -> "reprovado";
+    };
 }
 ```
 
-No código da aula a média é `Double` (melhor). Ajuste o enunciado da Q3 se usar `Double`: a ideia é o `null`. Ver `Boletim.media` que devolve `Double`.
+A média da aula é `Double`. O `case null` evita unboxar wrapper nulo.
 
 Critério: não unboxar `Double`/`Integer` nulo.
 

@@ -18,7 +18,7 @@ O ponto: `folha()` do gerente já inclui bônus.
 
 ```java
 for (Funcionario f : equipe) {
-    System.out.println(f + " → " + f.folha());
+        IO.println(f + " → " + f.folha());
 }
 ```
 

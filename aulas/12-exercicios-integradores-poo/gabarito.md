@@ -28,11 +28,8 @@ Livro 1.0, revista 2.0, DVD 3.0 (sugestão).
 ```java
 for (int i = 0; i < quantidadeItens; i++) {
     ItemAcervo item = itens[i];
-    if (item instanceof Emprestavel) {
-        Emprestavel e = (Emprestavel) item;
-        if (e.isDisponivel()) {
-            System.out.println(item.resumo());
-        }
+    if (item instanceof Emprestavel e && e.isDisponivel()) {
+        IO.println(item.resumo());
     }
 }
 ```

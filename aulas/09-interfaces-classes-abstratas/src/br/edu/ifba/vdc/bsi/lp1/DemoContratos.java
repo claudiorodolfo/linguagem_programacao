@@ -53,7 +53,11 @@ public class DemoContratos {
             new Circulo(2)
         };
         for (Forma f : formas) {
-            IO.println(f);
+            String tipo = switch (f) {
+                case Circulo _ -> "círculo";
+                case Retangulo _ -> "retângulo";
+            };
+            IO.println("%s: %s".formatted(tipo, f));
         }
     }
 }

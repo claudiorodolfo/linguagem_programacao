@@ -41,10 +41,10 @@ Arquivos compactos importam o módulo `java.base` automaticamente (`List`, `Arra
 | --- | --- | --- |
 | Text blocks `"""` | 15 | menus, relatórios |
 | `switch` expressão (`->`) | 14 | revisão de lógica, calculadora |
-| `record` | 16 | `Endereco` (relacionamentos); boas práticas |
+| `record` | 16 | `Intervalo` (encapsulamento); `Endereco` (relacionamentos) |
 | `instanceof Tipo x` | 16 | polimorfismo em diante |
 | Classes `sealed` | 17 | `Conta` na aula de interfaces e classes abstratas |
-| `switch` em hierarquia selada | 21 | polimorfismo e interfaces |
+| `switch` em hierarquia selada | 21 | contas e formas na aula de interfaces |
 | Variável não usada `_` | 22 | `case ContaCorrente _` |
 | `void main()` / arquivo compacto / `IO` | 25 | todas as Demos |
 | Corpo flexível de construtor (código **antes** de `super(...)`) | 25 | herança |

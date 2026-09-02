@@ -8,6 +8,7 @@ package br.edu.ifba.vdc.bsi.lp1;
 // java -cp bin br.edu.ifba.vdc.bsi.lp1.DemoEncapsulamento
 
 import br.edu.ifba.vdc.bsi.lp1.modelo.ContaBancaria;
+import br.edu.ifba.vdc.bsi.lp1.modelo.Intervalo;
 
 /**
  * Demonstra encapsulamento e organização em pacotes.
@@ -21,5 +22,8 @@ public class DemoEncapsulamento {
         IO.println("Saque 300? " + conta.sacar(300));
         IO.println("Saldo final: " + conta.getSaldo());
         // conta.saldo = -10;  // não compila: saldo é private
+
+        Intervalo semanas = new Intervalo(1, 18);
+        IO.println("Semanas do semestre: " + semanas.tamanho());
     }
 }

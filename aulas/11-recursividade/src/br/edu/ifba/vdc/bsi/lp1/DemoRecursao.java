@@ -14,12 +14,18 @@ package br.edu.ifba.vdc.bsi.lp1;
 public class DemoRecursao {
 
     void main() {
-        IO.println("4! = " + Fatorial.calcular(4));
-        IO.println("2^10 linear = " + Potencia.linear(2, 10));
-        IO.println("2^10 log    = " + Potencia.logaritmica(2, 10));
-
-        IO.println("arara? " + Palindromo.verificar("arara"));
-        IO.println("ifba?  " + Palindromo.verificar("ifba"));
+        IO.println("""
+                4! = %s
+                2^10 linear = %s
+                2^10 log    = %s
+                arara? %s
+                ifba?  %s
+                """.formatted(
+                Fatorial.calcular(4),
+                Potencia.linear(2, 10),
+                Potencia.logaritmica(2, 10),
+                Palindromo.verificar("arara"),
+                Palindromo.verificar("ifba")));
 
         int[] ordenado = {2, 4, 6, 8, 10, 12};
         IO.println("busca 8: " + BuscaBinaria.buscar(ordenado, 8));

@@ -27,6 +27,8 @@ public class DemoAcervo {
         ifba.cadastrarUsuario(ana);
         ifba.cadastrarUsuario(bruno);
 
+        ifba.listarDisponiveis();
+
         IO.println("Emprestar Clean Code para Ana? " + ifba.emprestar(ana, clean));
         IO.println("Emprestar Clean Code para Bruno? " + ifba.emprestar(bruno, clean));
         IO.println("Emprestar revista para Bruno? " + ifba.emprestar(bruno, info));

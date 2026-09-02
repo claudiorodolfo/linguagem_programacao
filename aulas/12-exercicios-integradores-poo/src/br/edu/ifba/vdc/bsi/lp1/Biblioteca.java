@@ -61,6 +61,16 @@ public class Biblioteca {
         return false;
     }
 
+    public void listarDisponiveis() {
+        IO.println("--- Disponíveis ---");
+        for (int i = 0; i < quantidadeItens; i++) {
+            ItemAcervo item = itens[i];
+            if (item instanceof Emprestavel e && e.isDisponivel()) {
+                IO.println(item.resumo());
+            }
+        }
+    }
+
     public void relatorio() {
         IO.println("--- Acervo ---");
         for (int i = 0; i < quantidadeItens; i++) {

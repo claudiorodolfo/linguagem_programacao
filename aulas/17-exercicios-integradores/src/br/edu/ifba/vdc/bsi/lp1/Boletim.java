@@ -23,18 +23,12 @@ public class Boletim {
     }
 
     public static String situacao(Estudante estudante) {
-        Double m = media(estudante);
-        if (m == null) {
-            return "cursando";
-        }
-        double v = m.doubleValue();
-        if (v >= 7.0) {
-            return "aprovado";
-        }
-        if (v >= 5.0) {
-            return "recuperação";
-        }
-        return "reprovado";
+        return switch (media(estudante)) {
+            case null -> "cursando";
+            case Double v when v >= 7.0 -> "aprovado";
+            case Double v when v >= 5.0 -> "recuperação";
+            default -> "reprovado";
+        };
     }
 
     public static String relatorio(Estudante estudante) {
@@ -42,7 +36,10 @@ public class Boletim {
         sb.append(estudante.getNome()).append(" (").append(estudante.getMatricula()).append(")\n");
         for (Avaliavel a : estudante.getAtividades()) {
             sb.append("  - ").append(a.nome()).append(": ");
-            sb.append(a.nota() == null ? "sem nota" : a.nota());
+            sb.append(switch (a.nota()) {
+                case null -> "sem nota";
+                case Integer n -> n.toString();
+            });
             sb.append(" (peso ").append(a.peso()).append(")\n");
         }
         Double m = media(estudante);

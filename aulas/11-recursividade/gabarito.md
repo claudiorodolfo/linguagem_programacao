@@ -120,11 +120,11 @@ Para \(2^{16}\), a versão linear faz 16 multiplicações recursivas; a logarít
 ```java
 static void mover(int n, char origem, char destino, char auxiliar) {
     if (n == 1) {
-        System.out.println(origem + " -> " + destino);
+        IO.println(origem + " -> " + destino);
         return;
     }
     mover(n - 1, origem, auxiliar, destino);
-    System.out.println(origem + " -> " + destino);
+    IO.println(origem + " -> " + destino);
     mover(n - 1, auxiliar, destino, origem);
 }
 ```

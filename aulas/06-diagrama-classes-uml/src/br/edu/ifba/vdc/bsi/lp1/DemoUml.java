@@ -31,17 +31,21 @@ public class DemoUml {
     }
 
     static void mostrarTraducao() {
-        IO.println("Composição 1–1: o endereço nasce no construtor do usuário.");
-        IO.println("  private Endereco endereco;  // losango preenchido em Usuario");
-        IO.println("Associação 1–N limitada: arranjo + quantidade, não Livro[] solto no main.");
-        IO.println("  private Emprestimo[] emprestimos; // 0..5");
-        IO.println("Classe associativa: Emprestimo aponta para Usuario e para Livro (dois campos).");
+        IO.println("""
+                Composição 1–1: o endereço nasce no construtor do usuário.
+                  private Endereco endereco;  // losango preenchido em Usuario
+                Associação 1–N limitada: arranjo + quantidade, não Livro[] solto no main.
+                  private Emprestimo[] emprestimos; // 0..5
+                Classe associativa: Emprestimo aponta para Usuario e para Livro (dois campos).
+                """);
     }
 
     static void mostrarArmadilhas() {
-        IO.println("Losango vazio (agregação): Turma tem Aluno; o aluno existe sem a turma.");
-        IO.println("Losango cheio (composição): Pedido tem ItemPedido criado DENTRO do pedido.");
-        IO.println("Multiplicidade 1..* no lado do item: Pedido sem itens costuma ser inválido no domínio.");
-        IO.println("Não desenhe extends hoje — triângulo vazio é herança.");
+        IO.println("""
+                Losango vazio (agregação): Turma tem Aluno; o aluno existe sem a turma.
+                Losango cheio (composição): Pedido tem ItemPedido criado DENTRO do pedido.
+                Multiplicidade 1..* no lado do item: Pedido sem itens costuma ser inválido no domínio.
+                Não desenhe extends hoje — triângulo vazio é herança.
+                """);
     }
 }

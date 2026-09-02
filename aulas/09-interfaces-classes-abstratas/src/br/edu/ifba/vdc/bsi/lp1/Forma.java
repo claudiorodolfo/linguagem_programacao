@@ -10,6 +10,6 @@ public abstract sealed class Forma permits Retangulo, Circulo {
 
     @Override
     public String toString() {
-        return nome() + " área=" + area() + " perímetro=" + perimetro();
+        return "%s área=%s perímetro=%s".formatted(nome(), area(), perimetro());
     }
 }

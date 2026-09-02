@@ -89,7 +89,7 @@ O compilador gera construtor, acessores (`inicio()`, não `getInicio()`), `equal
 
 ## O que executar no projetor
 
-O `DemoEncapsulamento` deposita, tenta sacar além do saldo e mostra que `conta.saldo = -10` **não compila**.
+O `DemoEncapsulamento` deposita, tenta sacar além do saldo, mostra que `conta.saldo = -10` **não compila** e usa o `record Intervalo` (dado imutável, sem regra de saldo).
 
 ## Ponte para relacionamentos
 
