@@ -30,26 +30,26 @@ Nesta disciplina ele é o mapa da biblioteca e da conta — o mesmo vocabulário
 Três compartimentos:
 
 ```
-┌─────────────────────┐
-│      Usuario        │  ← nome (substantivo, PascalCase)
-├─────────────────────┤
-│ − nome: String      │  ← atributos
-│ − matricula: String │
-│ − endereco: Endereco│
-├─────────────────────┤
-│ + registrar(e): boolean │  ← métodos
+┌─────────────────────────────┐
+│      Usuario                │  ← nome (substantivo, PascalCase)
+├─────────────────────────────┤
+│ − nome: String              │  ← atributos
+│ − matricula: String         │
+│ − endereco: Endereco        │
+├─────────────────────────────┤
+│ + registrar(e): boolean     │  ← métodos (ação, camelCase)
 │ + cidadeFormatada(): String │
-└─────────────────────┘
+└─────────────────────────────┘
 ```
 
-Visibilidade (bate com a aula de encapsulamento e pacotes):
+Visibilidade:
 
 | UML | Java |
 | --- | --- |
 | `+` | `public` |
 | `−` | `private` |
 | `#` | `protected` (herança) |
-| `~` | package-private (nenhum modificador) |
+| `~` | package (nenhum modificador) |
 
 Tipos depois de `:` — como no Java, só na ordem invertida: `nome: String` ≡ `String nome`.
 
