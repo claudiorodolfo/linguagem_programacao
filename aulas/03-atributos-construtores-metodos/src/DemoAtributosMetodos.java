@@ -1,11 +1,9 @@
-package br.edu.ifba.vdc.bsi.lp1;
-
-// Acessar o diretório dos fontes:
-// cd aulas/03-atributos-construtores-metodos/src
+// Acessar o diretório da aula:
+// cd aulas/03-atributos-construtores-metodos
 // Compilar e enviar os .class para a pasta bin:
-// javac --release 25 -d bin br/edu/ifba/vdc/bsi/lp1/*.java
+// javac --release 25 -d bin src/*.java
 // Executar a partir desta pasta, usando bin no classpath:
-// java -cp bin br.edu.ifba.vdc.bsi.lp1.DemoAtributosMetodos
+// java -cp bin DemoAtributosMetodos
 
 /**
  * Live coding: construtores, this, métodos e atributo estático.

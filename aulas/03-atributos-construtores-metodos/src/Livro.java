@@ -1,5 +1,3 @@
-package br.edu.ifba.vdc.bsi.lp1;
-
 /**
  * Livro da aula de classes e objetos, agora com construtores e this.
  * Atributos ainda sem private — isso muda na aula de encapsulamento e pacotes.

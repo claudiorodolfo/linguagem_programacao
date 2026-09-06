@@ -51,7 +51,7 @@ A forma com classe explícita e a forma clássica `public static void main` est�
 
 ## Estrutura típica de um projeto na disciplina
 
-Os `.java` ficam em `src/br/edu/ifba/vdc/bsi/lp1/`, espelhando o pacote `br.edu.ifba.vdc.bsi.lp1`. A aula de encapsulamento introduz o subpacote `modelo`. Arquivo compacto (JEP 512) não declara pacote — serve no quadro; o repositório usa classe nomeada.
+Os `.java` ficam em `src/`. Arquivo compacto (JEP 512) serve no quadro; o repositório usa classe nomeada.
 
 ## Atalhos úteis de depuração
 

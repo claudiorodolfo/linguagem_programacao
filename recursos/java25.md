@@ -12,9 +12,7 @@ void main() {
     IO.println("LP1 — IFBA Conquista");
 }
 
-// 2. Classe com main de instância no pacote da disciplina
-package br.edu.ifba.vdc.bsi.lp1;
-
+// 2. Classe com main de instância
 public class OlaIfba {
     void main() {
         IO.println("LP1 — IFBA Conquista");

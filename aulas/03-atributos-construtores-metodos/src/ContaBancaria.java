@@ -1,5 +1,3 @@
-package br.edu.ifba.vdc.bsi.lp1;
-
 /**
  * Conta bancária didática: cada objeto tem o próprio saldo.
  * Contador estático pertence à classe.

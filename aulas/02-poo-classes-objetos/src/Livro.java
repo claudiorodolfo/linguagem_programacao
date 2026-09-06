@@ -1,5 +1,3 @@
-package br.edu.ifba.vdc.bsi.lp1;
-
 /**
  * Modelo simplificado de livro da biblioteca do campus.
  * Sem construtor declarado (o padrão entra em cena) e sem private —

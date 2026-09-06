@@ -4,7 +4,7 @@
 
 - Apresentar ementa, cronograma, avaliação e o repositório da disciplina.
 - Reativar tipos, operadores, decisões, laços, arranjos e métodos em Java.
-- Compilar e executar com `void main()`, `IO` (Java 25) e o pacote `br.edu.ifba.vdc.bsi.lp1`.
+- Compilar e executar com `void main()` e `IO` (Java 25).
 
 ## Roteiro
 
@@ -36,15 +36,13 @@ void main() {
 java OlaIfba.java     # source-file mode: nem precisa javac no primeiro dia
 ```
 
-Arquivo compacto **não** declara `package` (JEP 512). O `OlaIfba.java` do repositório é a forma nomeada abaixo.
+O `OlaIfba.java` do repositório é a forma nomeada abaixo.
 
 O compilador declara uma classe implícita. Não é outro Java: é o mesmo programa, com a classe escondida.
 
-Em seguida a forma que usaremos o semestre inteiro (classe nomeada no pacote da disciplina):
+Em seguida a forma com classe nomeada:
 
 ```java
-package br.edu.ifba.vdc.bsi.lp1;
-
 public class OlaIfba {
     void main() {
         IO.println("LP1 — IFBA Conquista");
@@ -210,8 +208,8 @@ Tudo é **linha de texto**. Não há a armadilha clássica do `Scanner.nextInt()
 ```bash
 javac --release 25 -d aulas/01-revisao-logica/bin \
   $(find aulas/01-revisao-logica/src -name "*.java")
-java -cp aulas/01-revisao-logica/bin br.edu.ifba.vdc.bsi.lp1.OlaIfba
-java -cp aulas/01-revisao-logica/bin br.edu.ifba.vdc.bsi.lp1.DemoRevisao
+java -cp aulas/01-revisao-logica/bin OlaIfba
+java -cp aulas/01-revisao-logica/bin DemoRevisao
 ```
 
 Percorra `DemoRevisao`. Depois a `CalculadoraConsole` (menu em *text block* + `switch` expressão).

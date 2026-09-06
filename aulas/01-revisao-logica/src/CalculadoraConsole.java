@@ -1,11 +1,9 @@
-package br.edu.ifba.vdc.bsi.lp1;
-
-// Acessar o diretório dos fontes:
-// cd aulas/01-revisao-logica/src
+// Acessar o diretório da aula:
+// cd aulas/01-revisao-logica
 // Compilar e enviar os .class para a pasta bin:
-// javac --release 25 -d bin br/edu/ifba/vdc/bsi/lp1/*.java
+// javac --release 25 -d bin src/*.java
 // Executar a partir desta pasta, usando bin no classpath:
-// java -cp bin br.edu.ifba.vdc.bsi.lp1.CalculadoraConsole
+// java -cp bin CalculadoraConsole
 
 /**
  * Mini calculadora de console — text block, switch expressão e IO.readln (Java 25).

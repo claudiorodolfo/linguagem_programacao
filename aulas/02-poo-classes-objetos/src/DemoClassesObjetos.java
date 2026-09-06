@@ -1,11 +1,9 @@
-package br.edu.ifba.vdc.bsi.lp1;
-
-// Acessar o diretório dos fontes:
-// cd aulas/02-poo-classes-objetos/src
+// Acessar o diretório da aula:
+// cd aulas/02-poo-classes-objetos
 // Compilar e enviar os .class para a pasta bin:
-// javac --release 25 -d bin br/edu/ifba/vdc/bsi/lp1/*.java
+// javac --release 25 -d bin src/*.java
 // Executar a partir desta pasta, usando bin no classpath:
-// java -cp bin br.edu.ifba.vdc.bsi.lp1.DemoClassesObjetos
+// java -cp bin DemoClassesObjetos
 
 /**
  * Live coding: classe versus objeto, objetos independentes e alias de referência.

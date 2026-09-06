@@ -24,7 +24,7 @@ aulas/<assunto>/
   README.md        → objetivos, teoria e roteiro de aula
   exercicios.md    → lista para laboratório / casa
   gabarito.md      → resoluções (uso do docente)
-  src/br/edu/ifba/vdc/bsi/lp1/  → Java + Demo (pacote `br.edu.ifba.vdc.bsi.lp1`)
+  src/             → Java + Demo
 ```
 
 O prefixo numérico nas pastas (quando houver) só ordena a listagem no disco. O identificador estável é o **assunto** (`recursividade`, `heranca`, `classes-interna-externa`…).
@@ -41,16 +41,14 @@ As pastas de prova trazem instrumento proposto e gabarito.
 
 Requisito: **JDK 25**. Instruções de instalação em [`recursos/ambiente.md`](recursos/ambiente.md). Sintaxe da linguagem em [`recursos/java25.md`](recursos/java25.md).
 
-Cada aula é autocontida. Os fontes ficam em `src/br/edu/ifba/vdc/bsi/lp1/` (pacote `br.edu.ifba.vdc.bsi.lp1`). A partir da raiz do repositório:
+Cada aula é autocontida. Os fontes ficam em `src/`. A partir da raiz do repositório:
 
 ```bash
 # Exemplo: aula de classes e objetos
 javac --release 25 -d aulas/02-poo-classes-objetos/bin \
   $(find aulas/02-poo-classes-objetos/src -name "*.java")
-java -cp aulas/02-poo-classes-objetos/bin br.edu.ifba.vdc.bsi.lp1.DemoClassesObjetos
+java -cp aulas/02-poo-classes-objetos/bin DemoClassesObjetos
 ```
-
-A aula de encapsulamento também usa o subpacote `br.edu.ifba.vdc.bsi.lp1.modelo`. O comando é o mesmo (`find` no `src/`).
 
 Há um script na raiz:
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Compila e executa uma aula (pacote br.edu.ifba.vdc.bsi.lp1).
+# Compila e executa uma aula.
 # Uso: ./compilar.sh aulas/02-poo-classes-objetos DemoClassesObjetos
 set -euo pipefail
 
@@ -24,5 +24,12 @@ fi
 mkdir -p "$BIN"
 echo "Compilando ${SRC} (Java 25) ..."
 javac --release 25 -d "$BIN" $(find "$SRC" -name "*.java")
-echo "Executando ${PKG}.${CLASSE} ..."
-java -cp "$BIN" "${PKG}.${CLASSE}"
+
+if [[ -f "${BIN}/${CLASSE}.class" ]]; then
+  FQCN="${CLASSE}"
+else
+  FQCN="${PKG}.${CLASSE}"
+fi
+
+echo "Executando ${FQCN} ..."
+java -cp "$BIN" "${FQCN}"
