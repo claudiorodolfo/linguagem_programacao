@@ -60,7 +60,7 @@ Construtor pode aparecer como `+ Usuario(nome: String, …)` ou ficar implícito
 
 | Ideia (relacionamentos) | Traço UML | Lembrete |
 | --- | --- | --- |
-| Associação | linha (seta opcional = navegabilidade) | um objeto **conhece** o outro; sem losango |
+| Associação | linha (seta opcional = navegabilidade) | um objeto **conhece** o outro |
 | Agregação | losango **vazio** na parte que “tem” | “tem um”, mas a parte **vive sozinha** (o livro sem a estante) |
 | Composição | losango **preenchido** na parte que “tem” | a parte **nasce e morre** com o todo (o endereço com o usuário) |
 
@@ -77,15 +77,15 @@ Multiplicidade (cardinalidade) em **cada ponta**:
 ## 4. O diagrama da biblioteca (quadro)
 
 ```
-                    1          0..5
-┌─────────┐  ◇────────────────────────────┐
-│ Usuario │                               │
-└─────────┘                               ▼
-      │ 1                          ┌────────────┐          1     1  ┌───────┐
-      │                            │ Emprestimo │─────────────────▶│ Livro │
-      │ composição                 └────────────┘                  └───────┘
-      │ losango cheio
-      ▼ 1
+                
+┌─────────┐         1          0..5
+│ Usuario │  ◇────────────────────────────┐                            
+└─────────┘                               │
+      │ 1                          ┌────────────┐          1     1 ┌───────┐
+      │                            │ Emprestimo │──────────────────│ Livro │
+      │                            └────────────┘                  └───────┘
+      │
+      ◆ 1
 ┌──────────┐
 │ Endereco │  «record»
 └──────────┘
