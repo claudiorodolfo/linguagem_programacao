@@ -7,7 +7,6 @@
 - Ler e desenhar um **diagrama de classes** UML no nível desta disciplina.
 - Representar classe, atributos, métodos e visibilidade (`+` `-` `#` `~`).
 - Desenhar **associação**, **agregação**, **composição** e **multiplicidade** (cardinalidade).
-- Usar **classe associativa** para N–N.
 - Traduzir o diagrama para Java (campo, arranjo, `new` interno) e o Java de volta para o diagrama.
 
 Generalização (`extends`, triângulo vazio) fica na aula de herança. Interfaces (`«interface»`) ficam na aula de interfaces e classes abstratas.
@@ -61,10 +60,9 @@ Construtor pode aparecer como `+ Usuario(nome: String, …)` ou ficar implícito
 
 | Ideia (relacionamentos) | Traço UML | Lembrete |
 | --- | --- | --- |
-| Associação | linha (seta opcional = navegabilidade) | “conhece” |
-| Agregação | losango **vazio** na parte que “tem” | todo–parte frouxo |
-| Composição | losango **preenchido** na parte que “tem” | ciclo de vida acoplado |
-| Classe associativa | classe ligada por linha tracejada ao traço | `Emprestimo`, `Matricula` |
+| Associação | linha (seta opcional = navegabilidade) | um objeto **conhece** o outro; sem losango |
+| Agregação | losango **vazio** na parte que “tem” | “tem um”, mas a parte **vive sozinha** (o livro sem a estante) |
+| Composição | losango **preenchido** na parte que “tem” | a parte **nasce e morre** com o todo (o endereço com o usuário) |
 
 Multiplicidade (cardinalidade) em **cada ponta**:
 
@@ -94,8 +92,6 @@ Multiplicidade (cardinalidade) em **cada ponta**:
 ```
 
 Leitura: um usuário **compõe** um endereço; um usuário **associa-se** a até cinco empréstimos; cada empréstimo **associa-se** a um livro. O livro não morre se o empréstimo acaba — por isso não há losango cheio em `Livro`.
-
-`Emprestimo` como classe no meio do traço Usuario–Livro (classe associativa) é a forma “de livro”; a implementação da aula de relacionamentos (objeto `Emprestimo` com duas referências) é a mesma ideia.
 
 ## 5. Do diagrama para o Java
 
