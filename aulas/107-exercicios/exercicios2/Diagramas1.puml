@@ -1,0 +1,18 @@
+' Q1 — Completar a caixa
+' Desenhe a classe ContaBancaria da aula de encapsulamento e pacotes
+' com visibilidade: numero e saldo privados; depositar, sacar e
+' getSaldo públicos. Inclua tipos.
+
+@startuml Diagramas1
+hide empty members
+skinparam classAttributeIconSize 0
+
+class ContaBancaria {
+  - numero: String
+  - saldo: double
+  + depositar(valor: double): void
+  + sacar(valor: double): boolean
+  + getSaldo(): double
+}
+
+@enduml

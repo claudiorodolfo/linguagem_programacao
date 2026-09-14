@@ -1,0 +1,42 @@
+' Q3 — Multiplicidade
+' Um Usuario tem no máximo um Endereco e de 0 a 5 Emprestimo.
+' Um Livro pode aparecer em vários empréstimos ao longo do tempo,
+' mas um empréstimo aponta para um único livro.
+' Anote as multiplicidades em Usuario–Emprestimo–Livro e justifique
+' a ponta Livro em uma frase.
+
+@startuml Diagramas3
+hide empty members
+skinparam classAttributeIconSize 0
+
+class Usuario {
+  - nome: String
+}
+
+class Endereco <<record>> {
+  + cidade: String
+}
+
+class Emprestimo {
+  - data: String
+}
+
+class Livro {
+  - titulo: String
+}
+
+Usuario "1" *-- "0..1" Endereco
+Usuario "1" o-- "0..5" Emprestimo
+Emprestimo "0..*" --> "1" Livro
+
+note bottom of Livro
+  Ponta Livro = 1: cada empréstimo
+  aponta para um único livro.
+  A ponta oposta é 0..* porque o
+  mesmo livro pode figurar em vários
+  empréstimos ao longo do tempo
+  (depois de devolvido); o livro
+  não morre quando o empréstimo acaba.
+end note
+
+@enduml

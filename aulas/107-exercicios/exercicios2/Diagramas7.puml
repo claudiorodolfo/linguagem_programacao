@@ -1,0 +1,48 @@
+' Q6 — Questão Integradora
+' Um Pedido é composto por vários ItemPedido (máximo 20).
+' Cada item tem nome (String), quantidade (int) e preço unitário (double).
+' O pedido tem numero (String) e a operação total(): double.
+' a) Diagrama: visibilidade, losango do ciclo de vida, multiplicidades.
+' b) No Java, adicionarItem faz new ItemPedido(...) dentro do pedido.
+'    Relacione essa escolha ao losango desenhado.
+
+@startuml Diagramas7
+hide empty members
+skinparam classAttributeIconSize 0
+
+class Pedido {
+  - numero: String
+  - itens: ItemPedido[20]
+  - quantidade: int
+  + adicionarItem(nome: String, qtd: int, preco: double): boolean
+  + total(): double
+}
+
+class ItemPedido {
+  - nome: String
+  - quantidade: int
+  - precoUnitario: double
+  + subtotal(): double
+}
+
+Pedido "1" *-- "0..20" ItemPedido : composição
+
+note right of Pedido
+  b) adicionarItem faz
+  new ItemPedido(...) DENTRO
+  do pedido — o item não chega
+  pronto de fora.
+
+  Isso é exatamente o losango
+  CHEIO: composição. O ciclo de
+  vida do item está acoplado ao
+  pedido; se o pedido some, os
+  itens somem com ele.
+
+  Losango vazio (agregação)
+  seria receber um ItemPedido
+  já criado e só guardar a
+  referência.
+end note
+
+@enduml

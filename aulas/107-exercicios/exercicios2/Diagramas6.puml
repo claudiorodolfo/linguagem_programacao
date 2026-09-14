@@ -1,0 +1,50 @@
+' Q6 — Achar o erro
+' O diagrama abaixo está errado:
+' Pedido 1 ◇──────── 1..* ItemPedido (losango VAZIO em Pedido).
+' O enunciado diz que o item só existe dentro do pedido.
+' Circule o erro e redesenhe corretamente.
+
+@startuml Diagramas6-errado
+title ERRADO
+hide empty members
+skinparam classAttributeIconSize 0
+
+class Pedido
+class ItemPedido
+
+Pedido "1" o-- "1..*" ItemPedido
+
+note on link #FFAAAA
+  **ERRO — circule o losango VAZIO.**
+  Agregação: a parte viveria sozinha.
+  Mas o item só existe dentro do pedido
+  → o losango deveria ser CHEIO
+  (composição).
+end note
+
+@enduml
+
+@startuml Diagramas6-correto
+title CORRETO
+hide empty members
+skinparam classAttributeIconSize 0
+
+class Pedido {
+  + total(): double
+}
+
+class ItemPedido {
+  - nome: String
+  - quantidade: int
+  - precoUnitario: double
+}
+
+Pedido "1" *-- "1..*" ItemPedido : composição
+
+note bottom of Pedido
+  Losango PREENCHIDO em Pedido:
+  o ItemPedido nasce e morre com o pedido
+  (new ItemPedido dentro de adicionarItem).
+end note
+
+@enduml

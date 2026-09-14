@@ -1,0 +1,50 @@
+' Q4 — Traduzir o diagrama
+' Dado: Turma 1 ◇──────── 0..40 Aluno (losango vazio em Turma).
+' a) Agregação ou composição? Por quê?
+' b) Campos em Turma (tipos e visibilidade).
+' c) Aluno deve ter um campo Turma turma?
+'    O que muda na navegabilidade se tiver?
+
+@startuml Diagramas4
+hide empty members
+skinparam classAttributeIconSize 0
+
+class Turma {
+  - alunos: Aluno[40]
+  - quantidade: int
+  + matricular(a: Aluno): boolean
+}
+
+class Aluno {
+  - nome: String
+  - media: double
+}
+
+Turma "1" o-- "0..40" Aluno : agregação
+
+note top of Turma
+  a) AGREGAÇÃO (losango vazio).
+  A turma TEM alunos, mas o aluno
+  vive sozinho: nasce antes, pode
+  trocar de turma, continua depois
+  que a turma acaba. Não é composição.
+
+  b) Campos em Turma (private):
+  - alunos: Aluno[40]
+  - quantidade: int
+  (o arranjo + contador traduzem 0..40)
+end note
+
+note bottom of Aluno
+  c) Não é obrigatório.
+  Hoje a navegabilidade é Turma → Aluno:
+  só Turma guarda o arranjo.
+
+  Se Aluno tiver - turma: Turma,
+  a navegabilidade vira bidirecional
+  (Aluno → Turma também). Aí os dois
+  lados precisam ser atualizados juntos
+  (matricular preenche o arranjo E o campo).
+end note
+
+@enduml

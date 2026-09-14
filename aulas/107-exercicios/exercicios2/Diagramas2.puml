@@ -1,0 +1,43 @@
+' Q2 — Pedido / ItemPedido
+' a) Diagrama com losango correto, multiplicidades e total(): double.
+' b) Esqueleto de Pedido.adicionarItem(...) : o item nasce no pedido.
+
+@startuml Diagramas2
+hide empty members
+skinparam classAttributeIconSize 0
+
+class Pedido {
+  - numero: int
+  - itens: ItemPedido[20]
+  - quantidade: int
+  + adicionarItem(nome: String, qtd: int, preco: double): boolean
+  + total(): double
+}
+
+class ItemPedido {
+  - nomeProduto: String
+  - quantidade: int
+  - precoUnitario: double
+  + subtotal(): double
+}
+
+Pedido "1" *-- "1..*" ItemPedido : composição
+
+note right of Pedido
+  b) O item nasce DENTRO do pedido
+  (new no método — composição):
+
+  boolean adicionarItem(String nome,
+                        int qtd,
+                        double preco) {
+    if (quantidade >= itens.length) {
+      return false;
+    }
+    itens[quantidade] =
+        new ItemPedido(nome, qtd, preco);
+    quantidade++;
+    return true;
+  }
+end note
+
+@enduml

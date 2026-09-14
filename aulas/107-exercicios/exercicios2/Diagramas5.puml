@@ -1,0 +1,34 @@
+' Q5 — Classe associativa
+' Desenhe Estudante N–N Disciplina via Matricula (nota: double).
+' Três caixas + o traço das associações.
+' Não use duas listas cruzadas no desenho.
+
+@startuml Diagramas5
+hide empty members
+skinparam classAttributeIconSize 0
+
+class Estudante {
+  - nome: String
+}
+
+class Matricula {
+  - nota: double
+}
+
+class Disciplina {
+  - nome: String
+}
+
+Estudante "1" -- "0..*" Matricula
+Matricula "0..*" -- "1" Disciplina
+
+note bottom of Matricula
+  N–N via classe associativa:
+  um estudante cursa várias disciplinas;
+  uma disciplina possui vários estudantes.
+  A nota vive na Matricula — não há
+  Estudante[] em Disciplina nem
+  Disciplina[] em Estudante.
+end note
+
+@enduml

@@ -1,0 +1,46 @@
+' 7. Desafio Final — Integração
+' Relacionamento escolhido: N:N via classe associativa Emprestimo.
+' Usuario 1 ── 0..5 Emprestimo  0..* ── 1 Livro
+' O código em Diagramas8.java implementa este mesmo modelo.
+
+@startuml Diagramas8
+hide empty members
+skinparam classAttributeIconSize 0
+
+class Usuario {
+  - nome: String
+  - emprestimos: Emprestimo[5]
+  - quantidade: int
+  + Usuario(nome: String)
+  + registrar(livro: Livro, data: String): boolean
+  + listarEmprestimos(): void
+}
+
+class Emprestimo {
+  - data: String
+  - livro: Livro
+  + Emprestimo(data: String, livro: Livro)
+  + resumo(): String
+}
+
+class Livro {
+  - titulo: String
+  - emprestado: boolean
+  + Livro(titulo: String)
+  + emprestar(): boolean
+  + devolver(): void
+  + getTitulo(): String
+}
+
+Usuario "1" o-- "0..5" Emprestimo
+Emprestimo "0..*" --> "1" Livro
+
+note bottom of Emprestimo
+  N–N: um usuário registra até 5 empréstimos;
+  um livro aparece em 0..* empréstimos ao longo
+  do tempo; cada empréstimo aponta para 1 livro.
+  Emprestimo é a classe associativa — não há
+  Livro[] em Usuario nem Usuario[] em Livro.
+end note
+
+@enduml
