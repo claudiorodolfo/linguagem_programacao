@@ -29,15 +29,29 @@ void main() {
     inventario.entrada(estoque, 10);
     IO.println("quantidade: " + estoque.quantidade);
 
-    // Neste arquivo compacto as duas classes estão no mesmo
-    // (unnamed) package, então estoque.quantidade += qtd compila.
-    //
-    // Se Inventario for para outro pacote, deixa de compilar o
-    // acesso a estoque.quantidade: package-private não atravessa
-    // a fronteira do pacote.
-    //
-    // De verdade: quantidade seria private, e Estoque teria
-    // entrada(int)/saida(int) (ou equivalente). Assim a regra
-    // (quantidade nunca negativa, por exemplo) fica na classe
-    // dona do dado, e Inventario deixa de furar o estado.
+// quantidade não possui um modificador de acesso. 
+// Nesse caso, ela possui visibilidade de pacote (package-private). 
+// 
+// Isso significa que qualquer classe do MESMO pacote pode acessar 
+// quantidade diretamente. Por isso, neste exemplo, Inventario pode fazer: 
+// 
+//     estoque.quantidade += qtd; 
+//
+// Se Inventario estiver em OUTRO pacote, esse acesso deixa de funcionar, 
+// porque um atributo package-private não pode ser acessado de outro pacote. 
+// 
+// Na prática, preferimos proteger o estado da classe: 
+// 
+//     private int quantidade; 
+// 
+// Assim, somente Estoque pode alterar diretamente sua quantidade.
+// Outras classes precisam pedir que Estoque faça a operação:
+// 
+//     estoque.entrada(qtd); 
+// 
+// Dessa forma, Estoque pode controlar as regras do seu próprio estado,
+// por exemplo, não permitir que uma saída deixe a quantidade negativa.
+// 
+// Essa é uma ideia importante de encapsulamento: 
+// a classe deve proteger seus dados e controlar como eles podem ser alterados.
 }
