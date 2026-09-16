@@ -9,6 +9,13 @@ b) Classifique Disciplina–Aluno e Aluno–Endereco (associação,
 agregação ou composição) e a cardinalidade (1–1, 1–N). Justifique
 com o ciclo de vida.
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Relacionamentos7.java -d bin
+java -cp bin Relacionamentos7
+*/
+
 
 class Endereco {
     private String cidade;

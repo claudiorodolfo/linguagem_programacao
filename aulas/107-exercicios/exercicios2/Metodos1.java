@@ -4,6 +4,13 @@ Crie a classe Retangulo com double base e double altura. Crie um
 construtor com os dois valores. Implemente area(), perimetro() e
 ehQuadrado(). Teste dois retângulos no void main().
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Metodos1.java -d bin
+java -cp bin Metodos1
+*/
+
 
 class Retangulo {
     double base;

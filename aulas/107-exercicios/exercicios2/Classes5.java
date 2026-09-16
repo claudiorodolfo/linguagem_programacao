@@ -5,6 +5,13 @@ Implemente ligar(), desligar() e estaLigada(). Não use construtor:
 instancie com new Lampada() e manipule o estado por meio dos métodos.
 No void main(), ligue, imprima, desligue e imprima novamente.
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Classes5.java -d bin
+java -cp bin Classes5
+*/
+
 
 class Lampada {
     boolean ligada;

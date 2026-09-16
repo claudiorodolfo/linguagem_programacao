@@ -5,6 +5,13 @@ Atribua uma quarta variável (c) a outra instância. Empreste via d.
 Antes de executar, diga o que espera em a.emprestado, b.emprestado,
 c.emprestado e d.emprestado; depois confira.
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Classes6.java -d bin
+java -cp bin Classes6
+*/
+
 
 class Livro {
     String titulo;

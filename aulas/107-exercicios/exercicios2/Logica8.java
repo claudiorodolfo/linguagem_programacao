@@ -3,6 +3,13 @@ Q8 — Primos até n
 Leia n, sendo n ≥ 2, e imprima todos os números primos de 2 até n.
 Extraia a verificação para o método boolean ehPrimo(int n).
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Logica8.java -d bin
+java -cp bin Logica8
+*/
+
 
 boolean ehPrimo(int n) {
     if (n < 2) {

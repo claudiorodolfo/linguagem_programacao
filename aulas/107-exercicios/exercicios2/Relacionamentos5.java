@@ -5,6 +5,13 @@ disciplina possui vários estudantes. Não use duas listas cruzadas
 soltas: crie Matricula (estudante + disciplina + nota). Liste alunos
 de uma disciplina percorrendo as matrículas.
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Relacionamentos5.java -d bin
+java -cp bin Relacionamentos5
+*/
+
 
 class Estudante {
     private String nome;

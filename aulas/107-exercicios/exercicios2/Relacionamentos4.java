@@ -4,6 +4,13 @@ Dado usuario.getEndereco().cidade(), reescreva um método em Usuario
 que devolva a cidade sem o main conhecer Endereco. Explique por que
 isso ajuda quando Endereco ganhar, por exemplo, um campo bairro.
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Relacionamentos4.java -d bin
+java -cp bin Relacionamentos4
+*/
+
 
 class Endereco {
     private String cidade;

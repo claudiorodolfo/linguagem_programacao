@@ -5,6 +5,13 @@ double n2. O construtor recebe nome e matrícula; as notas começam
 em 0. Implemente lancarNotas(double n1, double n2), media() e
 aprovado() (média ≥ 7). Crie três alunos e imprima um relatório.
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Metodos2.java -d bin
+java -cp bin Metodos2
+*/
+
 
 class Aluno {
     String nome;

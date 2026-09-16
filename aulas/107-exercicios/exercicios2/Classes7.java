@@ -22,6 +22,13 @@ objeto e referência.
 O que imprime a == b? E a == c?
 c) Por que a e c podem ter o mesmo estado e mesmo assim a == c ser false?
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Classes7.java -d bin
+java -cp bin Classes7
+*/
+
 
 class Ponto {
     int x;

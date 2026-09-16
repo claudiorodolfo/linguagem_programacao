@@ -5,6 +5,13 @@ quantidade de itens efetivos. O construtor sem argumentos inicializa
 o arranjo. Implemente adicionar(String produto), removerUltimo() e
 listar(). Utilize apenas arrays.
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Metodos6.java -d bin
+java -cp bin Metodos6
+*/
+
 
 class Carrinho {
     String[] produtos;
@@ -23,7 +30,8 @@ class Carrinho {
 
     void removerUltimo() {
         if (quantidade > 0) {
-            produtos[--quantidade] = null;
+            quantidade--;
+            produtos[quantidade] = null;
         }
     }
 

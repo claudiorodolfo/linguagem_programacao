@@ -5,6 +5,13 @@ subtotal(). Pedido possui número, arranjo de itens (máx. 20),
 adicionarItem(...) e total(). O item só existe dentro do pedido; não
 há lista global de itens.
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Relacionamentos2.java -d bin
+java -cp bin Relacionamentos2
+*/
+
 
 class ItemPedido {
     private String nomeProduto;

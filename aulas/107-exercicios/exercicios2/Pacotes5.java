@@ -5,16 +5,28 @@ ContaCorrente (saldo muda). Qual vira record e qual permanece
 classe? Escreva o record Cpf com um método formatado()
 (000.000.000-00 vale como esboço).
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Pacotes5.java -d bin
+java -cp bin Pacotes5
+*/
 
-// Cpf vira record: só carrega dados, não muda depois de criado.
-// ContaCorrente permanece classe: saldo muda (depósito/saque).
-// record gera construtor, acessor digitos(), equals, hashCode e
-// toString. Não use record para tipo com invariante de saldo.
+//Use record quando o objeto representa principalmente um valor imutável. 
+// Use class quando o objeto possui um estado que precisa mudar ao longo do tempo.
+//
+// CPF representa um valor que, depois de criado, não deve ser alterado. 
+// Por isso, podemos usar um record: ele é adequado para objetos cujo 
+// estado é definido na criação e permanece imutável. 
+//
+// O record cria automaticamente o construtor e o método digitos(),
+// que permite acessar o valor armazenado no componente digitos.
+// Também cria equals(), hashCode() e toString().
 
 record Cpf(String digitos) {
     Cpf {
         if (digitos == null || digitos.length() != 11) {
-            throw new IllegalArgumentException("CPF deve ter 11 dígitos");
+            IO.println("Valor inválido para o CPF");
         }
     }
 
@@ -27,6 +39,17 @@ record Cpf(String digitos) {
     }
 }
 
+// Já uma ContaCorrente possui um estado que muda durante sua existência. 
+// O saldo, por exemplo, pode aumentar com um depósito ou diminuir com um saque. 
+// Por isso, ContaCorrente continua sendo uma classe. 
+//
+// Pense assim: 
+// CPF = "qual é o valor deste CPF?" 
+// ContaCorrente = "como está o estado desta conta agora?" 
+//
+// Além disso, uma ContaCorrente possui regras que precisam ser preservadas, 
+// como não permitir operações que deixem o saldo em uma situação inválida. 
+// Essas regras são chamadas de invariantes da classe.
 class ContaCorrente {
     private double saldo;
 

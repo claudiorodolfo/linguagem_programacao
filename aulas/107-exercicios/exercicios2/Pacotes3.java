@@ -5,10 +5,19 @@ protected ou public e justifique em uma frase: o atributo saldo de
 ContaBancaria; o método sacar; um auxiliar boolean valorPositivo(double v)
 usado só dentro da classe; a classe DemoEncapsulamento.
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Pacotes3.java -d bin
+java -cp bin Pacotes3
+*/
+
 
 class ContaBancaria {
     // saldo → private: só a própria classe altera, para manter
-    // a invariante (nunca negativo) fora do alcance de outros.
+    // Regras que devem continuar sendo verdadeiras durante toda a 
+    // existência de um objeto (Invariante):  
+    // (nunca negativo) fora do alcance de outros.
     private double saldo;
 
     ContaBancaria(double saldoInicial) {
@@ -30,13 +39,13 @@ class ContaBancaria {
     }
 
     // valorPositivo → private: detalhe interno, usado só aqui;
-    // ninguém de fora precisa enxergar o auxiliar.
+    // ninguém de fora precisa enxergar essa operação auxiliar.
     private boolean valorPositivo(double v) {
         return v > 0;
     }
 }
 
-// DemoEncapsulamento → public: é o ponto de entrada da aula;
+// DemoEncapsulamento → public: é o ponto de entrada;
 // o java precisa enxergar a classe pelo nome qualificado.
 // Aqui o arquivo é compacto, então o main fica abaixo (o nome
 // do arquivo não combinaria com public class DemoEncapsulamento).
@@ -47,5 +56,5 @@ void main() {
     IO.println("Saldo: " + conta.getSaldo());
 
     // protected não cabe em nenhum dos quatro: não há herança
-    // nesta aula; protected volta quando existir subclasse.
+    // protected aparece quando existe subclasse.
 }

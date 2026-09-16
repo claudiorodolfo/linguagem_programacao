@@ -12,6 +12,13 @@ br.edu.ifba.conquista.lp1.aula04. Cite duas consequências práticas
 dessa organização, considerando aspectos como: organização das
 pastas no disco; necessidade de import; compilação utilizando -d.
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Pacotes7.java -d bin
+java -cp bin Pacotes7
+*/
+
 
 class ContaBancaria {
     private String numero;

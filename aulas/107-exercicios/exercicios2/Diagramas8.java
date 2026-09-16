@@ -7,6 +7,13 @@ Usuario 1 ── 0..5 Emprestimo  0..* ── 1 Livro
 O diagrama correspondente está em Diagramas8.puml.
 Critério: o código e o UML representam o mesmo modelo.
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Diagramas8.java -d bin
+java -cp bin Diagramas8
+*/
+
 
 class Livro {
     private String titulo;

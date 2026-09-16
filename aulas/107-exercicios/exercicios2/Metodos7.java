@@ -31,6 +31,13 @@ c) Escreva boolean transferir(Conta destino, double valor) que só
 deposita no destino se o saque na origem funcionar. Assuma que
 existe void depositar(double valor).
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Metodos7.java -d bin
+java -cp bin Metodos7
+*/
+
 
 class Conta {
     static int total = 0;

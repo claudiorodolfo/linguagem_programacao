@@ -4,6 +4,13 @@ Mova Turma e Aluno para br.edu.ifba.conquista.lp1.aula05.exercicio.modelo
 e o programa principal para br.edu.ifba.conquista.lp1.aula05.exercicio.app.
 Compile com -d out e execute pelo nome qualificado.
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Relacionamentos6.java -d bin
+java -cp bin Relacionamentos6
+*/
+
 
 // Fontes nos pacotes (pastas = pacotes):
 //   br/edu/ifba/conquista/lp1/aula05/exercicio/modelo/Aluno.java

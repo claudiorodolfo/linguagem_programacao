@@ -5,22 +5,30 @@ os atributos private. O construtor deve rejeitar base ou altura ≤ 0:
 informe o erro e use 1.0 como fallback, ou recuse criar. Documente a
 escolha. Não crie setBase que aceite negativo.
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Pacotes1.java -d bin
+java -cp bin Pacotes1
+*/
+
 
 class Retangulo {
     private double base;
     private double altura;
 
     // Escolha: informar o erro e cair para 1.0.
-    // Assim o objeto sempre nasce válido (invariante: base > 0 e
-    // altura > 0) sem exigir try/catch no main nesta etapa.
-    // Recusar com IllegalArgumentException também seria correto.
+    // Assim o objeto sempre nasce válido (
+    // Regras que devem continuar sendo verdadeiras durante toda a 
+    // existência de um objeto (Invariante): 
+    // base > 0 e altura > 0).
     Retangulo(double base, double altura) {
         if (base <= 0) {
-            IO.println("base inválida (" + base + ") — usando 1.0");
+            IO.println("base inválida (" + base + ") —> usando 1.0");
             base = 1.0;
         }
         if (altura <= 0) {
-            IO.println("altura inválida (" + altura + ") — usando 1.0");
+            IO.println("altura inválida (" + altura + ") —> usando 1.0");
             altura = 1.0;
         }
         this.base = base;

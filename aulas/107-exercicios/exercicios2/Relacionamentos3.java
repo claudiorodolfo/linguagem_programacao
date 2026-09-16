@@ -5,6 +5,13 @@ informe a cardinalidade (1–1, 1–N, N–N). Justifique pelo ciclo de
 vida: Usuario e Endereco; Turma e Aluno; Emprestimo como ligação
 entre Usuario e Livro.
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Relacionamentos3.java -d bin
+java -cp bin Relacionamentos3
+*/
+
 
 class Endereco {
     private String cidade;

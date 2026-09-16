@@ -4,6 +4,13 @@ Crie Relogio com int hora (0–23) e int minuto (0–59). Implemente
 tic() e texto() no formato HH:MM. Simule 70 tics a partir de 23:50
 e informe o horário final.
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Metodos5.java -d bin
+java -cp bin Metodos5
+*/
+
 
 class Relogio {
     int hora;

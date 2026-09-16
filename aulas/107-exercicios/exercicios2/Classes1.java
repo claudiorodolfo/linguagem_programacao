@@ -5,6 +5,13 @@ Não declare construtor. Implemente String apresentar(), retornando
 algo como “Ana (20 anos)”. No void main(), crie duas pessoas e
 imprima as apresentações.
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Classes1.java -d bin
+java -cp bin Classes1
+*/
+
 
 class Pessoa {
     String nome;

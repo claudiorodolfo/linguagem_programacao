@@ -1,9 +1,18 @@
 /*
-Q2 — Invariante
+Q2 — Variável
 Na ContaBancaria encapsulada, explique por que não deve existir
-setSaldo(double saldo). Relacione a resposta ao conceito de
-invariante e ao risco de permitir alterações arbitrárias no estado.
+setSaldo(double saldo). Relacione a resposta ao conceito de 
+Regras que devem continuar sendo verdadeiras durante toda a 
+existência de um objeto (Invariante): e ao risco de permitir 
+alterações arbitrárias no estado.
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Pacotes2.java -d bin
+java -cp bin Pacotes2
+*/
+
 
 class ContaBancaria {
     private String numero;
@@ -23,11 +32,13 @@ class ContaBancaria {
     }
 
     // Não existe setSaldo(double saldo).
-    // Invariante: saldo nunca fica negativo; só muda por depósito
+    // Regras que devem continuar sendo verdadeiras durante toda a 
+    // existência de um objeto (Invariante): 
+    // saldo nunca fica negativo; só muda por depósito
     // ou saque, que validam o valor. Um setter cego aceitaria
     // conta.setSaldo(-999) ou setSaldo(1_000_000) e quebraria a
     // regra — alteração arbitrária do estado, sem operação de
-    // negócio. Encapsular é proteger essa invariante, não gerar
+    // negócio. Encapsular é proteger essa variável, não gerar
     // get/set para cada atributo.
 
     void depositar(double valor) {

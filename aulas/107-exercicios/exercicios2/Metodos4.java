@@ -5,6 +5,13 @@ O que aconteceria se essa chamada não fosse a primeira instrução?
 Depois, escreva Livro(String titulo, String autor) usando encadeamento
 e fazendo ano = 0.
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Metodos4.java -d bin
+java -cp bin Metodos4
+*/
+
 
 class Livro {
     String titulo;

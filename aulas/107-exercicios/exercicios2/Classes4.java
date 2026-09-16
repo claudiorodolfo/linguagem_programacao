@@ -4,6 +4,13 @@ Escreva um trecho que prove que dois objetos podem ter os mesmos
 valores nos atributos e, ainda assim, serem objetos diferentes.
 Utilize == e compare os campos titulo e autor.
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Classes4.java -d bin
+java -cp bin Classes4
+*/
+
 
 class Livro {
     String titulo;

@@ -13,6 +13,13 @@ IO.println(c.emprestado);
 IO.println(a == b);
 IO.println(a == c);
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Classes3.java -d bin
+java -cp bin Classes3
+*/
+
 
 class Livro {
     String titulo;

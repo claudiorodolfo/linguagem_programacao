@@ -4,6 +4,13 @@ Leia 8 números inteiros para um vetor. Depois, leia um valor x.
 Informe a primeira posição em que x aparece, considerando índice
 inicial 0, ou uma mensagem informando que o valor não foi encontrado.
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Logica4.java -d bin
+java -cp bin Logica4
+*/
+
 
 void main() {
     int[] numeros = new int[8];

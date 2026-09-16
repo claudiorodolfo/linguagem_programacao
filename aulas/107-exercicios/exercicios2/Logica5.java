@@ -8,6 +8,13 @@ String conceito(double media)
 conceito: A (≥ 9), B (≥ 7), C (≥ 5), D (demais).
 Recomendação: utilize uma expressão switch para conceito.
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Logica5.java -d bin
+java -cp bin Logica5
+*/
+
 
 int maximo(int a, int b, int c) {
     int maior = a;

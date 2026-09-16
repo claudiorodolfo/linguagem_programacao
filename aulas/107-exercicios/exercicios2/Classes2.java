@@ -4,6 +4,13 @@ Utilize a classe Livro apresentada em aula. Crie dois objetos Livro.
 Empreste somente o primeiro. Imprima descricao() dos dois objetos e
 explique, em um comentário, por que o segundo continua disponível.
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Classes2.java -d bin
+java -cp bin Classes2
+*/
+
 
 class Livro {
     String titulo;

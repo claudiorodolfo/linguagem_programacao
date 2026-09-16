@@ -6,6 +6,13 @@ necessário, utilizando this(numero, 0.0). Crie 3 contas e imprima
 totalDeContas. Explique em um comentário a diferença entre
 totalDeContas (da classe) e saldo (do objeto).
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Metodos3.java -d bin
+java -cp bin Metodos3
+*/
+
 
 class ContaBancaria {
     static int totalDeContas = 0;

@@ -4,6 +4,13 @@ Leia a quantidade n de estudantes (n > 0). Em seguida, leia n notas
 do tipo double. Ao final, informe a média da turma e quantos
 estudantes obtiveram nota maior ou igual a 7.0.
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Logica2.java -d bin
+java -cp bin Logica2
+*/
+
 
 void main() {
     int n = Integer.parseInt(IO.readln("Quantidade de estudantes: "));

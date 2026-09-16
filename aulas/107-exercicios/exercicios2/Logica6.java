@@ -7,6 +7,13 @@ Crie um menu com as opções:
 Utilize F = C × 9/5 + 32 e C = (F - 32) × 5/9.
 Valide opção inválida. O menu deve continuar até a escolha de Sair.
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Logica6.java -d bin
+java -cp bin Logica6
+*/
+
 
 void main() {
     int opcao;

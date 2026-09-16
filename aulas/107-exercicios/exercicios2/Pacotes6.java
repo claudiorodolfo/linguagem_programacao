@@ -5,6 +5,13 @@ pacote int quantidade) e Inventario. Inventario altera quantidade
 diretamente. Mova Inventario para outro pacote: o que deixa de
 compilar? Qual modificador você usaria de verdade e por quê?
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Pacotes6.java -d bin
+java -cp bin Pacotes6
+*/
+
 
 class Estoque {
     int quantidade; // package-private: qualquer classe do pacote acessa

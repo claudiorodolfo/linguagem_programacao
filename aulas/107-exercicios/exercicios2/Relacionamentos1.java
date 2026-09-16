@@ -5,6 +5,13 @@ quantidade. Implemente matricular(Aluno a), mediaDaTurma() e listar().
 Aluno possui nome e media encapsulados. O void main() não acessa
 diretamente o arranjo interno.
 */
+/*
+Para compilar e executar:
+cd "aulas/107-exercicios/exercicios2/"
+javac Relacionamentos1.java -d bin
+java -cp bin Relacionamentos1
+*/
+
 
 class Aluno {
     private String nome;
