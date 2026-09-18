@@ -6,7 +6,7 @@ Compile com -d bin e execute pelo nome qualificado.
 */
 /*
 Para compilar e executar:
-cd "aulas/107-exercicios/exercicios2/Pacote4/"
+cd "aulas/107-exercicios/exercicios2/Pacotes4/"
 javac br/edu/ifba/conquista/lp1/exercicio/modelo/Retangulo.java br/edu/ifba/conquista/lp1/exercicio/app/Principal.java -d bin
 java -cp bin br.edu.ifba.conquista.lp1.exercicio.app.Principal
 */
@@ -19,7 +19,7 @@ java -cp bin br.edu.ifba.conquista.lp1.exercicio.app.Principal
 // O app importa Retangulo porque está em outro pacote.
 // Construtor e area() são public: package-private não atravessa
 // a fronteira do pacote.
-// Compilar e executar (nesta pasta, exercicios2/Pacote4):
+// Compilar e executar (nesta pasta, exercicios2/Pacotes4):
 //
 //   javac -d bin \
 //     br/edu/ifba/conquista/lp1/exercicio/modelo/Retangulo.java \
