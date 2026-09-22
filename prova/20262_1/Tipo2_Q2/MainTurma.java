@@ -6,15 +6,11 @@ class Inscricao {
     public Inscricao(String nomeAluno, double media) {
 
         if (nomeAluno == null || nomeAluno.isBlank()) {
-            throw new IllegalArgumentException(
-                "Nome do aluno inválido."
-            );
+            System.out.println("Nome do aluno inválido.");
         }
 
         if (media < 0 || media > 10) {
-            throw new IllegalArgumentException(
-                "A média deve estar entre 0 e 10."
-            );
+            System.out.println("A média deve estar entre 0 e 10.");
         }
 
         this.nomeAluno = nomeAluno;
@@ -50,7 +46,7 @@ class Turma {
     public Turma(String codigo) {
 
         if (codigo == null || codigo.isBlank()) {
-            throw new IllegalArgumentException(
+            System.out.println(
                 "Código da turma inválido."
             );
         }

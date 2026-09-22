@@ -8,21 +8,15 @@ class ItemPedido {
                       double precoUnitario) {
 
         if (nomeProduto == null || nomeProduto.isBlank()) {
-            throw new IllegalArgumentException(
-                "Nome do produto inválido."
-            );
+            System.out.println("Nome do produto inválido.");
         }
 
         if (quantidade <= 0) {
-            throw new IllegalArgumentException(
-                "A quantidade deve ser positiva."
-            );
+            System.out.println("A quantidade deve ser positiva.");
         }
 
         if (precoUnitario < 0) {
-            throw new IllegalArgumentException(
-                "O preço não pode ser negativo."
-            );
+            System.out.println("O preço não pode ser negativo.");
         }
 
         this.nomeProduto = nomeProduto;
@@ -65,15 +59,11 @@ class Pedido {
     public void adicionarItem(ItemPedido item) {
 
         if (item == null) {
-            throw new IllegalArgumentException(
-                "O item não pode ser nulo."
-            );
+            System.out.println("O item não pode ser nulo.");
         }
 
         if (quantidadeItens >= itens.length) {
-            throw new IllegalStateException(
-                "O pedido já possui 20 itens."
-            );
+            throw new IllegalStateException("O pedido já possui 20 itens.");
         }
 
         itens[quantidadeItens] = item;
