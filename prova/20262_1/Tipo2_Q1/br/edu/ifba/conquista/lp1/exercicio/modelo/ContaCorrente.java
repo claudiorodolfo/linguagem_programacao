@@ -14,23 +14,17 @@ public class ContaCorrente {
                          double saldo) {
 
         if (numero <= 0) {
-            throw new IllegalArgumentException(
-                "Número da conta inválido."
-            );
+            System.out.println("Número da conta inválido.");
         }
 
         if (nomeCorrentista == null ||
             nomeCorrentista.isBlank()) {
 
-            throw new IllegalArgumentException(
-                "Nome do correntista inválido."
-            );
+            System.out.println("Nome do correntista inválido.");
         }
 
         if (saldo < 0) {
-            throw new IllegalArgumentException(
-                "O saldo inicial não pode ser negativo."
-            );
+            System.out.println("O saldo inicial não pode ser negativo.");
         }
 
         this.numero = numero;
@@ -41,9 +35,7 @@ public class ContaCorrente {
     public void alterarNome(String nome) {
 
         if (nome == null || nome.isBlank()) {
-            throw new IllegalArgumentException(
-                "Nome inválido."
-            );
+            System.out.println("Nome inválido.");
         }
 
         this.nomeCorrentista = nome;
@@ -52,9 +44,7 @@ public class ContaCorrente {
     public void depositar(double valor) {
 
         if (valor <= 0) {
-            throw new IllegalArgumentException(
-                "O valor do depósito deve ser positivo."
-            );
+            System.out.println("O valor do depósito deve ser positivo.");
         }
 
         saldo += valor;
@@ -63,15 +53,11 @@ public class ContaCorrente {
     public void sacar(double valor) {
 
         if (valor <= 0) {
-            throw new IllegalArgumentException(
-                "O valor do saque deve ser positivo."
-            );
+            System.out.println("O valor do saque deve ser positivo.");
         }
 
         if (valor > saldo) {
-            throw new IllegalStateException(
-                "Saldo insuficiente."
-            );
+            System.out.println("Saldo insuficiente.");
         }
 
         saldo -= valor;

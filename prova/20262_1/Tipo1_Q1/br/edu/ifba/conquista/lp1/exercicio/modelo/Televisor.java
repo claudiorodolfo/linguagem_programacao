@@ -11,15 +11,11 @@ public class Televisor {
 
     public Televisor(int canal, int volume) {
         if (canal < 1 || canal > 999) {
-            throw new IllegalArgumentException(
-                "O canal deve estar entre 1 e 999."
-            );
+            System.out.println("O canal deve estar entre 1 e 999.");
         }
 
         if (volume < 0 || volume > 99) {
-            throw new IllegalArgumentException(
-                "O volume deve estar entre 0 e 99."
-            );
+            System.out.println("O volume deve estar entre 0 e 99.");
         }
 
         this.canal = canal;
@@ -28,9 +24,7 @@ public class Televisor {
 
     public void alterarCanal(int canal) {
         if (canal < 1 || canal > 999) {
-            throw new IllegalArgumentException(
-                "O canal deve estar entre 1 e 999."
-            );
+            System.out.println("O canal deve estar entre 1 e 999.");
         }
 
         this.canal = canal;
