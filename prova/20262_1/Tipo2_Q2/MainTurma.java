@@ -59,9 +59,7 @@ class Turma {
     public void matricular(String nomeAluno, double media) {
 
         if (quantidadeInscricoes >= inscricoes.length) {
-            throw new IllegalStateException(
-                "A turma já possui 40 inscrições."
-            );
+            System.out.println("A turma já possui 40 inscrições.");
         }
 
         Inscricao inscricao =

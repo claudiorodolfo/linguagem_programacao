@@ -63,7 +63,7 @@ class Pedido {
         }
 
         if (quantidadeItens >= itens.length) {
-            throw new IllegalStateException("O pedido já possui 20 itens.");
+            System.out.println("O pedido já possui 20 itens.");
         }
 
         itens[quantidadeItens] = item;
@@ -92,7 +92,7 @@ class Pedido {
     public ItemPedido getItem(int indice) {
 
         if (indice < 0 || indice >= quantidadeItens) {
-            throw new IndexOutOfBoundsException();
+            System.out.println("Índice fora dos limites aceitáveis");
         }
 
         return itens[indice];
